@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "github 블로그 만들기 for mac"
+title: "[github blog] github 블로그 만들기 for mac"
 date: 2017-03-18 22:30:00
 categories: git
 tags: github jekyll blog

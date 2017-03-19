@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "블로그 포스트 등록하기"
+title: "[git] 블로그 포스트 등록하기"
 date: 2017-03-19 15:30:00
 categories: git
 tags: github jekyll blog
