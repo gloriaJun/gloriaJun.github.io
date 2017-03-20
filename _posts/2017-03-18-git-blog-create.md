@@ -2,7 +2,7 @@
 layout: post
 title: "[github blog] github 블로그 만들기 for mac"
 date: 2017-03-18 22:30:00
-categories: git
+categories: Git
 tags: github jekyll blog
 ---
 
@@ -24,7 +24,7 @@ github page가 Jekyll을 자체 지원하고 있으므로 많은 사용자들이
 먼저 github에 블로그 생성을 위한 repository를 생성하자.
 중요한 것은 repository 이름이다!!
 repository 이름에 자신의 github 사용자아이디를 이용하여 *[사용자아이디].github.io* 와 같이 생성해준다.
-![image](https://raw.githubusercontent.com/gloriaJun/gloriaJun.github.io/master/_posts/img/github_repo.png)
+![image](https://raw.githubusercontent.com/gloriaJun/gloriaJun.github.io/master/_posts/img/2017-03-18-github_repo.png)
 
 ## Jekyll 설치
 mac의 경우 기본으로 ruby가 설치되어 있어 별도 설치가 필요없다해서 건너띄었다.
@@ -75,8 +75,10 @@ Configuration file: none
     Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
 ```
+>`jekyll serve --watch` 을 수행하면 해당 명령을 수행한 위치의 폴더의 파일들을 변환하여 `./site`에 생성하고, 파일이 변경되면 자동으로 반영해준다.
+
 웹브라우저(http://127.0.0.1:4000/)에 접속해보면 다음과 같은 화면이 출력된다.
-![web](https://raw.githubusercontent.com/gloriaJun/gloriaJun.github.io/master/_posts/img/testpage.png)
+![web](https://raw.githubusercontent.com/gloriaJun/gloriaJun.github.io/master/_posts/img/2017-03-18-testpage.png)
 
 ## github 원격 저장소 연결하기
 이제는 github에 생성한 remote와 로컬의 디렉토리를 연결하는 작업을 한다. (로컬의 작업한 파일을 git을 이용하여 원격 저장소에 반영하는 것과 동일한 작업이라고 보면 된다.)
@@ -131,7 +133,7 @@ $ git commit -m 'my blog init files'
 $ git push origin master
 ```
 github에 접속해 해당 레파지토리를 확인하면 아래와 같이 커밋된 내용들을 확인할 수 있다.
-![github blog commit](https://raw.githubusercontent.com/gloriaJun/gloriaJun.github.io/master/_posts/img/first_commit.png)
+![github blog commit](https://raw.githubusercontent.com/gloriaJun/gloriaJun.github.io/master/_posts/img/2017-03-18-first_commit.png)
 
 그리고 웹브라우저에서 레파지토리명으로 생성한 이름(**https://gloriajun.github.io/**)으로 입력하면 앞에서 로컬에서 확인한 웹페이지를 만날 수 있다.
 그럼 정상적으로 블로그가 생성된 것이다.

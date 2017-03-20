@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## About Me
+이왕 하는 일 즐겁게 하자! 그리고 가능한 긍정적으로 생각하며 살아가자!!<br/>
+라는 삶의 모토를 가지고 살아가고 있는 이 시대의 워킹맘 입니다.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+## 블로그를 만들게 된 계기는 ...?
+아래의 것들에 대해 정리하기 위해 만든 공간...<br/>
+(별도로 정리를 안하고 참고했던 자료들만 스크랩했더니...나중에 다시 이해하기가 너무 힘들고..잊혀져 가는 것들이 아쉽다..ㅠㅠ)
+* 관심있는 분야에 대해 공부하면서 정리한 것. 
+* 업무에 사용하며 경험한 것.

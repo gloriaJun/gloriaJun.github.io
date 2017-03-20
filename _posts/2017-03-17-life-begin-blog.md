@@ -2,7 +2,7 @@
 layout: post
 title: "Starting Blog"
 date: 2017-03-17 23:00:00
-categories: 일상
+categories: "my life"
 ---
 공부한 내용들을 에버노트. 메모장 등에 별도로 정리를 하다보니...
 자료 조사하면서 스크랩한 것들과 뒤죽박죽이 되어버렸다.
