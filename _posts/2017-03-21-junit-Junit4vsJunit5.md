@@ -2,8 +2,8 @@
 layout: post
 title: "[junit] JUnit5 vs JUnit4"
 date: 2017-03-21 18:30:00
-categories: Git
-tags: github jekyll blog
+categories: JUnit
+tags: junit junit5 testing
 ---
 
 ![image](https://i1.wp.com/howtoprogram.xyz/wp-content/uploads/2016/08/JUnit-5-vs-JUnit-4.png?w=485)
