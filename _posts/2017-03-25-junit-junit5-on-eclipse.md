@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JUnit] JUnit5 for Eclipse"
-date: 2017-03-26 18:30:00
+date: 2017-03-25 18:30:00
 categories: JUnit
 tags: junit junit5 testing eclipse
 ---
@@ -103,7 +103,7 @@ JUnit3, JUnit4 기반으로 작성된 테스트케이스가 수행할 수 있는
 <br/><br/>
 ## Example
 #### JUnit5 API를 사용하여 테스트 케이스 작성
-* 테스트 코드 예제  <br/>
+테스트 코드 예제)
 ```java
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
@@ -121,11 +121,11 @@ public class Junit5Demo {
 }
 ```
 
-* 실행 결과
+실행 결과)
 ![](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-26-junit-junit5_on_eclipse.png?raw=true)
 
 #### JUnit4 API를 사용하여 작성된 테스트 케이스
-* 테스트 코드 예제 <br/>
+테스트 코드 예제)
 ```java
 import static org.junit.Assert.*;
 
@@ -164,32 +164,5 @@ public class JUnit4SampleTest {
 	}
 
 }
-```
-
-해당 케이스를 JUnit 런처를 이용해서도 정상적으로 수행할 수도 있고, 또한 터미널을 이용해서도 `junit-vintage`를 build 과정에 정의해주었으므로 정상적으로 수행되는 것을 확인할 수 있다.
-(vintage를  build 단계에 surefire의 의존 라이브러리로 정의해주지 않으면 junit4로 작성된 케이스는 수행되지 않는다.)
-```
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-Mar 23, 2017 3:45:43 PM org.junit.platform.launcher.core.ServiceLoaderTestEngineRegistry loadTestEngines
-INFO: Discovered TestEngines with IDs: [junit-jupiter, junit-vintage]
-Running com.glria.junit4base.JUnit4SampleTest
-setUpBeforeClass
-setUp
-tearDown
-tearDownAfterClass
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec <<< FAILURE! - in com.glria.junit4base.JUnit4SampleTest
-test  Time elapsed: 0.009 sec  <<< FAILURE!
-java.lang.AssertionError: Not yet implemented
-	at com.glria.junit4base.JUnit4SampleTest.test(JUnit4SampleTest.java:36)
-
-
-Results :
-
-Failed tests:
-  JUnit4SampleTest.test:36 Not yet implemented
-
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
 ```
 <br/><br/>
