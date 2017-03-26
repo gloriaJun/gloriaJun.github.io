@@ -126,7 +126,7 @@ public class Junit5Demo {
 
 #### JUnit4 API를 사용하여 작성된 테스트 케이스
 * 테스트 코드 예제 <br/>
-``` java
+```java
 import static org.junit.Assert.*;
 
 import org.junit.After;
