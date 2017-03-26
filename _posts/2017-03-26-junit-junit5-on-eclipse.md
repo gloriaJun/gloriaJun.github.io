@@ -81,7 +81,7 @@ pom.xml에 아래와 같이 정의한다.
 * JUnit Platform
  IntelliJ IDEA의 경우에는 JUnit Platform에서 테스트가 수행되도록 지원이 되고 있으므로 해당 패키지를 별도로 정의할 필요가 없다.
 하지만 이클립스와 같이 JUnit Platform을 지원하지 않는 그 외의 IDE의 경우에는 해당 패키지를 정의한 뒤에 테스트 클래스에 `@RunWith(JUnitPlatform.class)`을 추가해주면, JUnit Platform 을 JUnit4 기반에서 수행할 수 있다.  
-(또는 [Console Launcher](http://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher)를 사용하여 테스트를 수행하면 된다.
+(또는 [Console Launcher](http://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher)를 사용하여 테스트를 수행하면 된다.)
 
 * JUnit Vintage
 JUnit3, JUnit4 기반으로 작성된 테스트케이스가 수행할 수 있는 TestEngine을 제공한다. _mvn test 로 console에서 수행하려면 해당 패키지를 정의해줘야하는 것 같음_
@@ -96,14 +96,14 @@ JUnit3, JUnit4 기반으로 작성된 테스트케이스가 수행할 수 있는
 * @BeforeClass and @AfterClass no longer exist; use @BeforeAll and @AfterAll instead.
 * @Ignore no longer exists: use @Disabled instead.
 * @Category no longer exists; use @Tag instead.
-_(아래 부분은 아직까지 잘은 이해가 되지 앟음..ㅠㅠ)_
+<br/>_(아래 부분은 아직까지 잘은 이해가 되지 앟음..ㅠㅠ)_
 * @RunWith no longer exists; superseded by @ExtendWith.
 * @Rule and @ClassRule no longer exist; superseded by @ExtendWith; see the following section for partial rule support.
 
 <br/><br/>
 ## Example
 #### JUnit5 API를 사용하여 테스트 케이스 작성
-* 테스트 코드 예제
+* 테스트 코드 예제  <br/>
 ```java
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
@@ -125,7 +125,7 @@ public class Junit5Demo {
 ![](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-26-junit-junit5_on_eclipse.png?raw=true)
 
 #### JUnit4 API를 사용하여 작성된 테스트 케이스
-* 테스트 코드 예제
+* 테스트 코드 예제 <br/>
 ``` java
 import static org.junit.Assert.*;
 
