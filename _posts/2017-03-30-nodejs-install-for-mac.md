@@ -6,10 +6,10 @@ categories: NodeJS
 tags: nodejs mac
 ---
 
-NVM을 이용하여 설치를 함녀 NodeJS를 쉽게 설치할 수 있을 뿐만 아니라 버전별로도 관리를 할 수 있음.
-[NVM]( [GitHub - creationix/nvm: Node Version Manager - Simple bash script to manage multiple active node.js versions](https://github.com/creationix/nvm))에 보면 설치 방법이 나와있음.
+NVM을 이용하여 설치를 하면 NodeJS를 쉽게 설치할 수 있을 뿐만 아니라 버전별로도 관리를 할 수 있음.
+>[NVM]( [GitHub - creationix/nvm: Node Version Manager - Simple bash script to manage multiple active node.js versions](https://github.com/creationix/nvm))의 github에 보면 좀 더 자세한 설치 방법이 나와있음.
 
-1. 먼저 nvm을 설치한다.
+### nvm 설치
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 ```
@@ -21,7 +21,8 @@ $ nvm --version
 0.33.1
 ```
 
-2. node js 최신 버전을 설치한다.
+### node js 설치
+아래는 node js 최신 버전을 설치하는 경우에 대한 예시임.
 ```
 $ nvm install node
 Downloading and installing node v7.8.0...
