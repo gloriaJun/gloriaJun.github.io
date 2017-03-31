@@ -2,8 +2,8 @@
 layout: post
 title: "[JUnit] JUnit5 for Eclipse"
 date: 2017-03-25 18:30:00
-categories: JUnit
-tags: junit junit5 testing eclipse
+categories: "Testing"
+tags: junit junit5 eclipse java
 ---
 
 > 테스트 환경  
