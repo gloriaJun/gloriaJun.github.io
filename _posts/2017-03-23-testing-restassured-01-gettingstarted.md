@@ -3,7 +3,7 @@ layout: post
 title: "[Rest Assured] Getting Started"
 date: 2017-03-23 09:30:00
 categories: "Testing"
-tags: junit junit5 java restAssured "Rest API"
+tags: junit junit5 java restAssured Rest-API
 ---
 
 [Rest Assured Document Getting Started](https://github.com/rest-assured/rest-assured/wiki/GettingStarted)에 작성된 부분에서 테스트 시 필요에 따라 정의해야하는 패키지들에 부분만 정리한 부분임.

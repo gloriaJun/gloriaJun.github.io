@@ -3,7 +3,7 @@ layout: post
 title: "[Rest Assured] PetStore를 이용하여 사용해보기"
 date: 2017-03-23 15:30:00
 categories: "Testing"
-tags: junit junit5 java restAssured "Rest API"
+tags: junit junit5 java restAssured Rest-API
 ---
  
 Swagger 사이트에서 테스트용으로 제공되는 [Swagger Petstore](http://petstore.swagger.io/#￼/)를 이용하여 Rest-Assured 실습해보기.
