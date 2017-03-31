@@ -3,7 +3,7 @@ layout: post
 title: "[github blog] github 블로그 만들기 for mac"
 date: 2017-03-18 22:30:00
 categories: Git
-tags: github jekyll blog
+tags: git jekyll blog
 ---
 
 github 블로그 생성에 앞서. 개념부터 집고 넘어가기.

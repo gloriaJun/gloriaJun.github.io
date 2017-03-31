@@ -3,7 +3,7 @@ layout: post
 title: "[github blog] jekyll로 생성한 블로그의 환경 설정하기"
 date: 2017-03-19 15:30:00
 categories: Git
-tags: github jekyll blog
+tags: git jekyll blog
 ---
 
 로컬에 생성된 블로그 디렉토리를 보면 아래와 같이 구성되어 있다.
