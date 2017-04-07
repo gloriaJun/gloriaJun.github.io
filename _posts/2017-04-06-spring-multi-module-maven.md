@@ -334,6 +334,12 @@ application을 실행 후에 `http://localhost:8080`에 접속하거나, postman
 ]
 ```
 
+또는 `curl`을 설치 후에 아래와 같은 방법으로도 확인이 가능함.
+```
+$ curl localhost:8080/
+[{"id":1,"text":"clean up the room","completed":false},{"id":2,"text":"study math","completed":true}]
+```
+
 <br/><br/>
 > 참고 사이트  
 > [Getting Started · Creating a Multi Module Project](https://spring.io/guides/gs/multi-module/)  
