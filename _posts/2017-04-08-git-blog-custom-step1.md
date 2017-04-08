@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[github blog] Jekyll 블로그 커스터마이지4 - step1"
-date: 2017-04-08 19:30:00
+date: 2017-04-08 14:30:00
 categories: Git
 tags: git jekyll blog
 ---
