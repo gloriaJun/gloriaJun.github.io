@@ -45,6 +45,7 @@ $ tree
 ##### index.html
  `index.html`파일을 기존의 내용을 삭제하고 아래와 같이 변경하였다.<br/>
  (해당 페이지가 블로그 접속 시의 메인페이지이다…나중에 해당 파일에 메인 페이지이 body에 들어갈 내용들을 작성하기 위해 html 파일로 미리 변경해줌)
+
 ```html
 ---
 layout: default
@@ -65,6 +66,7 @@ title: Home
 ##### _layouts/default.html
 페이지의 레이아웃을 잡기 위한 파일이다. index.html에서 default로 정의하였으므로 해당 파일도 default.html로 생성한다.<br/>
 (만약, 다른 파일명으로 정의하고 싶다면, index.html의 layout에 해당 파일명과 일치 시켜 주면 되는 것 같음)
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -102,6 +104,7 @@ title: Home
 ###### _includes/head.html
 `head` tag에 들어갈 내용들을 정의한다. 
 style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 파일에 정의.
+
 ```html
 <head>
   <meta charset="utf-8">
@@ -121,6 +124,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 
 ###### _includes/nav.html
 페이지의 매뉴 카테고리 등 상단에 위치할 부분에 대해 정의한다.
+
 ```html
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
   <div class="navbar-header">
@@ -145,6 +149,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 ##### _includes/sidebar.html
 사이드에 들어갈 매뉴바를 정의한다.
 해당 부분에 차후에 카테고리와 tag 리스트를 넣으려고 생각 중임.
+
 ```html
 <div id="accordion" class="blog-sidebar-group" role="tablist" aria-multiselectable="true">
   <div class="card">
@@ -212,6 +217,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 
 ##### footer.htm
 페이지 하단 부분 정의. include 할 javascript도 해당 파일에서 정의하였음.
+
 ```html
 <footer class="blog-footer">
   <p>@2017 by gloria</p>
@@ -229,6 +235,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 
 ### assets/css/style.css
 커스텀 스타일을 정의한다.
+
 ```css
 /* 
   Global
