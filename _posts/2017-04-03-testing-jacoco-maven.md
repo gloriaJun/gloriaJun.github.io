@@ -6,7 +6,7 @@ categories: "Testing"
 tags: junit java coverage jacoco maven
 ---
 
-### Jacob??
+### Jacoco??
 테스트 커버리지를 측정하기 위한 툴이다.
 자세한 내용은 [EclEmma - JaCoCo Java Code Coverage Library](http://www.eclemma.org/jacoco/index.html) 를 참고.
 
