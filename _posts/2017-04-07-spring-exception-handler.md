@@ -126,6 +126,9 @@ postman을 이용해서 존재하지 않는 id를 전달하거나, mapping 되�
 ![](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-04-07-spring-exception-badrequest.png?raw=true)
 
 
+> **관련된 글들**
+> [1. 멀티 모듈의 프로젝트 생성하기](https://gloriajun.github.io/spring/2017/04/06/spring-multi-module-maven.html)
+>  
 
 
 
