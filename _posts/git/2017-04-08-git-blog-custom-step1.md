@@ -40,7 +40,7 @@ $ tree
 
 ### 페이지 레이아웃 잡기
 아래와 같은 디자인에서 좌측 사이드바만 없앤 디자인으로 결정을 하고 레이아웃을 잡기로 했다.<br/>
-![]({{ site.url }}/assets/images/2017-04-08-git-blog-layout.png?raw=true)
+![]({{ site.url }}/assets/images/git/2017/0408-git-blog-custom-step1/layout.png)
 
 ##### index.html
 블로그 접속 시 메인에 보여지는 화면으로 `index.md`파일을 삭제하고, `index.html`로 생성해준 뒤에 아래와 같이 작성한다.<br/>
@@ -78,7 +78,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 
 ### 빌드 및 확인
 jekyll 로 빌드해서 오류가 없는지 및 정상적으로 페이지가 출력이 되는 지 확인해본다.<br/>
-![]({{site.url}}/assets/images/2017-04-08-git-blog-step1.png?raw=true)
+![]({{ site.url }}/assets/images/git/2017/0408-git-blog-custom-step1/myblog-step1.png)
 
 
 > 참고한 사이트  

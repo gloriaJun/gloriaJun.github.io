@@ -35,9 +35,9 @@ gloriaJun.github.io]$ tree
 ```
 
 
-## \_config.yml 파일 수정하기
-\_config.yml 파일은 기본 설정 파일이다.
+## _config.yml 파일 수정하기
+`_config.yml` 파일은 기본 설정 파일이다.
 해당 파일을 이용하여 블로그의 전반적인 환경을 설정할 수 있다.
 해당 파일의 위치는 로컬에서 블로그명으로 생성한 디렉토리 하위에 있다.
 
-파일을 수정한 뒤에 jekyll serve —watch를 실행하면 로컬에서 변경된 내용들을 확인할 수 있다.
+파일을 수정한 뒤에 `jekyll serve —watch`를 실행하면 로컬에서 변경된 내용들을 확인할 수 있다.

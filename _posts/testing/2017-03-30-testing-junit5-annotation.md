@@ -25,7 +25,8 @@ dynamic test를 위한 메소드 임을 명시한다.
 테스크 클래스 또는 메소드의 물리적 이름 대신에 해당 annotation에 사용자가 별도로 정의한 이름을 테스트 케이스명으로 사용한다.
 
 * 기존에는 아래와 같은 형태로만 표현이 되었음.
-![DisplayName 사용하지 않은 경우](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-30-junit-annotation-DisplayName-nouse.png?raw=true)
+![]({{ site.url }}/assets/images/testing/2017/0330-junit5-annotation/DisplayName-nouse.png)
+
 
 * DisplayName annotation을 사용해서 논리적 이름을 명시한다.
   ```java
@@ -40,7 +41,7 @@ dynamic test를 위한 메소드 임을 명시한다.
   }
   ```
   테스트 수행을 하면, 아래 이미지와 같이 해당 annotation에 명시한 이름이 표현된다.<br/>
-![DisplayName 사용한 경우](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-30-junit-annotation-DisplayName-use.png?raw=true)
+![]({{ site.url }}/assets/images/testing/2017/0330-junit5-annotation/DisplayName-use.png)
 
 ##### @BeforeEach
 해당 클래스의 각각의 @Test 메소드 실행 전에 수행된다.
@@ -88,7 +89,7 @@ class nestedClass {
 }
 ```
 실행한 결과는 아래와 같다.<br/>
-  ![Nested](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-30-junit-annotation-nested.png?raw=true)
+![]({{ site.url }}/assets/images/testing/2017/0330-junit5-annotation/nested.png)
 
 ##### @Tag
 메소드 또는 클래스 레벨에서 테스트 필터링을 위해 선언한다.

@@ -122,7 +122,8 @@ public class Junit5Demo {
 ```
 
 실행 결과)
-![](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-26-junit-junit5_on_eclipse.png?raw=true)
+![]({{ site.url }}/assets/images/testing/2017/0325-junit5-on-eclipse/eclipse.png)
+
 
 #### JUnit4 API를 사용하여 작성된 테스트 케이스
 테스트 코드 예제)
@@ -165,4 +166,4 @@ public class JUnit4SampleTest {
 
 }
 ```
-<br/><br/>
+

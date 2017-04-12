@@ -18,7 +18,7 @@ tags: java logback junit
 ```
 
 classic만 추가하면, 아래와 같이 logback-classic 라이브러리들이 추가된 것을 확인할 수 있다.
-![](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-30-java-logback-junit.png?raw=true)
+![]({{ site.url }}/assets/images/java/2017/0330-java-logback-junit/logback.png)
 
 ## 로그 남기기
 Class 파일에 logger 객체를 정의하고 로깅 메시지를 남긴다.

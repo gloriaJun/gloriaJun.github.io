@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[github blog] github블로그에 테마 적용하기"
+title: "[github blog] 블로그에 테마 적용하기"
 date: 2017-03-26 15:30:00
 categories: Git
 tags: git jekyll blog
@@ -14,7 +14,7 @@ tags: git jekyll blog
 
 #### 테마 적용하기
 내가 이번에 적용하려고 하는 테마에서 아래와 같이 설치 방법이 나와있었다.
-![](https://github.com/gloriaJun/gloriaJun.github.io/blob/master/_images/2017-03-26_blog_theme_install.png?raw=true)
+![]({{ site.url }}/assets/images/git/2017/0326-git-blog-theme/theme-install-guide.png)
 
 그래서..아래와 같이 진행해서 로컬 웹브라우저로 확인.
 ```shell
@@ -24,5 +24,4 @@ $ jekyll serve --watch
 
 #### 설정파일 수정
 `_config.yml` 파일을 열어서 본인의 블로그에 맞게 정보를 변경하고..
-`_post` 폴더에 본인이 작성한 글들을 복사하거나, 새로 작성한다.
-그리고 다시 웹브라우저를 통해 확인 후에 GitHub 에 반영한다.
+`_post` 폴더에 본인이 작성한 글들을 복사하거나, 새로 작성한 뒤에 웹브라우저를 통하여 확인 후 github repository에 반영하면 된다.
