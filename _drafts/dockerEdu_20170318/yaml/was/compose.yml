@@ -1,0 +1,10 @@
+myweb:
+  image: nginx:latest
+  ports:
+    - 80:80
+  volumes:
+    - /home/docker/nginx.conf:/etc/nginx/nginx.conf
+  links:
+    - mywas:tomcat
+mywas:
+  image: tomcat:8.0
