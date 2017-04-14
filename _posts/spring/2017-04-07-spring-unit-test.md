@@ -76,3 +76,4 @@ Mockito를 이용하여 service에 대한 테스트 클래스를 작성한다.
 > **참고 링크**<br/>
 >  [Auto-configured Spring REST Docs tests](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html#boot-features-testing-spring-boot-applications-testing-autoconfigured-rest-docs)<br/>
 > [Spring Boot + RESTful + JUnit + Mockito + Hamcrest + EclEmma](https://medium.com/@gustavo.ponce.ch/spring-boot-restful-junit-mockito-hamcrest-eclemma-5add7f725d4e)
+> [Using custom arguments in Spring MVC controllers](https://sdqali.in/blog/2016/01/29/using-custom-arguments-in-spring-mvc-controllers/)

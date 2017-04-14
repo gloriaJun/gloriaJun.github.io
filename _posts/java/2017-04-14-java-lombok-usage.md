@@ -46,3 +46,7 @@ public class ToDos {
 
 다른 클래스 파일에서 해당 객체를 선언 후에 확인해보면..
 별도로 set/get 메소드와 toString 메소드를 생성해주지 않았으나 사용이 가능한 것을 확인할 수 있음.
+
+> 참고 링크 
+> [Lombok features](https://projectlombok.org/features/index.html)
+> 
