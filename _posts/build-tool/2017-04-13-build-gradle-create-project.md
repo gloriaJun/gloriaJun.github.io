@@ -6,7 +6,7 @@ categories: build-tool
 tags: gradle
 ---
 
-### gradel 설치 확인
+### gradle 설치 확인
 ```
 $ gradle -v
 
@@ -125,4 +125,46 @@ rootProject.name = 'todo'
 include 'common'
 include 'service'
 include 'web'
+```
+
+### 멀티 프로젝트 생성 시 Tip
+멀티 프로젝트 생성 시에 그룹 디렉토리가 없으면 생성하고, 하위 모듈이 존재하는 경우 디렉토리를 생성하고 서브 모듈로 등록하는 스크립트 
+
+##### settings.gradle
+```
+// 그룹 디렉터리를 돌면서 하위 디렉터리가 있으면 서브프로젝트로 등록하는 스크립트한다
+// 만약 그룹 디렉터리가 없으면 해당 디렉터리도 생성한다
+['common', 'todo-app', 'calendar-app', 'web'].each {
+    def projectDir = new File(rootDir, it)
+
+    // 그룹 디렉터리가 없으면 생성
+    if (!projectDir.exists()) {
+        projectDir.mkdirs()
+    }
+
+    // 모듈 그룹 디렉터리 하위에 디렉터리가 있으면 서브 프로젝트로 등록
+    projectDir.eachDir { dir ->
+        include ":${it}-${dir.name}"
+        project (":${it}-${dir.name}").projectDir = new File(projectDir.getAbsolutePath(), dir.name);
+    }
+}
+```
+
+
+##### build.gradle
+각각 모듈에 기본 폴더인 `src, src/java, src/main, src/test `을 생성하기 위한 부분에 대한 스크립트
+```
+task initSourceFolders {
+    subproject.sourceSets*.java.srcDirs*.each {
+        if( !it.exists() ) {
+            it.mkdirs()
+        }
+    }
+ 
+    subproject.sourceSets*.resources.srcDirs*.each {
+        if( !it.exists() ) {
+            it.mkdirs()
+        }
+    }
+}
 ```
