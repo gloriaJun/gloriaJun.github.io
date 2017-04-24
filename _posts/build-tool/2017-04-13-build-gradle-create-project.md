@@ -6,7 +6,7 @@ categories: build-tool
 tags: gradle
 ---
 
-### gradel 설치 확인
+### gradle 설치 확인
 ```
 $ gradle -v
 
