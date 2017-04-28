@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring Boot] swagger2 연동하기"
+title: "[Spring Boot] swagger2 설정하기"
 date: 2017-04-11 20:00:00
 categories: Spring
 tags: spring spring-boot gradle swagger
@@ -36,3 +36,4 @@ swagger를 정의한(?) 클래스에서 아래의 annotation을 추가해주면 
 
 > 참고 사이트  
 > [Setting Up Swagger 2 with a Spring REST API | Baeldung](http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)  
+> [Springfox Reference Documentation](http://springfox.github.io/springfox/docs/current/#springfox-samples)
