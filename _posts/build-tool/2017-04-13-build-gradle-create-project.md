@@ -7,6 +7,7 @@ tags: gradle
 ---
 
 ### gradle 설치 확인
+{% raw %}
 ```
 $ gradle -v
 
@@ -22,6 +23,7 @@ Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
 JVM:          1.8.0_111 (Oracle Corporation 25.111-b14)
 OS:           Mac OS X 10.12.3 x86_64
 ```
+{% endraw %}
 
 ### 프로젝트 생성
 폴더를 생성 한 뒤에 해당 폴더에서 gradle을 적용한다.
@@ -36,6 +38,7 @@ Total time: 0.837 secs
 ```
 
 `gradle wrapper`를 실행하고 나면 아래와 같은 폴더와 파일들이 생성된다.
+{% raw %}
 ```
 $ tree
 .
@@ -48,6 +51,7 @@ $ tree
 
 2 directories, 4 files
 ```
+{% endraw %}
 
 ###### gradlew & gradlew.bat
 gradle을 별도로 설치하거나 연동을 하지 않아도 사용할 수 있게 해주는 스크립트 파일.
@@ -64,9 +68,11 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-3.4.1-bin.zip
 
 ### gradle version upgrade
 프로젝트의 gradle 버전을 명시하여 업그레이드 하는 방법
+{% raw %}
 ```
 $ gradle wrapper --gradle-version 2.4.7
 ```
+{% endraw %}
 
 ### gradle init
 다음과 같은 파일들이 추가로 생성됨.

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "[펌글] Top 20 JUnit Testcase Best Practices"
