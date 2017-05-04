@@ -38,7 +38,7 @@ tags: junit java coverage jacoco maven
 
 <br/>
 #### Report 파일 확인
-`mvn jacoco:report`을 수행하면 리포트 파일이 생성된다.<br/>
+test phase 단계에 report를 생성하도록 설정을 하였으므로 `mvn test`를 수행하거나, 별도로 `mvn jacoco:report`을 수행하면 리포트 파일이 생성된다.<br/>
 ![]({{ site.url }}/assets/images/testing/2017/0403-jacoco-maven/report.png)
 
 
@@ -52,4 +52,28 @@ tags: junit java coverage jacoco maven
 * green : 단위 테스트에서 해당 부분이 수행되어 커버되었음.
 * yellow : 부분적으로 커버되었음.
 * red : 전혀 수행되지 않았음.
+
+#### 특정 클래스에 대해서는 coverage 측정 제외하기
+`exclude` 옵션을 주어서 특정 클래스 파일에 대해서는 제외 시킬 수 있다.
+```xml
+<configuration>
+    <excludes>
+      <exclude>com/mytest/restAssured/*</exclude>
+      <exclude>**/*String*.*</exclude>
+    </excludes>
+</configuration>
+```
+
+#### 테스트가 실패해도 jacoco report가 생성되도록 하기
+테스트가 실패하면 테스트 이후의 과정이 실행이 되지 않지만, 별도로 옵션을 주어서 테스트 이후의 과정이 수행되도록 할 수 있다.
+```xml
+<plugin>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>${maven.surefir.version}</version>
+    <configuration>
+      <!-- 테스트가 실패해도 이후 작업을 계속 진행 -->
+      <testFailureIgnore>true</testFailureIgnore>
+    </configuration>
+</plugin>
+```
 
