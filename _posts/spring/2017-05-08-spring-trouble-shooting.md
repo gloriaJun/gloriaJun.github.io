@@ -7,7 +7,7 @@ tags: spring spring-boot
 ---
 
 #### java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
-repository, service, web을 각각의 모듈로 하여 멀티모듈로 프로젝트를 구성한 경우에 repository에 대한 단위 테스트를 작성하여 수행하는 경우에 발생
+repository, service, web을 각각의 모듈로 하여 멀티모듈로 프로젝트를 구성한 경우에 repository에 대한 단위 테스트를 작성하여 수행하는 경우에 발생<br/>
 예시 프로젝트)<br/>
 [Spring Boot multi module project on Gradle](https://gloriajun.github.io/spring/2017/04/11/spring-multi-module-gradle.html)<br/>
 [Spring Boot multi module project on Maven](https://gloriajun.github.io/spring/2017/04/06/spring-multi-module-maven.html)<br/>
