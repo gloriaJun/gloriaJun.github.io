@@ -44,3 +44,9 @@ $ git add .
 $ git commit -m "init commit"
 $ git push origin master
 ```
+
+### git commit 메시지 편집기 설정
+아래와 같은 방법으로 자신이 원하는 편집기를 사용할 수 있도록 설정할 수 있음.
+```
+$ git config --global core.editor vim
+```
