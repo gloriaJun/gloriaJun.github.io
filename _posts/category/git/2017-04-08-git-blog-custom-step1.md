@@ -3,7 +3,7 @@ layout: post
 title: "[github blog] 커스터마이징 step1 - 레이아웃 잡기"
 date: 2017-04-08 14:30:00
 categories: Git
-tags: git jekyll blog
+tags: jekyll github-page
 ---
 
 github에 테마를 가져다 쓰다가 내 입맛대로 구성해보기 위해서 삽질한 내용들을 기록하기 위해서 정리하기.

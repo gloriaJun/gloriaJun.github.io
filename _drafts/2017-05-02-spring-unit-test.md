@@ -10,7 +10,7 @@ Spring Boot 를 이용하여 작성한 코드들에 대한 단위 테스트 작�
 
 ## Repository Test
 `@DataJpaTest`와 `TestEntityManager` 를 이용하여 작성.
-gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookInfoRepositoryTest.java
+{% gist gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookInfoRepositoryTest %}
 
 참고로 id를 `@GeneratedValue`로 선언을 한 경우, 단 건 테스트 시에는 문제가 없으나 클래스 전체의 테스트 메소드를 한 번에 수행하는 경우에 id가 자동으로 1개씩 증가를 해서 원하는 값을 select하거나, 값을 비교하는 경우에 정상동작을 했음에도 에러가 발생할 수 있다.
 그러므로 입력 시점의 id을 이용하여 값을 조회하고, 기대값과 비교하는 경우에는 id 빼고 값을 비교하여 체크하거나, `testFindOneById()`에서와 같이 작성을 해서 검증을 해야 한다.
@@ -22,7 +22,21 @@ gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookInfoRepositoryTest.java
 ```
 
 작성한 테스트 전체 코드
-gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookInfoServiceTest.java
+* mock을 사용한 테스트 케이스
+{% gist gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookInfoServiceWithMockTest %}
+
+* mock을 사용하지 않은 테스트 케이스
+{% gist gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookInfoServiceTest %}
+
+
+
 
 ## Controller Test
 
+작성한 테스트 전체 코드
+{% gist gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookTreeControllerTest %}
+
+
+> 참고 링크
+> [Unit and Integration tests in Spring Boot](http://www.lucassaldanha.com/unit-and-integration-tests-in-spring-boot/)
+> [SpringAngular2TypeScript/server/src/test/java/ch/javaee/demo/angular2/test at master · marco76/SpringAngular2TypeScript · GitHub](https://github.com/marco76/SpringAngular2TypeScript/tree/master/server/src/test/java/ch/javaee/demo/angular2/test)

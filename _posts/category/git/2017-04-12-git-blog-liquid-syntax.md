@@ -3,7 +3,7 @@ layout: post
 title: "[github blog] Jekyll Liquid Syntax 사용법 정리"
 date: 2017-04-12 16:30:00
 categories: Git
-tags: git jekyll blog
+tags: jekyll github-page
 ---
 
 Jekyll 에서 템플릿 처리 작업을 위해 제공하는 [Liquid 템플릿 언어](http://jekyllrb-ko.github.io/docs/templates/) 에 대한 정리 

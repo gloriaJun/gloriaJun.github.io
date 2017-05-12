@@ -10,14 +10,7 @@ tags: git
 
 ### 각 프로젝트별 파일 예시
 ###### spring boot
-```
-.gradle
-.idea
-/build
-*.iml
-/target
-```
-
+{% gist gloriaJun/0ab8676fb26273c066e4d49ea46da3d7 spring-boot %}
 
 ### 반영되지 말하야할 폴더가 git에 반영된 경우
 버전관리 대상이 아닌 파일이 이미 git에 반영된 경우에 대한 조치 방법

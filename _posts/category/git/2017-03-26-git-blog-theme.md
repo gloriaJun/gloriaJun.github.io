@@ -3,7 +3,7 @@ layout: post
 title: "[github blog] 블로그에 테마 적용하기"
 date: 2017-03-26 15:30:00
 categories: Git
-tags: git jekyll blog
+tags: jekyll github-page theme
 ---
 
 [Jekyll theme](http://jekyllthemes.org)에서 테마를 다운받아서 github 블로그에 적용하기.

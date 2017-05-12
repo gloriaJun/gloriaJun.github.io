@@ -3,7 +3,7 @@ layout: post
 title: "[github blog] 블로그 포스트 등록하기"
 date: 2017-03-19 19:30:00
 categories: Git
-tags: git jekyll blog
+tags: jekyll github-page
 ---
 
 블로그 디렉토리 하위의 **_post** 디렉토리에 markdown 을 이용하여 작성한 파일을 추가하면된다.

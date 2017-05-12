@@ -3,7 +3,7 @@ layout: post
 title: "[github blog] Gist를 블로그에 연동하기"
 date: 2017-04-12 14:30:00
 categories: Git
-tags: git jekyll blog gist
+tags: jekyll github-page gist
 ---
 
 > **사전 조건**  
