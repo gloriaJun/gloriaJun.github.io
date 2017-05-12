@@ -29,8 +29,6 @@ Spring Boot 를 이용하여 작성한 코드들에 대한 단위 테스트 작�
 {% gist gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookInfoServiceTest %}
 
 
-
-
 ## Controller Test
 
 작성한 테스트 전체 코드
