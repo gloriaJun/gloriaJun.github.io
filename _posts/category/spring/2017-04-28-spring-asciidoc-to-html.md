@@ -10,8 +10,8 @@ tags: spring spring-boot gradle swagger
 
 참고로…swagger로 생성한 문서를 ascii로 변환한 뒤에 html 문서를 생성하는 과정으로 테스트 해보고 있음.
 앞의 과정들은 아래의 글들을 참고하면 됨<br/>
-[1. [Spring Boot] swagger2 설정하기]({% post_url /spring/2017-04-12-spring-swagger-setting %})<br/>
-[2. [Spring Boot] swagger static-doc 설정하기]({% post_url /spring/2017-04-28-spring-swagger-static-doc %})
+[1. [Spring Boot] swagger2 설정하기]({% post_url /category/spring/2017-04-12-spring-swagger-setting %})<br/>
+[2. [Spring Boot] swagger static-doc 설정하기]({% post_url /category/spring/2017-04-28-spring-swagger-static-doc %})
 
 ## 의존 라이브러리 설정
 ```

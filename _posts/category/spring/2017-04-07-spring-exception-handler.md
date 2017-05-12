@@ -6,7 +6,7 @@ categories: Spring
 tags: spring spring-boot exception
 ---
 
-앞에서 multi module로 생성한 프로젝트 [Spring Boot multi module project on Maven]({% post_url /spring/2017-04-06-spring-multi-module-maven %})에  exception handler를 추가하기.
+앞에서 multi module로 생성한 프로젝트 [Spring Boot multi module project on Maven]({% post_url /category/spring/2017-04-06-spring-multi-module-maven %})에  exception handler를 추가하기.
 
 
 
@@ -49,8 +49,8 @@ postman을 이용해서 존재하지 않는 id를 전달하거나, mapping 되�
 
 
 > **관련된 글들**
-> [1. 멀티 모듈의 프로젝트 생성하기]({% post_url /spring/2017-04-06-spring-multi-module-maven %})
->  [2. unit test]({% post_url /spring/2017-04-07-spring-unit-test %})
+> [1. 멀티 모듈의 프로젝트 생성하기]({% post_url /category/spring/2017-04-06-spring-multi-module-maven %})
+>  [2. unit test]({% post_url /category/spring/2017-04-07-spring-unit-test %})
 
 
 
