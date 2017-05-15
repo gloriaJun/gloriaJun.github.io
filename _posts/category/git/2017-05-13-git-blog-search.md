@@ -62,7 +62,8 @@ gems:
 #### Google Search Console에 sitemap 주소 등록
 github page를 빌드한 뒤에 먼저 `http://localhost:4000/sitemap.xml`로 접속하여 xml의 내용이 출력이 되는 지 확인한 뒤, git에 push를 하고 자신의 github page에 접속하여 다시 확인한다.<br/>
 (참고로 blog 내용이 변경이 되거나 추가되면 jekyll에서 sitemap.xml도 같이 갱신이 된다)<br/>
-Search Console에 접속하여 해당 주소를 등록한다.
+Search Console에 접속하여 해당 주소를 등록하면 약 일주일 정도 안에 google로 부터 작성된 글에 대해 구글에서 검색이 될 거라는 메일을 수신받는다.</br>
+그 뒤에 구글에서 검색을 해보면 내가 작성한 글이 검색되는 것을 확인할 수 있다.
 
 #### 특정 글의 변경 주기나 우선순위를 변경하고 싶은 경우
 아래와 같은 속성을 해당 글에 추가해주면 된다.
