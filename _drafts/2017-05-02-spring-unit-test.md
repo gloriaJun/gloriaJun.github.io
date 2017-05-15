@@ -1,10 +1,21 @@
 ---
 layout: post
-title: "[Spring Boot] Unit Test"
+title: "[Spring Boot] Unit Test Example"
 date: 2017-05-02 12:00:00
 categories: Spring
 tags: spring spring-boot unit-test
 ---
+
+!!!!!
+아래의 글과 합쳐서 정리하자
+---
+layout: post
+title: "[Spring Boot] unit test"
+date: 2017-04-07 19:00:00
+categories: Spring
+tags: spring spring-boot unit-test
+---
+!!!!!!
 
 Spring Boot 를 이용하여 작성한 코드들에 대한 단위 테스트 작성 예시 정리하기…
 
@@ -35,6 +46,6 @@ Spring Boot 를 이용하여 작성한 코드들에 대한 단위 테스트 작�
 {% gist gloriaJun/deb5b74609dd9fcc709f7b9201997592 BookTreeControllerTest %}
 
 
-> 참고 링크
+> 참고 링크<br/>
 > [Unit and Integration tests in Spring Boot](http://www.lucassaldanha.com/unit-and-integration-tests-in-spring-boot/)
 > [SpringAngular2TypeScript/server/src/test/java/ch/javaee/demo/angular2/test at master · marco76/SpringAngular2TypeScript · GitHub](https://github.com/marco76/SpringAngular2TypeScript/tree/master/server/src/test/java/ch/javaee/demo/angular2/test)

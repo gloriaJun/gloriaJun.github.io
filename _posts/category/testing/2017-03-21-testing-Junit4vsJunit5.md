@@ -3,7 +3,7 @@ layout: post
 title: "[JUnit] JUnit5 vs JUnit4"
 date: 2017-03-21 18:30:00
 categories: "Testing"
-tags: junit junit5 java
+tags: junit junit4 junit5 java
 ---
 
 ![image](https://i1.wp.com/howtoprogram.xyz/wp-content/uploads/2016/08/JUnit-5-vs-JUnit-4.png?w=485)

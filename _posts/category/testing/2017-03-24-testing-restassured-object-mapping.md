@@ -3,7 +3,7 @@ layout: post
 title: "[Rest Assured] Object Mapping"
 date: 2017-03-24 17:30:00
 categories: "Testing"
-tags: junit junit5 java restAssured Rest-API
+tags: java restAssured Rest-API
 ---
 
 아래와 같은 object에 대한 데이타를 json format으로 전달해주어야 한다고  할 때..ojbect를 생성하여 object 로 전달하는 방법이 있을까 싶어 찾아보았다.
