@@ -3,7 +3,7 @@ layout: post
 title: "[Rest Assured] Logging"
 date: 2017-03-24 12:30:00
 categories: "Testing"
-tags: junit junit5 java restAssured Rest-API
+tags: java restAssured Rest-API
 ---
 
 ## Request Logging

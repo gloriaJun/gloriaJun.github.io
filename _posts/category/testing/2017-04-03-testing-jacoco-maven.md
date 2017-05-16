@@ -3,7 +3,7 @@ layout: post
 title: "[Jacoco] maven 기반에서 jacoco 설정하기"
 date: 2017-04-03 14:50:00
 categories: "Testing"
-tags: junit java coverage jacoco maven
+tags: java coverage jacoco maven
 ---
 
 ### Jacoco??
