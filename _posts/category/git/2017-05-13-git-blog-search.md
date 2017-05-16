@@ -19,6 +19,7 @@ sitemap을 google에 등록을 하여 구글에서 주기적으로 크롤링이 
 
 ###### 직접 sitemap.xml 파일 생성
 `_config.yml`과 동일한 경로에 `sitemap.xml`을 생성한 뒤 아래의 내용을 복사해서 붙여넣는다.
+{% raw %}
 ```
 ---
 layout: null
@@ -49,6 +50,7 @@ layout: null
   {% endfor %}
 </urlset>
 ```
+{% endraw %}
 
 ###### plugin 설치하여 생성하기
 `jekyll-sitemap` 플러그인을 설치한다.
@@ -63,15 +65,18 @@ gems:
 github page를 빌드한 뒤에 먼저 `http://localhost:4000/sitemap.xml`로 접속하여 xml의 내용이 출력이 되는 지 확인한 뒤, git에 push를 하고 자신의 github page에 접속하여 다시 확인한다.<br/>
 (참고로 blog 내용이 변경이 되거나 추가되면 jekyll에서 sitemap.xml도 같이 갱신이 된다)<br/>
 Search Console에 접속하여 해당 주소를 등록한다.
+참고로 sitemap을 등록 후에 구글에서 접수해서 검색 시 글이 표출되기까지는 시간이 조금 소요된다.
 
 #### 특정 글의 변경 주기나 우선순위를 변경하고 싶은 경우
 아래와 같은 속성을 해당 글에 추가해주면 된다.
+{% raw %}
 ```
 sitemap :
   changefreq : daily
   priority : 1.0
   lastmod : 2016-03-15 12:00:00
 ```
+{% endraw %}
 
 
 
