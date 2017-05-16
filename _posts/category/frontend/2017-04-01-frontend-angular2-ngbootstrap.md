@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Angular2] angular2에 ng-bootstrap 적용하기"
-date: 2017-04-01 023:30:00
+date: 2017-04-01 23:30:00
 categories: Frontend
 tags: javascript AngularJS Angular2
 ---

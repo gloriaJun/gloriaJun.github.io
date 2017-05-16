@@ -41,7 +41,7 @@ resp.then().statusCode(200).log().all();
 Response와 유사하나,  응답된 값을 검증을 위한 것이라..”then()” 구문 까지 또는 검증한 결과에 대해서도 저장이 가능한 것 같다.
 즉, 응답값에 대해 기본적으로 검증을 진행 후에 추가적인 확인을 하고자 하는 경우에 활용이 가능할 것 같다.
 
-* 사용예제
+* 사용예제 
 ```java
 ValidatableResponse resp = given().param("status", "pending").
                 when().get(EndPoint.PET + "/findByStatus").
@@ -52,3 +52,4 @@ ValidatableResponse resp = given().param("status", "pending").
                 when().get(EndPoint.PET + "/findByStatus").
                 then().statusCode(200).log().all();
 ```
+
