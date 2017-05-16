@@ -52,6 +52,7 @@ bootstrap의 navbar template을 활용하여 커스터마이징한 예제들
 {% endraw %}
 
 ###### 실행결과
-[](https://www.codeply.com/go/KLOOdT8IXu)
+[bootstrap4-fixed-navbar-custom](https://www.codeply.com/go/KLOOdT8IXu)
+
 <script src="http://codeply.com/js/embed.js"></script><div data-codeply="KLOOdT8IXu" ></div>
 
