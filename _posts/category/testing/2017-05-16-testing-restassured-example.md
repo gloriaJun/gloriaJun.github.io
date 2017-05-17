@@ -51,3 +51,4 @@ API에 대한 테스트 코드를 작성하기 전에 먼저 해당 API에 대�
 > 참고링크   
 > [yonoo’s :: REST-Assured 를 사용하여 maven 프로젝트로 간단한 API 테스트](http://yonoo88.tistory.com/886)  
 > [yonoo’s :: Rest-assured를 사용하여 간단한 Naver Open API 테스트](http://yonoo88.tistory.com/1003)  
+> [Testing RESTful Services in Java: Best Practices](https://blog.philipphauer.de/testing-restful-services-java-best-practices/)
