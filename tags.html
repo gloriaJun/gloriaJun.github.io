@@ -28,7 +28,7 @@ permalink: /tags/
   {% assign posts = tag_with_posts | last %}
 
   <div class="blog-list" id="{{ tag | slugify }}">
-    <h3>Posts tagged  with {{ tag }}</h3>
+    <h3>{{ tag }}</h3>
 
     <!-- This loops through the paginated posts -->
     {% for post in posts %}
