@@ -122,7 +122,7 @@ public class Junit5Demo {
 ```
 
 실행 결과)
-![]({{ site.url }}/assets/images/testing/2017/0325-junit5-on-eclipse/eclipse.png)
+![]({{ site.url }}/assets/images/post/testing/2017/0325-junit5-on-eclipse/eclipse.png)
 
 
 #### JUnit4 API를 사용하여 작성된 테스트 케이스

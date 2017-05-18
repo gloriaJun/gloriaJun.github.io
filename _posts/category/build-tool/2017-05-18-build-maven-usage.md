@@ -1,9 +1,9 @@
- ---
+---
 layout: post
 title: "[maven] usage 정리"
 date: 2017-05-18 20:30:00
 categories: build-tool
-tags: gradle
+tags: maven
 ---
 
 maven 사용 시 검색했던 사용법 정리

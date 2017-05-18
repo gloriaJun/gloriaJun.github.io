@@ -11,7 +11,7 @@ tags: jekyll github-page gist
 
 ### Gist 생성
 [Create a new Gist · GitHub](https://gist.github.com)에 접속하여 코드를 작성해서 `Public Gist`로 저장한다. <br/>
-![]({{ site.url }}/assets/images/git/2017/0412-git-blog-set-gist/gist-create.png)
+![]({{ site.url }}/assets/images/post/git/2017/0412-git-blog-set-gist/gist-create.png)
 
 ### jekyll-gist 설치
 아래의 html 구문을 삽입하여 코드를 넣을 부분에 복사하여 아래와 같이 사용할 수도 있지만..

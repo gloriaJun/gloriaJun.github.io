@@ -12,7 +12,7 @@ intellij를 사용해서 maven 기반의 multi module project 생성하기.
 먼저 빈 프로젝트를 하나 생성한 뒤, [File - New - Module]을 선택해서 parent, service, web 모듈을 생성한다.
 
 생성된 프로젝트 구조는 다음과 같음.<br/>
-![]({{ site.url }}/assets/images/spring/2017/0406-spring-multi-module-maven/project-maven.png)
+![]({{ site.url }}/assets/images/post/spring/2017/0406-spring-multi-module-maven/project-maven.png)
 
 ### pom.xml 파일 정의
 ##### parent

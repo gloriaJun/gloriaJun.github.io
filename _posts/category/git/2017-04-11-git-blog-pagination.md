@@ -1,11 +1,10 @@
-# [github blog] Jekyll 블로그 페이징 처리 - step2
-- - - -
+---
 layout: post
-title: "[github blog] Jekyll 블로그 커스터마이징 - step1"
+title: "[github blog] Jekyll 블로그 페이징 처리 - step2"
 date: 2017-04-11 23:30:00
 categories: Git
 tags: jekyll github-page
-- - - -
+---
 
 블로그의 메인 페이지에 표시되는 최근 포스팅된 글들에 대해 페이징 처리를 추가한다.
 

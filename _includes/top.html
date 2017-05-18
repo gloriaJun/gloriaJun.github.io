@@ -1,0 +1,16 @@
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded blog-navbar">
+  	<button class="navbar-toggler navbar-toggler-right btn-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon btn-menu-icon"></span>
+  	</button>
+  	<div class="navbar-brand d-flex blog-title-section">
+  		<a class="blog-title" href="{{site.baseurl}}/index.html">{{site.title}}</a>
+		  <p class="blog-description">{{ site.description }}</p>
+    </div>
+
+  <div class="collapse navbar-collapse blog-menu-section" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item py-0"><a href="{{ site.baseurl }}{{ site.category_page }}" class="nav-link blog-menu-item">Category</a></li>
+		<li class="nav-item py-0"><a href="{{ site.baseurl }}{{ site.tag_page }}" class="nav-link blog-menu-item">Tags</a></li>
+    </ul>
+  </div>
+</nav>

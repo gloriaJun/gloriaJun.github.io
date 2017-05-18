@@ -47,7 +47,7 @@ swagger를 정의한(?) 클래스에서 아래의 annotation을 추가해주면 
 
 ### Swagger UI로 확인
 `http://localhost:8080/swagger-ui.html`에 접속하면 아래와 같은 화면을 확인할 수 있다.
-![]({{ site.url }}/assets/images/spring/2017/0412-swagger-setting/swagger-ui.png)
+![]({{ site.url }}/assets/images/post/spring/2017/0412-swagger-setting/swagger-ui.png)
 
 > 참고 사이트  
 > [Setting Up Swagger 2 with a Spring REST API | Baeldung](http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)  

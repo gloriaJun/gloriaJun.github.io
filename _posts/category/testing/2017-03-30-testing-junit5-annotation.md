@@ -25,7 +25,7 @@ dynamic test를 위한 메소드 임을 명시한다.
 테스크 클래스 또는 메소드의 물리적 이름 대신에 해당 annotation에 사용자가 별도로 정의한 이름을 테스트 케이스명으로 사용한다.
 
 * 기존에는 아래와 같은 형태로만 표현이 되었음.
-![]({{ site.url }}/assets/images/testing/2017/0330-junit5-annotation/DisplayName-nouse.png)
+![]({{ site.url }}/assets/images/post/testing/2017/0330-junit5-annotation/DisplayName-nouse.png)
 
 
 * DisplayName annotation을 사용해서 논리적 이름을 명시한다.
@@ -41,7 +41,7 @@ dynamic test를 위한 메소드 임을 명시한다.
   }
   ```
   테스트 수행을 하면, 아래 이미지와 같이 해당 annotation에 명시한 이름이 표현된다.<br/>
-![]({{ site.url }}/assets/images/testing/2017/0330-junit5-annotation/DisplayName-use.png)
+![]({{ site.url }}/assets/images/post/testing/2017/0330-junit5-annotation/DisplayName-use.png)
 
 ##### @BeforeEach
 해당 클래스의 각각의 @Test 메소드 실행 전에 수행된다.
@@ -89,7 +89,7 @@ class nestedClass {
 }
 ```
 실행한 결과는 아래와 같다.<br/>
-![]({{ site.url }}/assets/images/testing/2017/0330-junit5-annotation/nested.png)
+![]({{ site.url }}/assets/images/post/testing/2017/0330-junit5-annotation/nested.png)
 
 ##### @Tag
 메소드 또는 클래스 레벨에서 테스트 필터링을 위해 선언한다.

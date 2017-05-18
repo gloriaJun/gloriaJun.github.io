@@ -14,7 +14,7 @@ tags: jekyll github-page theme
 
 #### 테마 적용하기
 내가 이번에 적용하려고 하는 테마에서 아래와 같이 설치 방법이 나와있었다.
-![]({{ site.url }}/assets/images/git/2017/0326-git-blog-theme/theme-install-guide.png)
+![]({{ site.url }}/assets/images/post/git/2017/0326-git-blog-theme/theme-install-guide.png)
 
 그래서..아래와 같이 진행해서 로컬 웹브라우저로 확인.
 ```shell

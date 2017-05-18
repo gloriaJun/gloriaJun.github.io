@@ -1,43 +1,38 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
-highlighter: rouge
-markdown: kramdown
-disqus: dbyll
-google_analytics: dbyll
+# ---------------------------------------
+# site setting
+# ---------------------------------------
 title: L.E.T
+description: Learned! Experience! Think!
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: Learned! Experience! Think!
-
-description: Stylish Jekyll Theme
 author:
-  name: gloria
-  email: pureainu@gmail.com
-  github: gloriajun
-  #twitter: dbtek
-  #pinterest: asd123
-  #linkedin: asd123
-  bio: 배운 것들을 기록하기 위한 공간
-  email_md5: 726351295ec82e145928582f595aa3aa
+   name: gloria
+   contact:
+      email: pureainu@gmail.com
+      github: https://github.com/gloriaJun/
 
-#rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
+# Where are tags and categories displayed
+tag_page: '/tags/'
+category_page: '/categories/'
 
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
 
-BASE_PATH:
+# ---------------------------------------
+# paging
+# ---------------------------------------
+# 한 페이지에 출력할 글의 갯수
+paginate: 10
+
+# ---------------------------------------
+# build setting
+# ---------------------------------------
+markdown: kramdown
+exclude: 
+   - README.md
+   - LICENSE
+   - bower.json
+   - Gemfile.lock
+   - Gemfile
 
 gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-sitemap
-  

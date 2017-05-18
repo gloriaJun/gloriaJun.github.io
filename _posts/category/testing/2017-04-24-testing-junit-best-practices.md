@@ -19,7 +19,7 @@ tags: junit
 ## Tips for writing great unit tests
 #### Test only one code unit at a time (수행 시점에 하나의 코드 단위만 테스트 하라)
 코드의 단위를 테스트를 시도하려고 할 때, 하나의 단위는 여러 개의 유스 케이스를 가질 수 있다. 분리된 테스트 케이스에서 각각의 유스 케이스를 테스트 하여야 한다.<br/>
-![]({{ site.url }}/assets/images/testing/2017/0424-junit-tc-best-practices/unit-test.png)
+![]({{ site.url }}/assets/images/post/testing/2017/0424-junit-tc-best-practices/unit-test.png)
 
 
 #### Don’t make unnecessary assertions (불필요한 assertion을 만들지 마라)
