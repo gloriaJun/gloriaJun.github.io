@@ -3,7 +3,7 @@ layout: post
 title: "[Java] typesafe 라이브러리를 이용해서 json 포맷의 설정 파일 읽기"
 date: 2017-03-28 15:53:00
 categories: Java
-tags: java typesafe json hocon
+tags: java typesafe config
 ---
 
 ## What is Typesafe …?
