@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Rest Assured] PetStore를 이용하여 사용해보기"
+title: "[Rest Assured] petstore를 사용한 테스트 케이스 작성"
 date: 2017-03-23 15:30:00
 categories: "Testing"
 tags: java restAssured Rest-API
