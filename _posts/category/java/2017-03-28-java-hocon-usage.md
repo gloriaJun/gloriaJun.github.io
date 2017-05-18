@@ -6,7 +6,7 @@ categories: Java
 tags: java typesafe json hocon
 ---
 
-## What is Typesafehub …?
+## What is Typesafe …?
 java properties, json, json superset(예를 들어 **hocon**)과 같은 설정 파일을 읽기 위한 configuration library이다.
 관련한 자세한 내용은 [github]( [GitHub - typesafehub/config: Configuration library for JVM languages](https://github.com/typesafehub/config) ) 페이지를 참고하면 됨.
 
@@ -44,26 +44,31 @@ _(json의 상위 개념이다보니..기본적인 사용법은 json이랑 비슷
 
 * 설정파일 예시  (`src/test/resources/application.conf`)
 ```
-{
-  "lucy" : {
-    "mode" : "local",
-    "domain" : "activity"
+# default setting value
+settings: {
+  content-type: "application/json;charset=UTF-8"
+  headers: {
+    "X-User-Locale": "ko_KR"
+    "X-User-Timezone" : "+09:00"
   }
 }
 ```
 
 
-#### java class 에서 설정파일 읽어오기
+#### java class에서 설정파일 읽어오기
 ```java
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PropReadFactory {
 
+    private static Logger logger = LoggerFactory.getLogger(PropReadFactory.class);
+
     public void PropertyReader() {
         Config config = ConfigFactory.load();
-        String mode = config.getString("lucy.mode");
-        System.out.println("logging");
+        logger.debug(config.getString("settings.content-type"));
     }
 }
 ```
