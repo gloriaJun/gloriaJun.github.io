@@ -10,6 +10,8 @@ author:
       email: pureainu@gmail.com
       github: https://github.com/gloriaJun/
 
+permalink: pretty
+
 # Where are tags and categories displayed
 tag_page: '/tags/'
 category_page: '/categories/'
