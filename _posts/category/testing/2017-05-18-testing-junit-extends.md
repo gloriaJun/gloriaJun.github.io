@@ -46,7 +46,7 @@ Parent : AfterClass
 ```java
 public class ParentTest {
 
-  {
+  static {
     System.out.println("Parent : static method");
   }
 
@@ -77,7 +77,7 @@ public class ParentTest {
 
 public class SampleTest extends ParentTest {
 
-  {
+  static {
     System.out.println("Child : static method");
   }
 
