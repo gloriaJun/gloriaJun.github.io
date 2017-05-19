@@ -22,9 +22,16 @@ category_page: '/categories/'
 paginate: 10
 
 # ---------------------------------------
-# build setting
+# markdown
 # ---------------------------------------
 markdown: kramdown
+krandown:
+  input: GFM
+  highlighter: rouge
+  
+# ---------------------------------------
+# build setting
+# ---------------------------------------
 exclude: 
    - README.md
    - LICENSE
