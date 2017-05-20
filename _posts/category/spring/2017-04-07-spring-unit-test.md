@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] unit test"
 date: 2017-04-07 19:00:00
 categories: Spring

@@ -173,6 +173,9 @@ img {
 /**
  * article
  */
+article .blog-post {
+  padding-bottom: 3rem;
+}
 article .blog-divider {
   border-bottom: 1px solid #eee;
 }

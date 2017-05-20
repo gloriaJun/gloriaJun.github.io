@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Unit Test] AssertJ"
 date: 2017-05-02 10:50:00
 categories: "Testing"

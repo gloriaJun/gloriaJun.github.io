@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Java] logback 설정하기"
 date: 2017-03-30 12:30:00
 categories: Java

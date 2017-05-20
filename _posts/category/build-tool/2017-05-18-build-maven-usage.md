@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[maven] usage 정리"
 date: 2017-05-18 20:30:00
 categories: build-tool

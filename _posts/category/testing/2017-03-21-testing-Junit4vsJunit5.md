@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[JUnit] JUnit5 vs JUnit4"
 date: 2017-03-21 18:30:00
 categories: "Testing"

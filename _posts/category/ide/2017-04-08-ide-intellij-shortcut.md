@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[IntelliJ] 단축키 정리"
 date: 2017-04-08 17:40:00
 categories: IDE

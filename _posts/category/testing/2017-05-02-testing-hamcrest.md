@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Unit Test] hamcrest"
 date: 2017-05-02 11:50:00
 categories: "Testing"

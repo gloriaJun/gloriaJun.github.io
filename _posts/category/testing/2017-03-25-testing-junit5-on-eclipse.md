@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[JUnit] JUnit5 for Eclipse"
 date: 2017-03-25 18:30:00
 categories: "Testing"

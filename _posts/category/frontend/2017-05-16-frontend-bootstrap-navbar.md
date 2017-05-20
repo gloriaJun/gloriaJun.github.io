@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Bootstrap] navgation bar 예제"
 date: 2017-05-14 20:30:00
 categories: Frontend

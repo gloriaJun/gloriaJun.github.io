@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] exception handler 정의하기"
 date: 2017-04-07 17:00:00
 categories: Spring

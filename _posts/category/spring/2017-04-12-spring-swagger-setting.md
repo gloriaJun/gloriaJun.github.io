@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] swagger2 설정하기"
 date: 2017-04-11 20:00:00
 categories: Spring

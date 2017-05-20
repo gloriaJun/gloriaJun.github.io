@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[github blog] 블로그에 테마 적용하기"
 date: 2017-03-26 15:30:00
 categories: Git

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Frontend Online Code Editor 종류"
 date: 2017-05-16 21:05:00
 categories: IDE

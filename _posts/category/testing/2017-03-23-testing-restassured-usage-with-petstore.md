@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Rest Assured] petstore를 사용한 테스트 케이스 작성"
 date: 2017-03-23 15:30:00
 categories: "Testing"

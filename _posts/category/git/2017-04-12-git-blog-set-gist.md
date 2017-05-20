@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[github blog] Gist를 블로그에 연동하기"
 date: 2017-04-12 14:30:00
 categories: Git

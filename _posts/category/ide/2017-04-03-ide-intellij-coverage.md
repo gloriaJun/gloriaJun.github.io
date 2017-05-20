@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[IntelliJ] Code Coverage"
 date: 2017-04-03 17:00:00
 categories: IDE

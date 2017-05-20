@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Angular2] Hello Angular!!"
 date: 2017-04-01 01:30:00
 categories: Frontend

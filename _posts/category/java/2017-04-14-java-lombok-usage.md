@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Java] Lombok Usage"
 date: 2017-04-14 11:30:00
 categories: Java

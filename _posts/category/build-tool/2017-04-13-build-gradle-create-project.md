@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[gradle] gradle project 생성 on terminal"
 date: 2017-04-13 20:30:00
 categories: build-tool

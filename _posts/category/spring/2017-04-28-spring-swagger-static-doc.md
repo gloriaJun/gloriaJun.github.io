@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] swagger static-doc 설정하기"
 date: 2017-04-28 17:00:00
 categories: Spring

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Rest Assured] Logging"
 date: 2017-03-24 12:30:00
 categories: "Testing"

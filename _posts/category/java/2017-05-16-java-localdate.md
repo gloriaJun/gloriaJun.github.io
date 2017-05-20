@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Java] LocalData & LocalDateTime"
 date: 2017-05-16 19:30:00
 categories: Java

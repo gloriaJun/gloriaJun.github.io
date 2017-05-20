@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] multi module project on Maven"
 date: 2017-04-06 17:00:00
 categories: Spring

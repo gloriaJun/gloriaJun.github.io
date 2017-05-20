@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Rest Assured] Object Mapping"
 date: 2017-03-24 17:30:00
 categories: "Testing"

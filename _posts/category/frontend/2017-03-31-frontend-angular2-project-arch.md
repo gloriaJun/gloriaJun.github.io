@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Angular2] Angular 프로젝트 구조"
 date: 2017-03-31 22:30:00
 categories: Frontend

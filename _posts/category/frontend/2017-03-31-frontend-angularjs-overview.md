@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[AngularJS] AngularJS 개념 정리 (ver1 기준)"
 date: 2017-03-31 19:30:00
 categories: Frontend

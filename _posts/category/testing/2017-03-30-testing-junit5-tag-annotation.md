@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[JUnit] JUnit5 Annotation @Tag"
 date: 2017-03-30 19:50:00
 categories: "Testing"

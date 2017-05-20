@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[NodeJS] NVM을 이용한 설치 for mac"
 date: 2017-03-30 22:30:00
 categories: NodeJS
