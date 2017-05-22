@@ -129,6 +129,9 @@ th, td{
   font-size: .9rem;
   color: #9a9a9a;
 }
+.blog-post-meta a.blog-category {
+  color: #9a9a9a;
+}
 .blog-post-content a, 
 .blog-post-content a:hover, 
 .blog-post-content a:visited {
@@ -163,7 +166,7 @@ th, td{
   padding: 1rem 0rem 0.5rem 0rem ;
   border-bottom: 1px solid #ebebeb;
 }
-.blog-tag, .blog-category {
+.blog-tag {
   display: inline-block;
   background: #E1EFF5;
   padding: 0 .5rem;
@@ -174,7 +177,7 @@ th, td{
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.blog-tag:hover, .blog-category:hover {
+.blog-tag:hover {
     text-decoration: none;
     background: #8CD6F5;
     color: #fff;

@@ -16,6 +16,7 @@
 
     // watch hash change and activate relevant tab
     $(window).on('hashchange', activateTab);
+    activateTab();
   };
 
   // run init on document ready

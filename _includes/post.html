@@ -7,7 +7,12 @@
 
 		<span class="blog-post-meta"><i class="fa fa-calendar">&nbsp;&nbsp;</i>{{ page.date | date: "%b %-d, %Y" }}</span>
 
-		<span class="blog-post-meta"><i class="fa fa-archive">&nbsp;&nbsp;</i>{{ page.categories }}</span> 
+       <span class="blog-post-meta"><i class="fa fa-archive">&nbsp;&nbsp;</i>
+        {% for cate in page.categories  %}
+          <a href="{{ site.baseurl }}{{ site.category_page }}#{{ cate | slugify }}" class="blog-category">{{ cate }}</a>
+        {% endfor %}
+      </span> 
+      
 		<span class="blog-post-meta">
 	        <i class="fa fa-tags">&nbsp;&nbsp;</i>
 	        {% for tag in page.tags  %}
