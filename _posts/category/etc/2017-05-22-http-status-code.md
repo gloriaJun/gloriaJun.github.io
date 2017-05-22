@@ -13,6 +13,7 @@ REST API에서 주로 사용하는 형태의 Http Status Code를 조사할 일�
 하지만 4xx은 클라이언트 오류, 5xx은 서버 오류 라는 큰 아웃라인 안에서 세부적으로 정의하여 사용하는 것 같음.
    
 | status code | type | description |
+|:-------:|:-------:|-------|
 | 200 | OK | 클라이언트의 요청을 서버가 정상적으로 수신하여 처리한 경우 |
 | 400 | Bad Request | 일반적인 오류. 주로 API에 필요한 필수 파라미터와 관련 |
 | 401 | Unauthorized | 인증 오류. 주로 사용자 토큰과 관련 |
@@ -41,7 +42,8 @@ REST API에서 주로 사용하는 형태의 Http Status Code를 조사할 일�
 - 등록되지 않은 appkey사용
 
 ###### 404
-
+- API path가 잘못되어 존재하지 않는 API를 호출한 경우
+- API 요청 URL이 잘못되었을 경우
 
 #### 5xx : Server error
 서버가 유효한 요청을 명백하게 수행하지 못했음을 나타낸다
@@ -49,8 +51,7 @@ REST API에서 주로 사용하는 형태의 Http Status Code를 조사할 일�
 
    
 > **Reference**   
->    
-> [Wikipedia - List of HTTP status codes](https://ko.wikipedia.org/wiki/HTTP_상태_코드)  
-> [네이버 오픈 API 에러 코드 목록](https://developers.naver.com/docs/common/common_error/)   
-> [다음 - 표준 에러 메시지](https://developers.daum.net/services/apis/docs/errors)   
+> [Wikipedia - List of HTTP status codes](https://ko.wikipedia.org/wiki/HTTP_상태_코드)   
+> [네이버 오픈 API 에러 코드 목록](https://developers.naver.com/docs/common/common_error/)     
+> [다음 - 표준 에러 메시지](https://developers.daum.net/services/apis/docs/errors)    
 > [카카오-에러 코드](https://developers.kakao.com/docs/restapi#간편한-참조-응답-코드-에러-코드)   
