@@ -30,9 +30,10 @@ excerpt_separator: <!--more-->
 # markdown
 # ---------------------------------------
 markdown: kramdown
-krandown:
-  input: GFM
-  highlighter: rouge
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: false
+highlighter: rouge
 
 # ---------------------------------------
 # other

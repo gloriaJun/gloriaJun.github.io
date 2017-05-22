@@ -28,6 +28,18 @@ blockquote {
   margin: 3rem 0rem 0rem 1rem;
 }
 
+table{
+    border-spacing: 0;
+    border:1px solid;
+}
+thead th {
+  background: #E1E8EB;
+}
+th, td{
+    border:1px solid;
+    padding: .3rem;
+}
+
 /*
 * Navbar
  */

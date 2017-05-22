@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] logback"
 date: 2017-04-18 02:00:00
 categories: Spring
