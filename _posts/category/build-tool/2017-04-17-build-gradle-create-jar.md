@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[gradle] 실행가능한 jar 생성하기"
 date: 2017-04-17 17:30:00
 categories: build-tool

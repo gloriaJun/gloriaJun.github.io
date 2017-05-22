@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[JUnit] JUnit5 Annotation 정리"
 date: 2017-03-30 18:50:00
 categories: "Testing"

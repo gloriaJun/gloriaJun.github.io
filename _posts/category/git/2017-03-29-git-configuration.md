@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Git] Configuration"
 date: 2017-03-29 19:30:00
 categories: Git

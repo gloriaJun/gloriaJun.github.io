@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[JUnit] JUnit5 의존 라이브러리 설정"
 date: 2017-03-30 18:30:00
 categories: "Testing"

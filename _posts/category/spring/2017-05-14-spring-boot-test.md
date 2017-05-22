@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] Spring Boot Test"
 date: 2017-05-14 16:10:00
 categories: Spring

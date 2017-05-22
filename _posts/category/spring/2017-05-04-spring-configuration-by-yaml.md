@@ -1,6 +1,7 @@
 
 ---
 layout: post
+comments: true
 title: "[Spring Boot] yaml 파일을 이용해서 환경 설정 하기"
 date: 2017-05-04 16:25:00
 categories: Spring

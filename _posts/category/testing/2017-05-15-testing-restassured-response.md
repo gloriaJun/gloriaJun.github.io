@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Rest Assured] Response"
 date: 2017-05-15 19:50:00
 categories: "Testing"

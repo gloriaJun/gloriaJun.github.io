@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring] HATEOAS"
 date: 2017-04-14 17:00:00
 categories: Spring

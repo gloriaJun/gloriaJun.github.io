@@ -19,7 +19,7 @@ img {
     display: block;
     max-width: 100%;
     margin: 0 0 1rem;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 
 /*
@@ -173,6 +173,9 @@ img {
 /**
  * article
  */
+article .blog-post {
+  padding-bottom: 3rem;
+}
 article .blog-divider {
   border-bottom: 1px solid #eee;
 }

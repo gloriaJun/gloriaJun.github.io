@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Jacoco] maven 기반 멀티 모듈 프로젝트에서  jacoco 설정하기 "
 date: 2017-05-08 17:50:00
 categories: "Testing"

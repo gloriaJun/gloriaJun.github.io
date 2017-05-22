@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] trouble shooting"
 date: 2017-05-08 18:50:00
 categories: Spring

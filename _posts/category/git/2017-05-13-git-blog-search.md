@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[github blog] github page 페이지가 웹페이지에서 검색 가능하게 하기"
 date: 2017-05-13 18:30:00
 categories: Git

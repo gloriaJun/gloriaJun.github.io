@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[펌글] Top 20 JUnit Testcase Best Practices"
 date: 2017-04-24 14:50:00
 categories: "Testing"

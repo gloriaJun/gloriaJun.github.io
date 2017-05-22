@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Rest Assured] Naver Open API를 이용한 테스트 코드 작성하기"
 date: 2017-05-16 18:35:00
 categories: "Testing"

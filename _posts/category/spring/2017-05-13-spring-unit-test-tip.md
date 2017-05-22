@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] Unit Test Tip 정리"
 date: 2017-05-13 11:10:00
 categories: Spring

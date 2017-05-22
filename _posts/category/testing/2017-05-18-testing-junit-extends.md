@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[JUnit] 테스트 클래스 상속 시에 대한 내용 정리"
 date: 2017-05-18 18:24:00
 categories: "Testing"

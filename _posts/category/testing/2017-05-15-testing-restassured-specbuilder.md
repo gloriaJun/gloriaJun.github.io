@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Rest Assured] SpecBuilder"
 date: 2017-05-15 19:30:00
 categories: "Testing"

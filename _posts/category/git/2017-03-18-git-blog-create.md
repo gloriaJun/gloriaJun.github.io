@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[github blog] github 블로그 만들기 for mac"
 date: 2017-03-18 10:30:00
 categories: Git

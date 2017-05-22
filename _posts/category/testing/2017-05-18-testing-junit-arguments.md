@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[JUnit] command line으로 argument 전달받기"
 date: 2017-05-18 15:24:00
 categories: "Testing"

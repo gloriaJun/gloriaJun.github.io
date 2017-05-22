@@ -10,6 +10,9 @@ author:
       email: pureainu@gmail.com
       github: https://github.com/gloriaJun/
 
+# url 주소 방식 (http://jekyllrb.com/docs/permalinks/#built-in-permalink-styles)
+permalink: pretty
+
 # Where are tags and categories displayed
 tag_page: '/tags/'
 category_page: '/categories/'
@@ -20,11 +23,25 @@ category_page: '/categories/'
 # ---------------------------------------
 # 한 페이지에 출력할 글의 갯수
 paginate: 10
+# 포스트 리스트에서 보여줄 본문의 요약글 정의 시 사용할 문구 (http://jekyllrb-ko.github.io/docs/posts/)
+excerpt_separator: <!--more-->
 
+# ---------------------------------------
+# markdown
+# ---------------------------------------
+markdown: kramdown
+krandown:
+  input: GFM
+  highlighter: rouge
+
+# ---------------------------------------
+# other
+# --------------------------------------- 
+disqus_short_name: 'pureainu'
+  
 # ---------------------------------------
 # build setting
 # ---------------------------------------
-markdown: kramdown
 exclude: 
    - README.md
    - LICENSE

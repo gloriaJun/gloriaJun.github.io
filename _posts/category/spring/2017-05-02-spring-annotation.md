@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] annotation 정리"
 date: 2017-05-02 18:50:00
 categories: Spring

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[gradle] Usage 정리"
 date: 2017-05-02 17:30:00
 categories: build-tool

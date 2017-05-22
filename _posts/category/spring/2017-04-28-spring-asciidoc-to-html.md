@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Spring Boot] Swagger2Markup (asciidoc to html/pdf)"
 date: 2017-04-28 18:00:00
 categories: Spring

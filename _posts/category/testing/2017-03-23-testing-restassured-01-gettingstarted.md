@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Rest Assured] Getting Started"
 date: 2017-03-23 09:30:00
 categories: "Testing"

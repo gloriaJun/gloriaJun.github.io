@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "[Angular2] angular2에 ng-bootstrap 적용하기"
 date: 2017-04-01 23:30:00
 categories: Frontend
