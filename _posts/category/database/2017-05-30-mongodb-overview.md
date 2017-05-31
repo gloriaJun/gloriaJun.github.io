@@ -22,7 +22,7 @@ tags: mongodb
 * GridFS : 별도 스토리지 엔진을 통해 파일을 저장할 수 있음
     
 ## RDBMS vs MongoDB
-![]({{ site.url }}/assets/images/post/database/2017/2017-05-30-mongodb-overview/rdbms_vs_mongodb.png)
+![]({{ site.url }}/assets/images/post/2017/0531-docker-vs-vmw.png)
 
 ## Tip …???
  [MongoDB를 쓰면서 알게 된 것들 | Bigmatch](http://bigmatch.i-um.net/2013/12/mongodb%EB%A5%BC-%EC%93%B0%EB%A9%B4%EC%84%9C-%EC%95%8C%EA%B2%8C-%EB%90%9C-%EA%B2%83%EB%93%A4/)의 글을 읽으면서 내가 기억해두고 싶은 것들 정리…   

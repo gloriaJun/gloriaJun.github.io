@@ -42,5 +42,5 @@ Devops는 협업 문화로써, 개발과 운영 간의 소통 문제를 해결�
 
 > Reference   
 > [조대협의 블로그 :: 개발과 운영의 조화 - Devops #2/2](http://bcho.tistory.com/817)
-> [DevOps, 그 문화에 대해서…](https://brunch.co.kr/@supims/18)
+> [DevOps, 그 문화에 대해서…](https://brunch.co.kr/@supims/18)    
 > [(kth 개발자블로그) DevOps, 개발과 운영의 새로운 문화 | Open API, Cloud, DevOps 와 eBook](https://ds5apn.wordpress.com/2014/12/28/backup-dev-kthcorp-com-devops-new-culture/)

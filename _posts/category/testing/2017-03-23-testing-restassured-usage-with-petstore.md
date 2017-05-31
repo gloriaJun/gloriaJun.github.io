@@ -59,7 +59,7 @@ public interface EndPoint {
 
 ## REST-API 테스트 케이스 작성
 Swagger petstore를 보면 각각의 API에 대해 아래와 같이 정의되어 있으며, 해당 스펙을 기반으로 테스트 케이스를 작성하면 된다.<br/>
-![]({{ site.url }}/assets/images/post/testing/2017/0323-restassured-usage-with-petstore/petstore.png)
+![]({{ site.url }}/assets/images/post/2017/0323-petstore.png)
 
 #### GET
 

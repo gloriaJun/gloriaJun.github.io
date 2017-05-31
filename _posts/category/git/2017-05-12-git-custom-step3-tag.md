@@ -11,7 +11,7 @@ github page에 tag와 category를 적용하는 방법
 
 #### Frontmatter 정의
 각각의 post의 frontmatter에 category와 tag에 대하여 정의가 되어있어야한다.<br/>
-사전 정의된 tag는 jekyll doc의 [사전-정의 전역변수](http://jekyllrb-ko.github.io/docs/frontmatter/)를 참고하면 된다.
+사전 정의된 tag는 jekyll doc의 [사전-정의 전역변수](http://jekyllrb-ko.github.io/docs/frontmatter/)를 참고하면 된다.   
 {% raw %}
 ```
 ---

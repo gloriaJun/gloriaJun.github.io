@@ -8,7 +8,7 @@ tags: java restAssured Rest-API
 ---
 
 아래와 같은 object에 대한 데이타를 json format으로 전달해주어야 한다고  할 때..ojbect를 생성하여 object 로 전달하는 방법이 있을까 싶어 찾아보았다.
-![]({{ site.url }}/assets/images/post/testing/2017/0324-restassured-object-mapping/put-user.png)
+![]({{ site.url }}/assets/images/post/2017/0324-put-user.png)
 
 찾아보니..rest-assured의 [Usage](https://github.com/rest-assured/rest-assured/wiki/Usage#object-mapping) 문서에 관련해서 설명이 나와있었다.
 

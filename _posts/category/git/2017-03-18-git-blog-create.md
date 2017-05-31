@@ -25,7 +25,7 @@ github page가 Jekyll을 자체 지원하고 있으므로 많은 사용자들이
 먼저 github에 블로그 생성을 위한 repository를 생성하자.
 중요한 것은 repository 이름이다!!
 repository 이름에 자신의 github 사용자아이디를 이용하여 *[사용자아이디].github.io* 와 같이 생성해준다.
-![]({{ site.url }}/assets/images/post/git/2017/0318-git-blog-create/create-repo.png)
+![]({{ site.url }}/assets/images/post/2017/0318-create-repo.png)
 
 
 
@@ -81,7 +81,7 @@ Configuration file: none
 >`jekyll serve --watch` 을 수행하면 해당 명령을 수행한 위치의 폴더의 파일들을 변환하여 `./site`에 생성하고, 파일이 변경되면 자동으로 반영해준다.
 
 웹브라우저(http://127.0.0.1:4000/)에 접속해보면 다음과 같은 화면이 출력된다.
-![]({{ site.url }}/assets/images/post/git/2017/0318-git-blog-create/test-page.png)
+![]({{ site.url }}/assets/images/post/2017/0318-test-page.png)
 
 
 ## github 원격 저장소 연결하기
@@ -137,7 +137,7 @@ $ git commit -m 'my blog init files'
 $ git push origin master
 ```
 github에 접속해 해당 레파지토리를 확인하면 아래와 같이 커밋된 내용들을 확인할 수 있다.
-![]({{ site.url }}/assets/images/post/git/2017/0318-git-blog-create/first-commit.png)
+![]({{ site.url }}/assets/images/post/2017/0318-first-commit.png)
 
 그리고 웹브라우저에서 레파지토리명으로 생성한 이름(**https://gloriajun.github.io/**)으로 입력하면 앞에서 로컬에서 확인한 웹페이지를 만날 수 있다.
 그럼 정상적으로 블로그가 생성된 것이다.

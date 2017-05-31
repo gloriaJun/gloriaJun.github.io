@@ -40,14 +40,14 @@ tags: java coverage jacoco maven
 <br/>
 #### Report 파일 확인
 test phase 단계에 report를 생성하도록 설정을 하였으므로 `mvn test`를 수행하거나, 별도로 `mvn jacoco:report`을 수행하면 리포트 파일이 생성된다.<br/>
-![]({{ site.url }}/assets/images/post/testing/2017/0403-jacoco-maven/report.png)
+![]({{ site.url }}/assets/images/post/2017/0403-report.png)
 
 
 ` index.hmtl`파일을 열면..각 패키지에 대한 코드 커버리지가 확인이 되고…<br/>
-![]({{ site.url }}/assets/images/post/testing/2017/0403-jacoco-maven/report2.png)
+![]({{ site.url }}/assets/images/post/2017/0403-report2.png)
 
 각 패키지에서 특정 소스를 열어서 보면 아래와 같이 해당 클래스에 대한 각 메소드 또는 분기 조건에 대한 측정 결과를 확인할 수 있다.<br/>
-![]({{ site.url }}/assets/images/post/testing/2017/0403-jacoco-maven/report3.png)
+![]({{ site.url }}/assets/images/post/2017/0403-report3.png)
 
 각 색상에 대한 설명은 다음과 같다.
 * green : 단위 테스트에서 해당 부분이 수행되어 커버되었음.

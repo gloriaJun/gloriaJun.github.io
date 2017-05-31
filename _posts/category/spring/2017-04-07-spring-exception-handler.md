@@ -43,10 +43,10 @@ controller에 id 조회에 대한 메소드를 추가하고, 조회한 데이타
 postman을 이용해서 존재하지 않는 id를 전달하거나, mapping 되지 않은 request를 전달하면 정상적으로 동작하는 것을 확인할 수 있음.
 
 * 존재하지 않은 id 를 조회하는 경우<br/>
-![]({{ site.url }}/assets/images/post/spring/2017/0407-spring-exception-handler/notfound.png)
+![]({{ site.url }}/assets/images/post/2017/0407-notfound.png)
 
 * 존재하지 않는 request 전달 시<br/>
-![]({{ site.url }}/assets/images/post/spring/2017/0407-spring-exception-handler/badrequest.png)
+![]({{ site.url }}/assets/images/post/2017/0407-badrequest.png)
 
 
 > **관련된 글들**

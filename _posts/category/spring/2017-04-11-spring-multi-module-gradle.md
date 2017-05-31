@@ -11,7 +11,7 @@ Maven 기반으로 생성했던 multi porject를 gradle 기반으로 생성하�
 
 ### Project 생성
 메인 프로젝트 하위로 모듈을 생성한다.<br/>
-![]({{ site.url }}/assets/images/post/spring/2017/0411-spring-multi-module-gradle/project-gradle.png)
+![]({{ site.url }}/assets/images/post/2017/0411-project-gradle.png)
 
 ### Root Project 설정
 Root Project 레벨에는 프로젝트 전역에 공통으로 적용되는 부분에 대해 설정을 한다.
