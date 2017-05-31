@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[Shell Script] git clone과 다수 디렉토리의 pull 스크립트"
 date: 2017-05-17 18:35:00
-categories: "Script"
+categories: server
 tags: shell-script git
 ---
 

@@ -1,11 +1,13 @@
-# Docker 교육 in 패캠 - 2017.03.18
-- - - -
+---
 layout: post
 title: [패캠] Docker 기반의 DevOps 인프라 구축 Workshop 1일차
 date: 2017-03-18 20:00:00
 categories: Docker
 tags: docker 
-- - - -
+---
+
+# Docker 교육 in 패캠 - 2017.03.18
+
 _패스트캠프에서 강의한 ‘Docker 기반의 DevOps 인프라 구축 Workshop’ 이란 주제 강의 내용에 대한 정리_
 
 ## 교육 전 사전 준비 사항

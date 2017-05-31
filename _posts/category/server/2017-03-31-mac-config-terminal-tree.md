@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[Mac OS X] terminal 환경설정 - tree 설치"
 date: 2017-03-31 09:00:00
-categories: Mac
+categories: server
 tags: mac terminal tree
 ---
 
