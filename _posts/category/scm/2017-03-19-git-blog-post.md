@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[github blog] 블로그 포스트 등록하기"
 date: 2017-03-19 19:30:00
-categories: Git
+categories: scm
 tags: jekyll github-page
 ---
 

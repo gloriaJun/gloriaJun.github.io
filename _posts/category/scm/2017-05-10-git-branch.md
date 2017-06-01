@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[Git] Branch 사용법 정리"
 date: 2017-05-10 14:30:00
-categories: Git
+categories: scm
 tags: git
 ---
 

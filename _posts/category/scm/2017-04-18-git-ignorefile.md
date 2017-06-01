@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[Git] ignore 파일 관리"
 date: 2017-04-18 01:30:00
-categories: Git
+categories: scm
 tags: git
 ---
 

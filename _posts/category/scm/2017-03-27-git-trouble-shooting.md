@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[Git] Trouble Shooting"
 date: 2017-03-27 22:30:00
-categories: Git
+categories: scm
 tags: git
 ---
 

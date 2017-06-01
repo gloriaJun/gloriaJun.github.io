@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[github blog] Jekyll 블로그 페이징 처리 - step2"
 date: 2017-04-11 23:30:00
-categories: Git
+categories: scm
 tags: jekyll github-page
 ---
 

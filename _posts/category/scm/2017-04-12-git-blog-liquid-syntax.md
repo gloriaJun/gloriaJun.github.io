@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[github blog] Jekyll Liquid Syntax 사용법 정리"
 date: 2017-04-12 16:30:00
-categories: Git
+categories: scm
 tags: jekyll github-page
 ---
 

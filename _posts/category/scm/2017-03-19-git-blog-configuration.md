@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[github blog] jekyll로 생성한 블로그의 환경 설정하기"
 date: 2017-03-19 15:30:00
-categories: Git
+categories: scm
 tags: jekyll github-page
 ---
 

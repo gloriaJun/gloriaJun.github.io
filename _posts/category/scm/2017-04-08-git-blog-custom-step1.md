@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[github blog] 커스터마이징 step1 - 레이아웃 잡기"
 date: 2017-04-08 14:30:00
-categories: Git
+categories: scm
 tags: jekyll github-page
 ---
 
