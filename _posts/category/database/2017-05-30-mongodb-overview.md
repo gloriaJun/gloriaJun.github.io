@@ -22,7 +22,7 @@ tags: mongodb
 * GridFS : 별도 스토리지 엔진을 통해 파일을 저장할 수 있음
     
 ## RDBMS vs MongoDB
-![]({{ site.url }}/assets/images/post/2017/0531-docker-vs-vmw.png)
+![]({{ site.url }}/assets/images/post/2017/0530-rdbms-vs-mongodb.png)
 
 ## Tip …???
  [MongoDB를 쓰면서 알게 된 것들 | Bigmatch](http://bigmatch.i-um.net/2013/12/mongodb%EB%A5%BC-%EC%93%B0%EB%A9%B4%EC%84%9C-%EC%95%8C%EA%B2%8C-%EB%90%9C-%EA%B2%83%EB%93%A4/)의 글을 읽으면서 내가 기억해두고 싶은 것들 정리…   
@@ -39,7 +39,7 @@ json 기반의 데이터베이스이며, NoSQL이므로 쿼리 작성 시 json�
 
 ###### Subdocument가 계속해서 늘어날 땐 별도의 collection으로 만들고 인덱스를 걸어라
 Join이 안되는 MongoDB에서 1:N 관계를 표현할 때에는 referencing과 embedding의 두 가지 방법이 있는데, 가능하면 RDBMS 방식으로 표현을 하는 것이 좋다.
-```json
+```
 // male collection
 {
   _id : ObjectId(1),
