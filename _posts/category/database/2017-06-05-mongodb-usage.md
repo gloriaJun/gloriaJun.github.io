@@ -129,6 +129,40 @@ find() 명령어를 이용하여 조회한다.
 { "_id" : ObjectId("5934e131fd6da2018268936a"), "no" : "2", "name" : "Alice" }
 { "_id" : ObjectId("5934e131fd6da2018268936b"), "no" : "3", "name" : "Julia" }
 ```
+   
+`pretty()` 메소드를 추가하면 포맷팅된 형식으로 출력된다.
+```
+> db.student.find().pretty()
+{
+    "_id" : ObjectId("5934ed392d0fc43769940531"),
+    "no" : "2",
+    "name" : "Alice"
+}
+{
+    "_id" : ObjectId("5934ed392d0fc43769940532"),
+    "no" : "3",
+    "name" : "Julia"
+}
+```
+   
+`findOne()` 메소드의 경우에는 하나의 Document만 반환된다. 
+```
+}
+> db.student.findOne()
+{
+    "_id" : ObjectId("5934ed392d0fc43769940531"),
+    "no" : "2",
+    "name" : "Alice"
+}
+> db.student.findOne({"no":3})
+null
+> db.student.findOne({"no":"3"})
+{
+    "_id" : ObjectId("5934ed392d0fc43769940532"),
+    "no" : "3",
+    "name" : "Julia"
+}
+```
 
 ###### 삭제
 `db.COLLECTION_NAME.remove(criteria, justOne)` 구문을 이용하여 삭제한다.       
