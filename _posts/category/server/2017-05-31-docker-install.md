@@ -108,6 +108,32 @@ export DOCKER_MACHINE_NAME="docker-vm"
 # Run this command to configure your shell:
 # eval $(docker-machine env docker-vm)
 ```
+   
+기본적으로 `/Users` 폴더는 공유가 되도록 설정이 되어있어 생성된 머신에 접속해보면 확인할 수 있다.
+```
+$ docker-machine ssh docker-vm
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+ _                 _   ____     _            _
+| |__   ___   ___ | |_|___ \ __| | ___   ___| | _____ _ __
+| '_ \ / _ \ / _ \| __| __) / _` |/ _ \ / __| |/ / _ \ '__|
+| |_) | (_) | (_) | |_ / __/ (_| | (_) | (__|   <  __/ |
+|_.__/ \___/ \___/ \__|_____\__,_|\___/ \___|_|\_\___|_|
+Boot2Docker version 17.05.0-ce, build HEAD : 5ed2840 - Fri May  5 21:04:09 UTC 2017
+Docker version 17.05.0-ce, build 89658be
+docker@docker-vm:~$ ls -lrt
+total 4
+-rw-r--r--    1 docker   staff           69 Jun  1 12:28 log.log
+docker@docker-vm:~$ ls /
+Users/   dev/     home/    lib/     linuxrc  opt/     root/    sbin/    tmp      var/
+bin/     etc/     init     lib64    mnt/     proc/    run/     sys/     usr/
+```
 
 ###### docker container 실행 (hello world)
 간단하게 hello-world 컨테이너를 내려받고 실행해봄으로써 정상적으로 docker 환경구성이 완료되었는 지를 확인할 수 있다.
