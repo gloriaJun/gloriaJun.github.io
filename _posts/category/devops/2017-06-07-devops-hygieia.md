@@ -15,6 +15,13 @@ hygieia dashboard 환경구성을 위해서는 아래와 같은 app 설치 및 �
 * Tool Collectors
 * Plugin WebHook
 
+## Build Hygieia℠
+Java 1.8 이상을 지원.   
+아래와 같이 maven을 이용하여 Hygieia 전체 components를 빌드한다.
+```
+mvn clean install package
+```
+
 ## Database
 MongoDB container를 생성한다.
 ```
