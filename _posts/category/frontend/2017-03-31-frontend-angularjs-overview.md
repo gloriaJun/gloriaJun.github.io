@@ -18,10 +18,12 @@ tag를 직접 정의해서 사용할 수 있음
 
 ### Expressions
 html에서 javascript의 내용을 출력해야하는 경우에 사용
-아래와 같을 때 `{{ name }}`을 의미
+아래와 같을 때 {% raw %}`{{ name }}`{% endraw %}을 의미
+{% raw %}
 ```
 <p>hello {{ name }}! </p>
 ```
+{% endraw %}
 
 ### Module
 directive, controller, service를 모아놓은 컨테이너를 의미.
@@ -37,13 +39,13 @@ html 뒷단에 위치하고, html 뷰를 조절하는데 사용
 싱글톤으로 구현되어있으므로 어플리케이션이 데이타를 관리하는 용도로만 사용하는 것을 권장
 
 ## 예제
-* ng-app
+###### ng-app
 np-app 이라고 선언하면 라이브러리에게 여기에 angular 코드가 있다고 알려주는 것임.
 그럼 angular directive 코드를 찾아서 해석하는 과정을 진행한다고..
 
-* ng-init
+###### ng-init
 자바스크립트 변수를 초기화
-
+{% raw %}
 ```
 <html>
 
@@ -60,6 +62,7 @@ np-app 이라고 선언하면 라이브러리에게 여기에 angular 코드가 
 
 </html>
 ```
+{% endraw %}
 
 위와 같이 선언하면 웹 브라우저 화면에 `Hello Chris` 라는 문자열이 출력됨.
 
