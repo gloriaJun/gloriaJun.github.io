@@ -12,11 +12,11 @@ tags: javascript AngularJS
 * HTML, CSS, JavaScript를 사용
 
 ## Conceptual Overview
-### Directives
+##### Directives
 확장된 HTML, 커스텀 속성과 엘리먼트로 되어있는 것을 의미함.
 tag를 직접 정의해서 사용할 수 있음
 
-### Expressions
+##### Expressions
 html에서 javascript의 내용을 출력해야하는 경우에 사용
 아래와 같을 때 {% raw %}`{{ name }}`{% endraw %}을 의미
 {% raw %}
@@ -25,25 +25,31 @@ html에서 javascript의 내용을 출력해야하는 경우에 사용
 ```
 {% endraw %}
 
-### Module
+##### Module
 directive, controller, service를 모아놓은 컨테이너를 의미.
 기능적으로 비슷한 것들을 모아서 모듈을 만듬
 의존 관계가 있는 경우에 다른 모듈을 주입을 해서 사용할 수 있음.
 
-### Controller
+##### Controller
 html 뒷단에 위치하고, html 뷰를 조절하는데 사용
 오직 뷰의 비지니스 로직을 구현하는 경우에만 사용해야한다.
 
-### Service
+##### Service
 재사용할 수 있는 비지니스 로직.
 싱글톤으로 구현되어있으므로 어플리케이션이 데이타를 관리하는 용도로만 사용하는 것을 권장
 
+##### Filter
+데이터의 출력 형식을 설정하는 컴포넌트이다.
+angular에서 지원하는 filter는 [Filter components in ng](https://docs.angularjs.org/api/ng/filter) 를 참고하면 된다.
+또한 “$filterProvider”를 이용하여 사용자 정의 필터를 만들어 사용할 수 도 있다.
+
+
 ## 예제
-###### ng-app
+##### ng-app
 np-app 이라고 선언하면 라이브러리에게 여기에 angular 코드가 있다고 알려주는 것임.
 그럼 angular directive 코드를 찾아서 해석하는 과정을 진행한다고..
 
-###### ng-init
+##### ng-init
 자바스크립트 변수를 초기화
 {% raw %}
 ```
