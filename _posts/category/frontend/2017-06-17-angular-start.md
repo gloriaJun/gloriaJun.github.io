@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "[Angular] angular 시작하기"
+title: "[Angular] angular 시작하기 (node + bower + gulp)"
 date: 2017-06-17 13:30:00
 categories: Frontend
 tags: javascript AngularJS

@@ -27,3 +27,12 @@ Application 클래스임을 정의해주는 annotation.
 ### @Entity
 JPA (Java Persistence API)에서 데이터베이스에 저장하기 위해 사용자가 정의한 클래스.
 
+### InitBinder
+요청 파라미터에 대한 데이터 바인딩을 정의하기 위한 annotation.   
+
+```java
+@InitBinder
+public void initBinder(WebDataBinder binder) {
+      binder.registerCustomEditor(CollectorType.class, new CaseInsensitiveCollectorTypeEditor());
+}
+```

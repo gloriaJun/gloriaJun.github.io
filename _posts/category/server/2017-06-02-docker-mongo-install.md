@@ -12,7 +12,7 @@ docker를 이용하여 MongoDB를 설치하는 방법에 대하여 정리
 ## MongoDB 컨테이너 생성
 docker hub에서 이미지를 가져와서 생성한다.
 ```shell
-$ docker run --name mongodb -p 27017:27017 -d mongo --bind_ip=0.0.0.0
+$ docker run --name mongodb -p 27017:27017 -d mongo
 Unable to find image 'mongo:latest' locally
 latest: Pulling from library/mongo
 56c7afbcb0f1: Pull complete
