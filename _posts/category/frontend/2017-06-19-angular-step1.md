@@ -25,7 +25,7 @@ tags: javascript AngularJS
 데이터들을 초기화 해준다.
 
 ```html
-<div ng-app="" ng-init= "colors = ['빨강', '보라', '초록']">
+<div ng-app="" ng-init="colors = ['빨강', '보라', '초록']">
 </div>
 ```
 
@@ -43,7 +43,7 @@ collection에 담긴 item을 하나씩 출력한다.  for, while 문과 같은 �
 <div ng-app="" ng-init= "colors = ['빨강', '보라', '초록']">
 	  <ol>
 	  	<li ng-repeat = "color in colors">
-	  		{{color}}
+	  		{{ color }}
 	  	</li>
 	  </ol>
 </div>
