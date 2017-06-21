@@ -11,12 +11,15 @@ tags: javascript AngularJS
 
 #### Application 모듈
 `mainApp.js` 파일을 생성한 뒤 아래와 같이 작성하여 저장한다.
+
 ```javascript
 var mainApp = angular.module("mainApp", []);
 ```
 
 #### Controller 모듈
 `myController.js` 파일을 생성하고,  controller에 해당하는 부분을 작성하여 저장한다.
+
+{% raw %}
 ```javascript
 mainApp.controller("myController",  function($scope) {
 	$scope.week={
@@ -31,9 +34,12 @@ mainApp.controller("myController",  function($scope) {
 	};
 });
 ```
+{% endraw %}
 
 #### index.html 파일 수정
 분리된 코드가 작성된 스크립트 파일을 포함시키도록 변경한다.
+
+{% raw %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -61,3 +67,4 @@ mainApp.controller("myController",  function($scope) {
 </body>
 </html>
 ```
+{% endraw %}
