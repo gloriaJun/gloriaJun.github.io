@@ -38,7 +38,7 @@ tags: javascript AngularJS
 
 ###### ng-repeat
 collection에 담긴 item을 하나씩 출력한다.  for, while 문과 같은 동작임.
-
+{% raw %}
 ```html
 <div ng-app="" ng-init= "colors = ['빨강', '보라', '초록']">
 	  <ol>
@@ -48,6 +48,7 @@ collection에 담긴 item을 하나씩 출력한다.  for, while 문과 같은 �
 	  </ol>
 </div>
 ```
+{% endraw %}
 
 ###### ng-bind
 변수에 값을 바인딩하여 출력한다.
@@ -56,14 +57,17 @@ collection에 담긴 item을 하나씩 출력한다.  for, while 문과 같은 �
 ```
     
 참고로  `ng-bind`를 이용하여 출력할 수도 있지만 `{{ }}` 괄호를 이용하여서도 출력할 수 있다.
+{% raw %}
 ```html
 <p>Hello!! {{name}}</p>	
 ```
+{% endraw %}
 
 
 ## Contoller
 contorller는 html 뷰를 구성하기 위한 비지니스 로직을 구현하는 데 사용한다.   
 간단한 예제는 아래와 같다.
+{% raw %}
 ```html
 <!DOCTYPE html>
 <html>
@@ -105,3 +109,4 @@ contorller는 html 뷰를 구성하기 위한 비지니스 로직을 구현하�
 </body>
 </html>
 ```
+{% endraw %}

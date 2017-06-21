@@ -108,10 +108,12 @@ run 에서 사용가능한 명령어 옵션들
 
 #### private ip
 컨테이너에 할당된 private ip 확인
+{% raw %}
 ```
 $ docker inspect -f "{{ .NetworkSettings.IPAddress }}" mongodb
 172.17.0.2
 ```
+{% endraw %}
 
 
 > Reference     
