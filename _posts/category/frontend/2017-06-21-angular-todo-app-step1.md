@@ -4,7 +4,7 @@ comments: true
 title: "[AngularJS] todo 어플리케이션 만들기 - Step 1"
 date: 2017-06-21 22:30:00
 categories: Frontend
-tags: javascript AngularJS
+tags: javascript angular
 ---
 
 angularJS를 이용하여 [앵귤러로 Todo앱 만들기 2 - 앵귤러 로딩](http://blog.jeonghwan.net/lectures/todomvc-angular/2/)에 정리된 ToDO 어플리케이션 만들기 실습 따라하기…

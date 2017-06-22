@@ -4,7 +4,7 @@ comments: true
 title: "[Angular] angular 시작하기 (node + bower + gulp)"
 date: 2017-06-17 13:30:00
 categories: Frontend
-tags: javascript AngularJS
+tags: javascript angular
 ---
 
 AngularJS 개발을 위한 환경 구축 방법에 대한 정리

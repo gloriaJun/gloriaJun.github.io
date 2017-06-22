@@ -4,7 +4,7 @@ comments: true
 title: "[AngularJS] 간단 실습하기  Step2"
 date: 2017-06-20 22:30:00
 categories: Frontend
-tags: javascript AngularJS
+tags: javascript angular
 ---
 
 [간단 실습하기  Step1]({% post_url category/frontend/2017-06-19-angular-step1 %})에서 작성한 코드를 “service, controller, application”으로 파일을 분리하기.   

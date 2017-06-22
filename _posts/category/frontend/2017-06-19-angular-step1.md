@@ -4,7 +4,7 @@ comments: true
 title: "[AngularJS] 간단 실습하기  Step1"
 date: 2017-06-19 22:30:00
 categories: Frontend
-tags: javascript AngularJS
+tags: javascript angular
 ---
 
 개발 환경 구성이 되어 있지 않다면 [angular 시작하기]({% post_url category/frontend/2017-06-17-angular-start %}) 참고.    

@@ -4,7 +4,7 @@ comments: true
 title: "[Angular2] Hello Angular!!"
 date: 2017-04-01 01:30:00
 categories: Frontend
-tags: javascript AngularJS Angular2
+tags: javascript angular angular2
 ---
 
 [Angular Doc](angular.io)에서 *[Setup]( [Setup for local development - ts - GUIDE](https://v2.angular.io/docs/ts/latest/guide/setup.html) )* 문서를 참고해서 정리한 내용
