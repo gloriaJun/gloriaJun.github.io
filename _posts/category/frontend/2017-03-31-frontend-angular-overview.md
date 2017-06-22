@@ -49,7 +49,7 @@ controller와 model로부터 정보를 합쳐서 동적으로 view를 생성하�
 사용자가 보는 화면 전환을 말한다.
 
 ###### Expressions
-html에서 javascript의 내용을 출력해야하는 경우에 사용
+html에서 javascript의 내용을 출력해야하는 경우에 사용     
 아래와 같을 때 {% raw %}`{{ name }}`{% endraw %}을 의미
 {% raw %}
 ```
@@ -58,18 +58,13 @@ html에서 javascript의 내용을 출력해야하는 경우에 사용
 {% endraw %}
 
 ###### Module
-directive, controller, service를 모아놓은 컨테이너를 의미.
-기능적으로 비슷한 것들을 모아서 모듈을 만듬
+directive, controller, service를 모아놓은 컨테이너를 의미.      
+기능적으로 비슷한 것들을 모아서 모듈을 만듬     
 의존 관계가 있는 경우에 다른 모듈을 주입을 해서 사용할 수 있음.
 
 
-## 예제
-##### ng-app
-np-app 이라고 선언하면 라이브러리에게 여기에 angular 코드가 있다고 알려주는 것임.
-그럼 angular directive 코드를 찾아서 해석하는 과정을 진행한다고..
-
-##### ng-init
-자바스크립트 변수를 초기화
+## 간단한 예제
+아래는 웹 브라우저 화면에 `Hello Chris` 라는 문자열이 출력되는 간단한 예제이다.
 {% raw %}
 ```
 <html>
@@ -88,8 +83,9 @@ np-app 이라고 선언하면 라이브러리에게 여기에 angular 코드가 
 </html>
 ```
 {% endraw %}
-
-위와 같이 선언하면 웹 브라우저 화면에 `Hello Chris` 라는 문자열이 출력됨.
+        
+`np-app`은 HTML 코드에서 angular에게 angular application임을 알려주는 directive이다.    
+`ng-init`은 쉽게 말하면 특정 변수에 값을 초기화 하기 위한 directive이다. 위의 예제에서는 name이라는 변수에 'Chris'라는 값을 할당하여 초기화한다.     
 
 > Plunker 라는 웹브라우저 에디터를 이용하면 간단하게 테스트해 해볼 수 있음  
 > https://plnkr.co/edit/?p=preview   
