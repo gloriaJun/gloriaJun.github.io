@@ -16,6 +16,7 @@ permalink: pretty
 # Where are tags and categories displayed
 tag_page: '/tags/'
 category_page: '/categories/'
+project_page: '/projects/'
 
 
 # ---------------------------------------

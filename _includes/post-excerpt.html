@@ -4,9 +4,14 @@
     &nbsp;&nbsp;|&nbsp;&nbsp;
  <!--      <span class="post-meta" style="margin-left:50px;margin-right:50px;"><i class="fa fa-comment-o">&nbsp;&nbsp;</i><a style="color:#828282" href="{{ post.url | prepend: site.baseurl }}#disqus_thread"></a></span> -->
     <span class="blog-post-meta"><i class="fa fa-archive">&nbsp;&nbsp;</i>
-      {% for cate in post.categories  %}
+      {% for cate in post.categories  %} 
         <a href="{{ site.baseurl }}{{ site.category_page }}#{{ cate | slugify }}" class="blog-category">{{ cate }}</a>
       {% endfor %}
+
+      {% for cate in post.projects  %} 
+        <a href="{{ site.baseurl }}{{ site.project_page }}#{{ cate | slugify }}" class="blog-category">{{ cate }}</a>
+      {% endfor %}
+
     </span>   
       
     <span class="blog-post-meta">
