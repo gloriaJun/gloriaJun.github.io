@@ -70,10 +70,6 @@ compileJava.options.encoding = 'UTF-8'
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
 
-    // database
-    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
-    runtime 'com.h2database:h2'
-
     // other
     compileOnly 'org.projectlombok:lombok:1.16.16'
 
