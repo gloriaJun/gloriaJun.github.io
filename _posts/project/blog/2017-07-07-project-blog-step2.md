@@ -300,4 +300,4 @@ assets/
 ![]({{ site.url }}/assets/images/post/2017/0706-spring-blog-project-ui-index.png)  
     
 > *Project 과정에 대한 글 리스트*    
-> 1. [spring boot로 블로그 만들어보기]({% post_url project/blog/2017-07-06-millky-blog-configuration %})
+> 1. [spring boot로 블로그 만들어보기]({% post_url project/blog/2017-07-06-project-blog-step1 %})

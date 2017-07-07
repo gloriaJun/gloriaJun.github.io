@@ -133,3 +133,8 @@ public class Application implements CommandLineRunner
 > **Reference**       
 > [Spring Boot + Spring Data MongoDB example](https://www.mkyong.com/spring-boot/spring-boot-spring-data-mongodb-example/)       
 > [Getting Started · Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)      
+      
+
+> *Project 과정에 대한 글 리스트*    
+> 1. [spring boot로 블로그 만들어보기]({% post_url project/blog/2017-07-06-project-blog-step1 %})
+> 2. [spring boot로 블로그 만들어보기2 - UI 테마 적용]({% post_url project/blog/2017-07-07-project-blog-step2 %})
