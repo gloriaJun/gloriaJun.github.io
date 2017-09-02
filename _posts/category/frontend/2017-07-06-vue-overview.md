@@ -85,6 +85,16 @@ npm install
 npm run dev
 ```
      
+다음과 같은 설정들을 기본으로 제공한다.   
+* webpack : Webpack, vue-loader, 정적 분석, 테스트 등 기본 빌드 프로세스 대부분을 설정
+* webpack-simple : Webpack과 vue-loader로 구성된 간단한 조합
+browserify : Browserify, vueify, 정적 분석, 테스트 등 기본 빌드 프로세스 대부분을 설정
+* browserify-simple : Browserify와 vueify로 구성된 간단한 조합
+* simple : 특별한 모듈 관리 도구를 사용하지 않고 HTML 파일 1개로 구성하는 제일 간단한 조합
+ 
 
 > **Reference**       
-> [Vue.js 입문서 - 프론트엔드 개발자를 위한 • Captain Pangyo](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/)      
+> [Vue.js 입문서 - 프론트엔드 개발자를 위한 • Captain Pangyo](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/)     
+> [GitHub - pablohpsilva/vuejs-component-style-guide: Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)     
+> https://medium.com/tldr-tech/     vue-js-2-vuex-router-yarn-basic-configuration-version-2-7b9c489d43b3    
+[Project Structure · GitBook](http://vuejs-templates.github.io/webpack/structure.html)         
