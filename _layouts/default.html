@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
   {% include head.html %}
 
   <body>
 
-    {% include top.html %}
+    {% include header.html %}
 
-    <div class="container-fluid">
-        
-        <div class="content-wrapper">
-          {{content}}
-        </div> <!-- ./content-wrapper -->
-
-          <!-- 
-          <div id="sidebar" class="col-sm-3 col-sm-offset-1">
-            { include sidebar.html %}
-          </div> -->
-        
+    <div class="page-content">
+        {{ content }}
     </div>
 
     {% include footer.html %}
 
   </body>
+
 </html>

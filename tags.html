@@ -1,42 +1,27 @@
 ---
-layout: default
-title: Tags
+layout: page
+title: "Tags"
 permalink: /tags/
 ---
 
-{% assign site_tags = site.tags | sort %}
-
-<div class="blog-page">
-
-  <h1 class="blog-page-title"><i class="fa fa-tags"></i>Tags</h1>
-
-  <div class="blog-item-list">
-    {% for tag_with_posts in site_tags %}
-      {% assign tag = tag_with_posts | first | slugify %}
-      {% assign posts = tag_with_posts | last %}
-
-      <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag }}" class="post-tag">
-        <span class="blog-tag">{{ tag  }}&nbsp;({{ posts.size }})</span>
-      </a>
-    {% endfor %}
-  </div>
-
-
-{% for tag_with_posts in site_tags %}
-
-  {% assign tag = tag_with_posts | first %}
-  {% assign posts = tag_with_posts | last %}
-
-  <div class="blog-list" id="{{ tag | slugify }}">
-    <h3>{{ tag }}</h3>
-
-    <!-- This loops through the paginated posts -->
-    {% for post in posts %}
-      {% include post-excerpt.html %}
-    {% endfor %}
-
-  </div> <!-- /.blog-list -->
-
+{% for tag in site.tags %}
+  {% capture cat %}{{ tag | first }}{% endcapture %}
+  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
+  <ul class="posts-list">
+  {% for post in site.tags[cat] %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+  {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
-
-
+<br>
