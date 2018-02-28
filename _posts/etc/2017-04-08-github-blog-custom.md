@@ -4,7 +4,7 @@ title: "(github blog) 커스터마이징"
 date: 2017-04-08 14:30:00
 author: gloria
 categories: etc
-tags: jekyll github
+tags: jekyll blog
 #cover:  "/assets/instacode.png"
 ---
 

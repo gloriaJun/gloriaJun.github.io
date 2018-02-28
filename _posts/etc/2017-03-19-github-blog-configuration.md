@@ -4,7 +4,7 @@ title: "(github blog) 환경 설정"
 date: 2017-03-19 15:30:00
 author: gloria
 categories: etc
-tags: jekyll github
+tags: jekyll blog
 #cover:  "/assets/instacode.png"
 ---
 

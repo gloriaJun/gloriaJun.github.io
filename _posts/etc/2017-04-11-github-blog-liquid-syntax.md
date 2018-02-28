@@ -4,7 +4,7 @@ title: "(github blog) Jekyll Liquid Syntax 사용법 정리"
 date: 2017-04-11 12:30:00
 author: gloria
 categories: etc
-tags: jekyll github
+tags: jekyll blog
 #cover:  "/assets/instacode.png"
 ---
 

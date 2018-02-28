@@ -4,7 +4,7 @@ title: "(github blog) 블로그 만들기 for mac"
 date: 2017-03-18 10:30:00
 author: gloria
 categories: etc
-tags: jekyll github
+tags: jekyll blog 
 #cover:  "/assets/instacode.png"
 ---
 

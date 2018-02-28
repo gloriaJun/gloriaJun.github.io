@@ -4,7 +4,7 @@ title: "(github blog) 웹페이지에서 검색 가능하게 하기"
 date: 2017-05-13 18:30:00
 author: gloria
 categories: etc
-tags: jekyll github
+tags: jekyll blog
 #cover:  "/assets/instacode.png"
 ---
 
