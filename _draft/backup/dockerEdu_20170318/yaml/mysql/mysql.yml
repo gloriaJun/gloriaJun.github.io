@@ -1,0 +1,9 @@
+mydb:
+  image: mysql:5.6
+  environment:
+    - MYSQL_ROOT_PASSWORD=Passw0rd
+  ports:
+    - 3306:3306
+  volumes:
+    - /home/docker/my.cnf:/etc/mysql/conf.d/my.cnf
+    - /db_master:/var/lib/mysql
