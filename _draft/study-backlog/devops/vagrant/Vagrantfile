@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+OS_NAME="ubuntu1404"
+OS_URL="https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = OS_NAME
+  config.vm.box_url = OS_URL
+  config.vm.hostname = "ubuntu14"
+
+  # network configure
+  config.vm.network "private_network", :dev => "eth0", :ip => "192.168.10.10"
+  # config.vm.network "public_network"
+  # config.vm.synced_folder "../data", "/vagrant_data"
+
+  # VM configure
+  config.vm.provider "virtualbox" do |vb|
+      vb.name = "ubuntu14"
+      vb.customize ["modifyvm", :id, "--memory", 2048]
+      vb.customize ["modifyvm", :id, "--cpus", 1]
+  end
+
+end
