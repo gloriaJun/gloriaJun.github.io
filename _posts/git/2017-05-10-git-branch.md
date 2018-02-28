@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 title: "[Git] git branch"
 date: 2017-05-10 14:30:00
 author: gloria
