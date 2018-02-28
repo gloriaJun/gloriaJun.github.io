@@ -25,17 +25,11 @@ h1 {
 h2 {
 	font-size: modular-scale(3);
 }
-h3 {
+h3, h4 {
 	font-size: modular-scale(2);
 }
-h4 {
+h5, h6 {
 	font-size: modular-scale(1);
-}
-h5 {
-	font-size: modular-scale(-1);
-}
-h6 {
-	font-size: modular-scale(-2);
 }
 
 p {
