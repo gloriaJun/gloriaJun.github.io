@@ -108,6 +108,7 @@ gems:
 
 exclude:
   - "/vendor/"
+  - "/_draft/"
   - README.md
   - LICENSE
   - bower.json
