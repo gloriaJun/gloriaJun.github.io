@@ -8,8 +8,7 @@ tags: build gradle
 ---
 
 ## gradle 설치 확인
-{% raw %}
-```
+```bash
 $ gradle -v
 
 ------------------------------------------------------------
@@ -24,11 +23,10 @@ Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
 JVM:          1.8.0_111 (Oracle Corporation 25.111-b14)
 OS:           Mac OS X 10.12.3 x86_64
 ```
-{% endraw %}
 
 ## 프로젝트 생성
 폴더를 생성 한 뒤에 해당 폴더에서 gradle을 적용한다.
-```
+```bash
 $ cd gradle-sample-project/
 $ gradle wrapper
 :wrapper
@@ -39,8 +37,7 @@ Total time: 0.837 secs
 ```
 
 `gradle wrapper`를 실행하고 나면 아래와 같은 폴더와 파일들이 생성된다.
-{% raw %}
-```
+```bash
 $ tree
 .
 ├── gradle
@@ -52,12 +49,11 @@ $ tree
 
 2 directories, 4 files
 ```
-{% endraw %}
 
 #### gradlew & gradlew.bat
 gradle을 별도로 설치하거나 연동을 하지 않아도 사용할 수 있게 해주는 스크립트 파일.
 `gradle/wrapper/gradle-wrapper.properties`에 정의된 설정값을 통하여 자동으로 다운 받아 프로젝트 별로 독립적으로 실행되어질 수 있도록하여 동작시켜줌.
-```
+```bash
 $ cat gradle/wrapper/gradle-wrapper.properties
 #Tue Apr 11 11:26:23 KST 2017
 distributionBase=GRADLE_USER_HOME
@@ -69,15 +65,13 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-3.4.1-bin.zip
 
 ## gradle version upgrade
 프로젝트의 gradle 버전을 명시하여 업그레이드 하는 방법
-{% raw %}
-```
+```bash
 $ gradle wrapper --gradle-version 2.4.7
 ```
-{% endraw %}
 
 ## gradle init
 다음과 같은 파일들이 추가로 생성됨.
-```
+```bash
 build.gradle
 settings.gradle
 ```
@@ -87,12 +81,12 @@ gradle은 `task` 라는 이름으로 정해진 빌드 기능이 제공됨.
 어떤 plugin을 선언하느냐에 따라 의존성에 맞게 관리되고 있으며, `build.gradle` 이라는 파일에 선언함.
 
 java로 개발하는 경우, 아래와 같이 선언해주면 됨.
-```
+```bash
 apply plugin: 'java'
 ```
 
 그리고 빌드를 실행해보면  task가 다음과 같이 실행됨을 확인할 수 있음.
-```
+```bash
 $ gradle build
 :compileJava NO-SOURCE
 :processResources NO-SOURCE
@@ -118,7 +112,7 @@ Total time: 0.742 secs
 #### Repository 주소 정의
 의존 라이브러리들이 관리되고 있는 저장소의 주소를 정의한다.
 메이븐 저장소를 사용 시에는 `mavenCentral()`를 추가로 정의해준다.
-```
+```bash
 repositories {
     //mavenCentral()
     jcenter()
@@ -127,7 +121,7 @@ repositories {
 
 #### settings.gradle
 싱글 또는 멀티 프로젝트 구성에 대해 정의하는 파일.
-```
+```bash
 rootProject.name = 'todo'
 include 'common'
 include 'service'
@@ -138,7 +132,7 @@ include 'web'
 멀티 프로젝트 생성 시에 그룹 디렉토리가 없으면 생성하고, 하위 모듈이 존재하는 경우 디렉토리를 생성하고 서브 모듈로 등록하는 스크립트
 
 #### settings.gradle
-```
+```bash
 // 그룹 디렉터리를 돌면서 하위 디렉터리가 있으면 서브프로젝트로 등록하는 스크립트한다
 // 만약 그룹 디렉터리가 없으면 해당 디렉터리도 생성한다
 ['common', 'todo-app', 'calendar-app', 'web'].each {
