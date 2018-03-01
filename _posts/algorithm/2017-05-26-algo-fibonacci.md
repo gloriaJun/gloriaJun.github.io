@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[알고리즘] 피보나치 수열"
+title: "(알고리즘) 피보나치 수열"
 date: 2017-05-26 09:53:00
 author: gloria
 categories: algorithm

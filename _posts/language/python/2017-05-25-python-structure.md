@@ -3,7 +3,7 @@ layout: post
 title: "(Python) 문법 정리"
 date: 2017-05-25 16:35:00
 author: gloria
-categories: python
+categories: language
 tags: python
 ---
 
