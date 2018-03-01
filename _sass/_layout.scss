@@ -291,6 +291,9 @@ pre code.hljs {
 					width: 70%;
 				}
 			}
+			code.hljs {
+				white-space: pre-wrap;
+			}
 		}
 		.tags {
 			font-size: 0.9em;
