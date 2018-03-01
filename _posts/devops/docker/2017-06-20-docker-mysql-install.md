@@ -1,15 +1,15 @@
 ---
 layout: post
-comments: true
 title: "[docker] mysql 컨테이너 생성"
 date: 2017-06-20 10:30:00
-categories: server
+author: gloria
+categories: devops
 tags: docker mysql
 ---
 
 docker를 이용하여 mysql 설치하기.   
 
-#### 컨테이너 생성
+## 컨테이너 생성
 ```
 $ docker \
    run \
@@ -23,8 +23,8 @@ $ docker \
    mysql;
 ```
 
-###### docker-compose를 이용한 생성
-yml 파일 
+#### docker-compose를 이용한 생성
+yml 파일
 ```
 version: '2'
 
@@ -42,7 +42,7 @@ services:
        - "3306:3306"
 ```
 
-#### mysql 접속
+## mysql 접속
 ```
 $ docker exec -it mysqldb mysql -u root -p
 Enter password:

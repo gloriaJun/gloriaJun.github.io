@@ -3,7 +3,6 @@ layout: post
 title: "[Http] HTTP Status Code"
 date: 2017-05-21 21:30:00
 author: gloria
-
 categories: etc
 tags: status-code
 ---
