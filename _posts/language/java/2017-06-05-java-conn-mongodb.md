@@ -1,16 +1,16 @@
 ---
 layout: post
-comments: true
-title: "[MongoDB] Java 연동 예제"
+title: "(Java) mongodb 연동하기"
 date: 2017-06-05 14:45:00
-categories: database
-tags: mongodb java jdbc
+author: gloria
+categories: language
+tags: java jdbc mongodb
 ---
 
 MongoDB에 jdbc driver 를 이용하여 연동하는 방법에 대한 예제
 
 #### gradle
-```
+```gradle
 group 'java-data'
 version '1.0-SNAPSHOT'
 

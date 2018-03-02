@@ -1,10 +1,10 @@
 ---
 layout: post
-comments: true
-title: "[Java] JavaDoc"
+title: "(Java) JavaDoc"
 date: 2017-05-25 10:30:00
-categories: Java
-tags: java javadoc
+author: gloria
+categories: language
+tags: java javadoc documentation
 ---
 
 ## JavaDoc
@@ -37,5 +37,5 @@ Javadoc에 예제 코드를 작성할 때 html, annotation 등을 사용하는 �
 
 
 
-> Reference
-> [Java Documentation Comments](https://www.tutorialspoint.com/java/java_documentation.htm)
+## Reference
+- [Java Documentation Comments](https://www.tutorialspoint.com/java/java_documentation.htm)

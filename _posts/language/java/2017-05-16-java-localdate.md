@@ -1,11 +1,14 @@
 ---
 layout: post
-comments: true
-title: "[Java] LocalData & LocalDateTime"
+title: "(Java) LocalData & LocalDateTime"
 date: 2017-05-16 19:30:00
-categories: Java
-tags: java localdate localdatetime
+author: gloria
+categories: language
+tags: java date
 ---
+
+* TOC
+{:toc}
 
 java8 부터 지원하는 날짜 객체.
 
@@ -16,9 +19,7 @@ java8 부터 지원하는 날짜 객체.
     System.out.println(localDateTime);
 ```
 
-
-#### 날짜 변환하기
-###### to "java.util.Date"
+#### 날짜 변환하기 : to "java.util.Date"
 ```java
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, d MMM yyyy HH:mm:ss Z");
     LocalDateTime localDateTime = LocalDateTime.parse("Tue, 16 May 2017 14:32:09 +0900", formatter);
@@ -74,7 +75,6 @@ java8 부터 지원하는 날짜 객체.
 ```
 
 
-> 참고 링크  
-> [Java 8 – How to convert String to LocalDate](https://www.mkyong.com/java8/java-8-how-to-convert-string-to-localdate/)  
-> [jekalmin의 블로그](http://jekalmin.tistory.com/entry/%EC%9E%90%EB%B0%94-18-%EB%82%A0%EC%A7%9C-%EC%A0%95%EB%A6%AC)  
->   
+## 참고 링크  
+- [Java 8 – How to convert String to LocalDate](https://www.mkyong.com/java8/java-8-how-to-convert-string-to-localdate/)  
+- [jekalmin의 블로그](http://jekalmin.tistory.com/entry/%EC%9E%90%EB%B0%94-18-%EB%82%A0%EC%A7%9C-%EC%A0%95%EB%A6%AC)  

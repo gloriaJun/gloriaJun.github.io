@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[docker] mysql 컨테이너 생성"
+title: "(Docker) mysql 컨테이너 생성"
 date: 2017-06-20 10:30:00
 author: gloria
 categories: devops
