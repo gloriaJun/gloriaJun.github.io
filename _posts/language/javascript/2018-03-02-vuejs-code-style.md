@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "(VueJs) Code Style"
-date: 2018-03-02 16:35:00
+date: 2018-03-02 11:35:00
 author: gloria
 categories: language
-tags: javascript vuejs eslint
+tags: javascript frontend vuejs eslint
 ---
 
 VueJS로 프로젝트를 진행하면서 다큐먼트에서 제공하는 [스타일 가이드](https://kr.vuejs.org/v2/style-guide/)에 맞춰서 작성을 하기로 하면서 정리한 내용들
@@ -57,7 +57,9 @@ Vue팀에서 제안하는 스타일가이드가 적용된 [eslint-plugin-vue](ht
 
 #### 플러그인 적용
 ```bash
-npm install --save-dev eslint eslint-plugin-vue
+npm install --save-dev eslint eslint-loader babel-eslint
+npm install --save-dev eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-friendly-formatter
+npm install --save-dev eslint-plugin-vue
 ```
 
 #### EsLint config 설정
@@ -113,6 +115,48 @@ new Vue({
   16:1  error  Do not use 'new' for side effects  no-new
 
 ✖ 1 problem (1 error, 0 warnings)
+```
+
+#### EsLint ignore 파일 작성
+```
+// .eslintignore
+/build/
+/config/
+/dist/
+/*.js
+```
+
+#### package.json 실행 스크립트 정의
+```json
+"scripts": {
+    "lint": "eslint --ext .js,.vue src",
+},
+```
+
+#### 빌드 시에 eslint가 수행되도록 설정
+`webpack.config.js` 또는 `/build/webpack.base.conf.js` 파일에 아래와 같이 추가한다.
+```javascript
+// webpack.config.js
+module.exports = {
+//(...중략...)
+  module: {
+    rules: [
+//(...중략...)
+      {
+        test: /\.(js|vue)$/,
+        loader: "eslint-loader",
+        exclude: /node_modules/,
+        enforce: 'pre',
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      }
+//(...중략...)      
+    ]
+//(...중략...)    
+  }
+//(...중략...)
+}
 ```
 
 

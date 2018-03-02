@@ -1,6 +1,13 @@
-# vue-router
+---
+layout: post
+title: "(VueJs) vue-router"
+date: 2018-03-01 14:35:00
+author: gloria
+categories: language
+tags: javascript frontend vuejs
+---
 
-## 라우트에 따른 메시지 변경
+## router에 따른 메시지 변경
 
 #### header tag 내부의 title 변경하기
 ```javascript
@@ -48,7 +55,7 @@ export default {
 ```
 
 만약, User의 상위 객체에 해당 값을 전달하고자 하면 다음과 같이 전달하면 된다.
-- 방법 1)
+###### 방법 1)
 ```javascript
 // User.vue
 export default {
@@ -64,7 +71,8 @@ export default {
 }
 ```
 
-- 방법 2) router의 meta를 이용하는 방법이 더 간단하고 깔끔한 것 같다  
+###### 방법 2)
+(*router의 meta를 이용하는 방법이 더 간단하고 깔끔한 것 같다*)
 즉, router에서 meta에 해당 객체를 담아서 전달
 ```javascript
 // App.vue

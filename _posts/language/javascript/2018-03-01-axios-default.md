@@ -1,4 +1,19 @@
-# axios
+---
+layout: post
+title: "(Axios) default 설정"
+date: 2018-03-01 10:32:00
+author: gloria
+categories: language
+tags: javascript frontend vuejs axios
+---
+
+`main.js`에서 axios 대신에 default 설정을 정의한 스크립트 파일을 import하여 사용한다.
+###### main.js
+```javascript
+import $http from '@/utility/http'
+
+Vue.prototype.$http = $http
+```
 
 ###### http.js
 ```javascript
@@ -28,11 +43,4 @@ $http.interceptors.response.use(null, function (error) {
 })
 
 export default $http
-```
-
-###### main.js
-```javascript
-import $http from '@/utility/http'
-
-Vue.prototype.$http = $http
 ```

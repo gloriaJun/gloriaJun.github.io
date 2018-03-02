@@ -1,5 +1,14 @@
-#### Arrays.prototype.sort
-- 숫자 정렬
+---
+layout: post
+title: "(Javascript) Arrays"
+date: 2018-01-10 14:35:00
+author: gloria
+categories: language
+tags: javascript
+---
+
+## Arrays.prototype.sort
+#### 숫자 정렬
 ```javascript
 let input="2 3 6 6 5"
 let nums = input.split(' ').map(Number);
@@ -11,7 +20,7 @@ nums.sort((a,b) => a-b); // [2, 3, 5, 6, 6]
 nums.sort((a,b) => b-a); // [6, 6, 5, 3, 2]
 ```
 
-- 문자 정렬
+#### 문자 정렬
 ```javascript
 let input="a c b e"
 let str = input.split(' ');
