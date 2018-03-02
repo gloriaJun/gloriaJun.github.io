@@ -7,6 +7,9 @@ categories: devops
 tags: git
 ---
 
+* TOC
+{:toc}
+
 #### 현재 설정된 설정 값을 확인
 ```
 # 전역으로 설정된 값 확인

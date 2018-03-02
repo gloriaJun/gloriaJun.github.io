@@ -7,7 +7,10 @@ categories: language
 tags: javascript frontend vuejs
 ---
 
-## router에 따른 메시지 변경
+* TOC
+{:toc}
+
+호출되는 router에 따라 동적으로 title이나 메시지가 변경되도록 하는 방법
 
 #### header tag 내부의 title 변경하기
 ```javascript

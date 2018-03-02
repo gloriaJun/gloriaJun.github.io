@@ -7,6 +7,9 @@ categories: language
 tags: python
 ---
 
+* TOC
+{:toc}
+
 python 문법 정리
 
 ## 리스트

@@ -7,6 +7,9 @@ categories: language
 tags: javascript
 ---
 
+* TOC
+{:toc}
+
 ## Arrays.prototype.sort
 #### 숫자 정렬
 ```javascript
