@@ -47,7 +47,8 @@ $ tree
 아래와 같은 디자인에서 좌측 사이드바만 없앤 디자인으로 결정을 하고 레이아웃을 잡기로 했다.<br/>
 ![]({{ site.baseurl }}/assets/images/post/2017/0408-blog-custom-layout.png)
 
-#### index.html
+#### 코드 작성
+**index.html**   
 블로그 접속 시 메인에 보여지는 화면으로 `index.md`파일을 삭제하고, `index.html`로 생성해준 뒤에 아래와 같이 작성한다.<br/>
  (해당 페이지가 블로그 접속 시의 메인페이지이다…나중에 해당 파일에 메인 페이지이 body에 들어갈 내용들을 작성하기 위해 html 파일로 미리 변경해줌)
 {% raw %}
@@ -71,7 +72,7 @@ $ tree
 ```
 {% endraw %}
 
-#### _layouts/default.html
+**_layouts/default.html**    
 페이지의 레이아웃을 잡기 위한 파일이다. index.html에서 default로 정의하였으므로 해당 파일도 default.html로 생성한다.<br/>
 (만약, 다른 파일명으로 정의하고 싶다면, index.html의 layout에 해당 파일명과 일치 시켜 주면 되는 것 같음)
 {% raw %}
@@ -112,7 +113,7 @@ $ tree
 그리고서 default.html 에 포함되는 각각의 파일들을  {% raw %}`{% include head.html %}`{% endraw %} 와 같이 정의하고 `_includes/` 폴더에 해당 파일명으로 넣어주면 된다.
 
 
-#### _includes/head.html
+**_includes/head.html**   
 `head` tag에 들어갈 내용들을 정의한다.
 style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 파일에 정의.
 {% raw %}
@@ -134,7 +135,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 ```
 {% endraw %}
 
-#### _includes/nav.html
+**_includes/nav.html**   
 페이지의 매뉴 카테고리 등 상단에 위치할 부분에 대해 정의한다.
 {% raw %}
 ```html
@@ -159,7 +160,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 ```
 {% endraw %}
 
-#### _includes/sidebar.html
+**_includes/sidebar.html**    
 사이드에 들어갈 매뉴바를 정의한다.
 해당 부분에 차후에 카테고리와 tag 리스트를 넣으려고 생각 중임.
 {% raw %}
@@ -229,7 +230,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 ```
 {% endraw %}
 
-#### _includes/footer.htm
+**_includes/footer.htm**    
 페이지 하단 부분 정의. include 할 javascript도 해당 파일에서 정의하였음.
 {% raw %}
 ```html
@@ -248,7 +249,7 @@ style에 관련된 css 와 같은 파일들에 대해서도 필요 시 해당 �
 ```
 {% endraw %}
 
-#### assets/css/style.css
+**assets/css/style.css**    
 커스텀 스타일을 정의한다.
 ```css
 /*
@@ -346,7 +347,7 @@ jekyll 로 빌드해서 오류가 없는지 및 정상적으로 페이지가 출
 ## 페이징 처리
 블로그의 메인 페이지에 표시되는 최근 포스팅된 글들에 대해 페이징 처리를 추가한다.
 
-#### _config.xml 
+**_config.xml**    
 `_config.xml` 파일에 페이징 처리 관련된 설정을 추가한다.
 {% raw %}
 ```
@@ -357,7 +358,7 @@ gems:
 ```
 {% endraw %}
 
-#### index.html
+**index.html**    
 블로그의 메인 페이지에 해당하는 파일을 수정한다.
 {% raw %}
 ```html
@@ -438,7 +439,7 @@ category_page: '/categories/'
 
 아래는 각 tags.html과 categories.html 파일에 대한 예시...
 
-- tags.html
+**tags.html**     
 {% raw %}
 ```html
 ---
@@ -466,7 +467,7 @@ title: Tag
 ```
 {% endraw %}
 
-- categories.html
+**categories.html**     
 {% raw %}
 ```html
 {% for category in site.categories %}
@@ -490,7 +491,7 @@ title: Tag
 화면에 출력된 형태는 tag와 동일한 패턴으로 출력된다.
 
 
-## 참고한 사이트  
+## Reference
 -  https://www.w3schools.com/bootstrap/bootstrap_templates.asp  
 - [Blog Template for Bootstrap](http://getbootstrap.com/examples/blog/#)  
 - [Use Tags and Categories in your Jekyll based Github Pages without plugins · Codinfox](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
