@@ -60,6 +60,7 @@ REST는 자체 표현 구조(Self-descriptiveness)로 구성되어 REST API만�
 
 
 ## Reference
-[poiemaweb-REST API](http://poiemaweb.com/js-rest-api)
-[RESTFul이란 무엇인가?](http://blog.remotty.com/blog/2014/01/28/lets-study-rest/)
-[HTTP Status Codes](https://httpstatuses.com/)
+- [poiemaweb-REST API](http://poiemaweb.com/js-rest-api)
+- [RESTFul이란 무엇인가?](http://blog.remotty.com/blog/2014/01/28/lets-study-rest/)
+- [HTTP Status Codes](https://httpstatuses.com/)
+- [REST API 제대로 알고 사용하기](http://meetup.toast.com/posts/92)
