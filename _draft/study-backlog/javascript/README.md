@@ -16,18 +16,3 @@ http://vuejs.kr/update/2017/01/08/using-vue-with-vuex-vue-rotuer/
 
 ## ui-template
 - [matrix-admin](https://wrappixel.com/demos/free-admin-templates/matrix-admin/index.html)
-
-
-## Mini Project
-
-#### Dibro
-가계부 프로젝트
-###### Language
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" width="30" height="30" />
-
-###### Server platform/framework
-
-###### DB/No SQL
-
-###### Web Client
-<img src="https://kr.vuejs.org/images/logo.png" width="30" height="30" />
