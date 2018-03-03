@@ -8,6 +8,9 @@ tags: jekyll blog
 #cover:  "/assets/instacode.png"
 ---
 
+* TOC
+{:toc}
+
 github에 테마를 가져다 쓰다가 내 입맛대로 구성해보기 위해서 삽질한 내용들을 기록하기 위해서 정리하기.
 
 > 구성 환경  
