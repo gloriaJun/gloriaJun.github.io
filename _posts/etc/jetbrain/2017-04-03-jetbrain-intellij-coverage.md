@@ -20,7 +20,7 @@ Foreground에 체크된 것을 해제하고, Background로 변경
 
 #### 커버리지 측정하기
 수행할 테스트 케이스 또는 패키지 선택 후, 우클릭해서 “Run ~~ with Coverage”로 수행한다.
-![]({{ site.baseurl }}/assets/images/post/2017/0403-intellij-run-test.png)
+![]({{ site.baseurl }}/assets/images/post/2017/0403-intellij-run-test.png){: .width-50 }
 
 그러면 아래와 같이 커버리지를 확인할 수 있다.
 ![]({{ site.baseurl }}/assets/images/post/2017/0403-intellij-coverage.png)
