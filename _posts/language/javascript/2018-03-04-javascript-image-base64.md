@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Javascript) 이미지 파일 base64 인코딩/디코딩"
-date: 2018-03-03 16:35:00
+date: 2018-03-04 16:35:00
 author: gloria
 categories: language
 tags: javascript base64

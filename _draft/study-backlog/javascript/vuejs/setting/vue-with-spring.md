@@ -15,7 +15,7 @@
 ```
 
 thymeleaf의 경우 html5 모드가 기본으로 설정되어 있어 아래의 설정을 추가해주어야 meta tag로 인한 에러가 발생하지 않는다.   
-그리고 추가로 frontend 빌드 산출물에 대한 경로를 설정해준다 
+그리고 추가로 frontend 빌드 산출물에 대한 경로를 설정해준다
 ```
 // src/main/resources/application.properties
 spring.thymeleaf.mode=LEGACYHTML5
