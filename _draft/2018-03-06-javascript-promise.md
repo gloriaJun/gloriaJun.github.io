@@ -12,3 +12,4 @@ tags: javascript promise callback
 
 ## Reference
 - http://www.datchley.name/promise-patterns-anti-patterns/
+- http://han41858.tistory.com/11
