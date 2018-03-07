@@ -33,6 +33,29 @@ router.beforeEach((to, from, next) => {
 })
 ```
 
+#### header tag 내부의 favicon 변경하기
+```javascript
+const routes = [
+  {
+    path: '/user',
+    component: USER,
+    meta: {
+      title: 'User Page',
+      favicon: '/static/favicon.ico'
+    }
+  }
+]
+
+const router = new Router({
+  mode: 'history',
+  routes
+})
+
+router.beforeEach((to, from, next) => {
+  document.querySelector('link[rel="shortcut icon"]').setAttribute('href', meta.favicon)
+})
+```
+
 #### 파라미터 전달
 ```javascript
 const routes = [
