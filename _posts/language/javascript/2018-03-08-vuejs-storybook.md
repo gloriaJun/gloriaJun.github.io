@@ -20,16 +20,7 @@ tags: javascript vuejs storybook
 npm i --save-dev @storybook/vue
 ```
 
-설치 후에 `package.json`에 storybook 실행을 위한 명령어를 script에 추가해준다
-```json
-{
-  "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook"
-  }
-}
-```
-
-**config 파일 생성**
+###### config 파일 생성
 Story 파일 로딩을 위해 `storybook/config.js`파일에 아래와 같이 설정한다
 ```javascript
 // config.js
@@ -46,7 +37,7 @@ configure(loadStories, module);
 `stories` 디렉토리 하위에 `.sotries.js` 확장자가 포함된 모든 파일을 로딩하기 위해서 위와 같이 작성하였음 ([Loading stories dynamically](https://storybook.js.org/basics/writing-stories/#loading-stories-dynamically) 참고)
 
 
-**stories 작성**
+###### stories 작성
 ```javascript
 // index.js
 import { storiesOf } from '@storybook/vue'
@@ -63,7 +54,17 @@ storiesOf('status', module) // 상위 카테고리 지정
   }))
 ```
 
-**storybook 실행**
+###### storybook 실행
+`package.json`에 storybook 실행을 위한 명령어를 script에 추가해준다
+```json
+{
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  }
+}
+```
+
+이후에는 아래와 같이 storybook을 실행하면 된다
 ```bash
 npm run storybook
 ```
@@ -71,7 +72,7 @@ npm run storybook
 ## style 파일 로딩하기
 `.css, .scss ...`과 같은 작성한 스타일 파일 로딩하는 방법
 
-**preview-head.html**
+**preview-head.html**    
 html 태그를 이용하여 import하는 방법이다.
 `.stroybook/preview-head.html` 파일을 생성하고 아래와 같은 형태로 작성한다.
 ```html
@@ -99,7 +100,32 @@ module.exports = (storybookBaseConfig, configType) => {
 ```
 좀 더 자세한 내용은 [Custom Webpack Config](https://storybook.js.org/configurations/custom-webpack-config/)의 내용을 참고
 
-##
+## Addon
+#### storybook-addon-vue-info
+[storybook-addon-vue-info](https://github.com/pocka/storybook-addon-vue-info/)은 컴포넌트의 정보를 추가로 화면에 출력해준다.
+
+**Installation**    
+```bash
+npm install --save-dev storybook-addon-vue-info
+```
+
+**Usage**
+stories 파일에 해당 addon을 import 해준다
+```javascript
+// index.js
+import { storiesOf } from '@storybook/vue'
+import VueInfoAddon from 'storybook-addon-vue-info'
+
+// component
+import ProgressBar from '../src/components/status/ProgressBar.vue'
+
+storiesOf('status', module) // 상위 카테고리 지정
+  .addDecorator(VueInfoAddon)
+  .add('progressBar', () => ({ // 하위 내용 지정
+    components: { ProgressBar },
+    template: '<progress-bar :value=20></progress-bar>'
+  }))
+```
 
 
 ## Reference
