@@ -109,7 +109,7 @@ module.exports = (storybookBaseConfig, configType) => {
 npm install --save-dev storybook-addon-vue-info
 ```
 
-**Usage**
+**Usage**    
 stories 파일에 해당 addon을 import 해준다
 ```javascript
 // index.js
