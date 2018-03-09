@@ -26,9 +26,8 @@ Story 파일 로딩을 위해 `storybook/config.js`파일에 아래와 같이 �
 // config.js
 import { configure } from '@storybook/vue';
 
-const req = require.context('../stories', true, /\.stories\.js$/)
-
 function loadStories() {
+  const req = require.context('../stories', true, /\.stories\.js$/)
   req.keys().forEach((filename) => req(filename))
 }
 
@@ -101,6 +100,57 @@ module.exports = (storybookBaseConfig, configType) => {
 좀 더 자세한 내용은 [Custom Webpack Config](https://storybook.js.org/configurations/custom-webpack-config/)의 내용을 참고
 
 ## Addon
+#### addon-actions
+[addon-actions](https://github.com/storybooks/storybook/tree/master/addons/actions)은 이벤트 핸들러에 의해 전달받은 데이타를 `ACTION LOGGER` 화면에 출력해준다
+**Installation**    
+```bash
+npm install --save-dev @storybook/addon-actions
+```
+
+**Usage**   
+`.storybook/addons.js`에 아래와 같이 작성해준다
+```javascript
+import '@storybook/addon-actions/register'
+```
+
+stories 파일에 해당 addon을 import 한 뒤에 이벤트에 연결해준다
+```javascript
+// index.js
+import { storiesOf } from '@storybook/vue'
+import VueInfoAddon from 'storybook-addon-vue-info'
+import { action } from '@storybook/addon-actions'
+
+// component
+import MyButton from '../src/components/button/MyButton.vue'
+
+storiesOf('button', module) // 상위 카테고리 지정
+  .addDecorator(VueInfoAddon)
+  .add('MyButton', () => ({ // 하위 내용 지정
+    components: { MyButton },
+    template: '<my-button onClick={ action('button-click') }>Button</my-button>'
+  }))
+```
+
+#### storybook-addon-console
+[storybook-addon-console](https://github.com/storybooks/storybook-addon-console)은 디버그 콘솔에 출력되는 메시지를 `ACTION LOGGER` 창에 출력해준다.
+**Installation**    
+```bash
+npm install --save-dev @storybook/addon-console
+```
+
+**Usage**   
+`.storybook/config.js`에 아래의 내용을 추가로 작성한다
+```javascript
+// addons
+import { setConsoleOptions } from '@storybook/addon-console';
+
+// for redirect console log
+const panelExclude = setConsoleOptions({}).panelExclude;
+setConsoleOptions({
+  panelExclude: [...panelExclude],
+});
+```
+
 #### storybook-addon-vue-info
 [storybook-addon-vue-info](https://github.com/pocka/storybook-addon-vue-info/)은 컴포넌트의 정보를 추가로 화면에 출력해준다.
 
@@ -113,19 +163,65 @@ npm install --save-dev storybook-addon-vue-info
 stories 파일에 해당 addon을 import 해준다
 ```javascript
 // index.js
-import { storiesOf } from '@storybook/vue'
+import { storiesOf, addDecorator } from '@storybook/vue'
 import VueInfoAddon from 'storybook-addon-vue-info'
 
 // component
 import ProgressBar from '../src/components/status/ProgressBar.vue'
 
+addDecorator(VueInfoAddon)
+
 storiesOf('status', module) // 상위 카테고리 지정
-  .addDecorator(VueInfoAddon)
   .add('progressBar', () => ({ // 하위 내용 지정
     components: { ProgressBar },
     template: '<progress-bar :value=20></progress-bar>'
   }))
 ```
+
+#### viewport
+[Storybook Viewport Addon](https://github.com/storybooks/storybook/tree/master/addons/viewport)
+```bash
+npm i --save-dev @storybook/addon-viewport
+```
+```javascript
+// .storybook/config.js
+import '@storybook/addon-viewport/register'
+```
+
+#### addon-centered
+[Storybook Centered Decorator](https://www.npmjs.com/package/@storybook/addon-centered)
+preview 화면을 가운데로 정렬한다.
+```bash
+npm install @storybook/addon-centered --save-dev
+```
+```javascript
+// .storybook/config.js
+import previewCentered from '@storybook/addon-centered'
+addDecorator(previewCentered)
+```
+
+#### addon-storysource
+[Storybook Storysource Addon](https://www.npmjs.com/package/@storybook/addon-storysource)는 해당 컴포넌트에 대하여 작성한 스토리 스크립트를 하단의 창에 출력해준다.
+```bash
+npm install @storybook/addon-storysource --save-dev
+```
+```javascript
+// .storybook/webpack.config.js
+const path = require('path');
+
+module.exports = (storybookBaseConfig, configType) => {
+  storybookBaseConfig.module.rules.push({
+    test: [/\.stories\.js$/, /index\.js$/],
+    loaders: [require.resolve('@storybook/addon-storysource/loader')],
+    include: [path.resolve(__dirname, '../stories')],
+    enforce: 'pre'
+  });
+
+  // Return the altered config
+  return storybookBaseConfig;
+};
+```
+
 
 
 ## Reference
