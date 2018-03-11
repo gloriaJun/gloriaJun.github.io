@@ -12,21 +12,23 @@ tags: javascript frontend vuejs css
 #### html
 ```html
 <div id="app">
+  <h4>Upload Image File</h4>
+  <p>Input Image URL and Click the button or Drag and Drop or Attach an Image File</p>
   <div class="input-group">
     <input
-           type="text"
-           class="form-control"
-           placeholder="Input Image URL or Image File Drag & Drop or Select"
-           v-model="filename"
-           @dragover.prevent
-           @dragenter.prevent
-           @drop.prevent="onDrop">
+       type="text"
+       class="form-control"
+       placeholder="Input Image URL or  Drag & Drop or Select"
+       v-model="filename"
+       @dragover.prevent
+       @dragenter.prevent
+       @drop.prevent="onDrop">
     <div class="input-group-append">
       <span class="input-group-text" @click="onClickFile"><i class="fa fa-paperclip">
         </i></span>
         <button
-                class="btn btn-outline-info"
-                @click="onClickUpload">URL Image Upload</button>
+          class="btn btn-outline-info"
+          @click="onClickUpload">Upload</button>
     </div>
     <input type=file class="file-input" accept="image/*" ref="fileInput" @change="onFileChange">
   </div>
@@ -64,40 +66,23 @@ var app = new Vue({
           return false
         }
         this.filename = file.name
-        this.previewFromFile(file)
+        this.preview(file)
       }
     },
     onClickUpload () {
-      let vm = this
-      let xhr = new XMLHttpRequest()
-      xhr.onload = () => {
+      this.preview (this.filename)
+    },
+    preview (file) {
+      if (typeof file === 'string') {
+        this.imageSrc = file
+      } else {
+        let vm = this
         let reader = new FileReader()
-        // on reader load somthing...
         reader.onload = () => {
           vm.imageSrc = reader.result
         }
-        // convert the file to base64 text
-        reader.readAsDataURL(xhr.response)
+        reader.readAsDataURL(file)
       }
-      xhr.open('GET', this.filename)
-      xhr.onreadystatechange = function (event) {  
-        if (xhr.readyState === 4) {  
-          if (xhr.status !== 200) {  
-            console.log('Error')
-            alert('please check image url')
-          }  
-        }
-      }
-      xhr.responseType = 'blob'
-      xhr.send()
-    },
-    previewFromFile (file) {
-      let vm = this
-      let reader = new FileReader()
-      reader.onload = () => {
-        vm.imageSrc = reader.result
-      }
-      reader.readAsDataURL(file)
     }
   }
 })
