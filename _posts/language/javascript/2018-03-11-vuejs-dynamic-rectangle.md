@@ -60,7 +60,12 @@ var app = new Vue({
       return !Object.values(obj).some(x => x > 0)
     },
     setImageSize () {
-      let pageContentWidth = document.documentElement.querySelector('body').clientWidth
+      let el = document.documentElement.querySelector('body')
+      let style = window.getComputedStyle ? getComputedStyle(el, null) : el.currentStyle
+      // padding은 빠진 넓이를 구함
+      let paddingWidth = parseInt(style.paddingLeft) + parseInt(style.paddingRight)
+
+      let pageContentWidth = el.clientWidth - paddingWidth
       // 검출 결과 이미지 사이즈 정의
       let baseSize = pageContentWidth / 2
       this.imageSize = {
@@ -81,6 +86,9 @@ var app = new Vue({
 
 #### css
 ```scss
+body {
+  padding: 1rem;
+}
 #app {
   position: relative;
   background-color: #eee;
@@ -103,3 +111,6 @@ var app = new Vue({
 #### 실행 결과
 <p data-height="265" data-theme-id="0" data-slug-hash="mxJbyr" data-default-tab="js,result" data-user="gloriaJun" data-embed-version="2" data-pen-title="mxJbyr" class="codepen">See the Pen <a href="https://codepen.io/gloriaJun/pen/mxJbyr/">mxJbyr</a> by gloria (<a href="https://codepen.io/gloriaJun">@gloriaJun</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+## Reference
+- [Getting width and height of an element]( https://plainjs.com/javascript/styles/getting-width-and-height-of-an-element-23/)

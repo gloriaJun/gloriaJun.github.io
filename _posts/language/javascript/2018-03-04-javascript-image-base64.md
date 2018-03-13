@@ -4,7 +4,7 @@ title: "(Javascript) 이미지 파일 base64 인코딩/디코딩"
 date: 2018-03-04 16:35:00
 author: gloria
 categories: language
-tags: javascript base64
+tags: javascript base64 image
 ---
 
 #### image file을 base64로 인코딩
@@ -111,10 +111,10 @@ onClickImage (event) {
   encodeBase64ImageTagviaCanvas(event.currentTarget.src)
     .then(data => {
       console.log(data)
+
     })
 }
 ```
-
 
 ## Reference
 - http://jsfiddle.net/handtrix/YvQ5y/
