@@ -116,5 +116,36 @@ onClickImage (event) {
 }
 ```
 
+#### image file 또는 url을 입력받아서 base64 인코딩
+file 또는 url 두 가지 방식 모두 사용 가능한 메소드
+```javascript
+function imageEncodeToBase64 (file, maxWidth, maxHeight) {
+  let src = ''
+
+  // 전달된 이미지 파일의 객체 타입에 따라서 호출할 메소드 선택 및 파일 타입 추출
+  if (typeof file === 'string') {
+    src = file
+  } else {
+    src = URL.createObjectURL(file)
+  }
+
+  return new Promise((resolve, reject) => {
+    let image = new Image()
+    image.onload = function (event) {
+      let canvas = document.createElement('canvas')
+
+      // set image size
+      canvas.width = (image.naturalWidth > maxWidth) ? maxWidth : image.naturalWidth
+      canvas.height = (image.naturalWidth > maxHeight) ? maxHeight : image.naturalHeight
+
+      // draw canvas
+      canvas.getContext('2d').drawImage(image, 0, 0, image.width, image.height)
+      resolve(canvas)
+    }
+    image.src = src
+  })
+}
+```
+
 ## Reference
 - http://jsfiddle.net/handtrix/YvQ5y/
