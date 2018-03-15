@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Javascript) Promise"
+title: "(Javascript) Promise Loop"
 date: 2018-03-06 14:35:00
 author: gloria
 categories: language
