@@ -1,6 +1,13 @@
-## spring boot랑 연동하기
+---
+layout: post
+title: "(VueJS) springboot 연동"
+date: 2018-03-15 13:35:00
+author: gloria
+categories: language
+tags: javascript vuejs springboot
+---
 
-#### Spring Boot 설정
+## Spring Boot 설정
 `pom.xml`에 thymeleaf 모듈을 추가한다
 ```xml
 		<!-- template engine library for view -->
@@ -43,7 +50,7 @@ public class RouteController {
 }
 ```
 
-#### vuejs 설정
+## vuejs 설정
 webpack 빌드 시에 생성되는 산출물이 생성될 경로를 설정해준다.
 ```javascript
 // config/index.js
@@ -57,6 +64,6 @@ build: {
   }
 ```
 
-#### Reference
+## Reference
 - [Spring Boot + Vue.js 연동하기](http://itstory.tk/entry/Spring-Boot-Vuejs-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)  
 - [Apache + Tomcat , SPA](https://medium.com/@circlee7/apache-tomcat-spa-59e3d58ced6f)
