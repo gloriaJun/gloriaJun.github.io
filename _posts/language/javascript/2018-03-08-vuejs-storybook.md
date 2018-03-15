@@ -4,7 +4,7 @@ title: "(VueJS) Storybook with vue"
 date: 2018-03-06 14:35:00
 author: gloria
 categories: language
-tags: javascript vuejs storybook
+tags: javascript vuejs storybook frontend
 ---
 
 * TOC
@@ -84,18 +84,31 @@ html 태그를 이용하여 import하는 방법이다.
 ## webpack 빌드 설정
 `.storybook/webpack.config.js` 파일을 생성해서 아래와 같이 작성한다.
 ```javascript
-const path = require('path');
+const path = require('path')
 
-module.exports = (storybookBaseConfig, configType) => {
-  storybookBaseConfig.module.rules.push({
-    test: /\.scss$/,
-    loaders: ["style-loader", "css-loader", "sass-loader"],
-    include: path.resolve(__dirname, '../')
-  });
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
 
-  // Return the altered config
-  return storybookBaseConfig;
-};
+module.exports = {
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src')
+    }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"],
+        include: resolve('src')
+      }
+    ]
+  }
+}
+
 ```
 좀 더 자세한 내용은 [Custom Webpack Config](https://storybook.js.org/configurations/custom-webpack-config/)의 내용을 참고
 
@@ -133,6 +146,7 @@ storiesOf('button', module) // 상위 카테고리 지정
 
 #### storybook-addon-console
 [storybook-addon-console](https://github.com/storybooks/storybook-addon-console)은 디버그 콘솔에 출력되는 메시지를 `ACTION LOGGER` 창에 출력해준다.
+> addon-actions 이 사전에 설치되어있어야 한다.
 **Installation**    
 ```bash
 npm install --save-dev @storybook/addon-console
