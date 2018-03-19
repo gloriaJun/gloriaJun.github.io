@@ -18,52 +18,25 @@ export default {
    * @returns {Promise<any>}
    */
   encode (file, maxWidth) {
-    let src, name, type
-
-    // 전달된 이미지 파일의 객체 타입에 따른 파일 추출
-    if (typeof file === 'string') {
-      const re = new RegExp('.(gif|jpg|jpeg|tiff|png|ico)$', 'i')
-      src = file
-      name = (/[^(/|\\)]*$/).exec(file)[0]
-      type = re.test(name) ? re.exec(name) : 'jpg'
-    } else {
-      src = URL.createObjectURL(file)
-      name = file.name
-      type = file.type.replace('image/', '')
-    }
+    const re = new RegExp('.(gif|jpg|jpeg|tiff|png|ico)$', 'i')      
+    let name = (/[^(/|\\)]*$/).exec(url)[0]
+    let type = re.test(name) ? re.exec(name)[0].replace('.', '') : 'jpg'
 
     return new Promise((resolve, reject) => {
       let image = new Image()
+
       image.onload = function (event) {
         let canvas = document.createElement('canvas')
-
-        // set image size
-        let width, height
-        if (maxWidth === undefined || image.naturalWidth <= maxWidth) {
-          width = image.naturalWidth
-          height = image.naturalHeight
-        } else {
-          width = maxWidth
-          height = image.naturalHeight * (maxWidth / image.naturalWidth)
-        }
-        // error check
-        if (width + height === 0) {
-          this.onerror()
-          return false
-        }
-
-        // set image size
-        canvas.width = width
-        canvas.height = height
         // draw canvas
-        canvas.getContext('2d').drawImage(image, 0, 0, width, height)
+        canvas.width = image.naturalWidth
+        canvas.height = image.naturalHeight
+        canvas.getContext('2d').drawImage(image, 0, 0)
 
+        let dataUrl = canvas.toDataURL('image/' + type)
         resolve({
           name: name,
           type: type,
-          width: canvas.width.toString(),
-          height: canvas.height.toString(),
-          dataUrl: canvas.toDataURL('image/' + type).split(',')[1]
+          dataUrl: dataUrl.split(',')[1]
         })
       }
       image.onerror = function () {
@@ -71,7 +44,8 @@ export default {
         alert(msg)
         console.error(msg)
       }
-      image.src = src
+      image.crossOrigin = 'anonymous';
+      image.src = url
     })
   },
   /**
