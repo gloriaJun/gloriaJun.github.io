@@ -24,6 +24,7 @@ static page로 generate 해주는 기능도 있어 공부삼아 리팩토링 중
 [bootstrap-vue](https://bootstrap-vue.js.org/docs) 패키지를 설치한다.
 ```bash
 npm i bootstrap-vue --save
+npm i node-sass sass-loader --save-dev
 ```
 플러그인을 import 하기 위한 `plugins/bootstrap-vue.js` 파일을 생성한다.
 ```javascript
@@ -51,6 +52,15 @@ css: [
 ]
 ```
 
+## 장단점
+보름 정도 사용해보고 느낀 내 생각은...경험이 부족해서 느낄 수도 있지만..
+**장점**    
+- webpack의 자질구레한 설정들이 간편해졌다
+- 빠르게 개발을 위한 환경을 구성할 수 있다.
+
+**단점**    
+- webpack관련 설정들(예를 들어 proxy..)을 커스터마이징하려고 할 때 관련된 정보를 얻기가 쉽지 않다.
+- 빌드 및 배포 설정 관련하여 개발 중 문제가 발생했을 때 구글링해서 관련 정보를 찾기 어려운 경우가 많다.
 
 
 ## Reference
