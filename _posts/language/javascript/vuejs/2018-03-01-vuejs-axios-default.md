@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Axios) default 설정"
+title: "(VueJs) Axios 사용하기"
 date: 2018-03-01 10:32:00
 author: gloria
 categories: language
