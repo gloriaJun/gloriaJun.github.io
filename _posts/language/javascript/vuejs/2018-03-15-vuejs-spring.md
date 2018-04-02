@@ -64,6 +64,58 @@ build: {
   }
 ```
 
+## maven 빌드 설정
+maven으로 빌드 시에 frontend 소스도 빌드되도록 설정하기 위해서는 [eirslett/frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin#running-npm) 플러그인을 이용하여 설정한다.
+```xml
+// pom.xml
+<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.eirslett</groupId>
+				<artifactId>frontend-maven-plugin</artifactId>
+				<version>1.6</version>
+				<configuration>
+					<workingDirectory>src/main/webapp</workingDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<id>install node and npm</id>
+						<goals>
+							<goal>install-node-and-npm</goal>
+						</goals>
+						<configuration>
+							<nodeVersion>v9.3.0</nodeVersion>
+							<npmVersion>5.8.0</npmVersion>
+						</configuration>
+					</execution>
+					<execution>
+						<id>npm install</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<arguments>install</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>npm run generate</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<!--<phase>deploy</phase>-->
+						<configuration>
+							<arguments>run generate</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+```
+
+
 ## Reference
 - [Spring Boot + Vue.js 연동하기](http://itstory.tk/entry/Spring-Boot-Vuejs-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)  
 - [Apache + Tomcat , SPA](https://medium.com/@circlee7/apache-tomcat-spa-59e3d58ced6f)
+-
