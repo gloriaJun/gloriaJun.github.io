@@ -44,3 +44,10 @@ $http.interceptors.response.use(null, function (error) {
 
 export default $http
 ```
+
+#### Polyfill 적용
+axios는 IE에서 공식적으로 지원하지 않으므로 Polyfill을 적용해주어야함
+- [IE에서 Axios 사용하기](https://lovemewithoutall.github.io/it/vue-ie-support-with-es6-promise/)
+- [es6-promise](https://github.com/stefanpenner/es6-promise)
+
+## Reference
