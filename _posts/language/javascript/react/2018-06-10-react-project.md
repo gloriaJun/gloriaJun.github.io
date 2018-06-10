@@ -22,7 +22,7 @@ $ yarn eject
 #### sass 설치
 프로젝트에서 Sass 를 사용하기 위하여 필요한 도구
 ```bash
-sass-loader, node-sass
+yarn add -D sass-loader node-sass
 ```
 
 ###### webpack 설정
