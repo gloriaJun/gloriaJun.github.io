@@ -7,6 +7,9 @@ categories: os
 tags: mac-OS
 ---
 
+* TOC
+{:toc}
+
 ## tree 명령어 설치
 폴더를 tree 구조로 보기 위한 명령어.
 기본적으로 설치가 되어있지 않으므로 homebrew를 이용하여 별도로 설치를 해주어야 한다.
@@ -105,6 +108,57 @@ $ tree
 └── index.md
 
 9 directories, 11 files
+```
+
+## Tip
+
+#### 특정 depth 까지만 출력
+```bash
+$ tree -L 1
+.
+├── README.md
+├── build
+├── config
+├── index.html
+├── node_modules
+├── package.json
+├── src
+├── static
+├── test
+└── yarn.lock
+
+6 directories, 4 files
+```
+
+#### depth와 directory 만 출력
+```bash
+$ tree -L 1 -d
+.
+├── build
+├── config
+├── node_modules
+├── src
+├── static
+└── test
+
+6 directories
+```
+
+#### 특정 디렉토리를 제외하고 출력
+```bash
+$ tree -L 1 -I "node_modules"
+.
+├── README.md
+├── build
+├── config
+├── index.html
+├── package.json
+├── src
+├── static
+├── test
+└── yarn.lock
+
+5 directories, 4 files
 ```
 
 (갠적으로 이 명령어 너무 맘에 든다…폴더 구조를 너무도 명확하게 확인할 수 있어서랄까…왜 이제껏 이 명령어를 몰랐던건가..싶기도 하다…)
