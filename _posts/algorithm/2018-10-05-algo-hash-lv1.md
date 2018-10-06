@@ -24,6 +24,16 @@ tags: hash
 
 
 
+##### 입출력 예
+
+| participant                             | completion                       | return |
+| --------------------------------------- | -------------------------------- | ------ |
+| [leo, kiki, eden]                       | [eden, kiki]                     | leo    |
+| [marina, josipa, nikola, vinko, filipa] | [josipa, filipa, marina, nikola] | vinko  |
+| [mislav, stanko, mislav, ana]           | [stanko, ana, mislav]            | mislav |
+
+
+
 #### 풀이 결과
 
 ###### javascript
