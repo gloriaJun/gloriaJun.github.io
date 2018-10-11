@@ -8,8 +8,8 @@ tags: javascript vuejs vuecli3
 
 ---
 
-[TOC]
-
+* TOC
+{:toc}
 
 
 ## Vue CLI 3 Installation

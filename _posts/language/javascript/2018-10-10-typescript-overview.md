@@ -8,7 +8,9 @@ tags: typescript
 
 ---
 
-[TOC]
+* TOC
+{:toc}
+
 
 ## TypeScript
 
@@ -60,7 +62,7 @@ ECMAScript 표준에 따른 기본 자료형 외에 아래의 타입이 추가�
 문법적으로는 두 가지 방법이 있음
 
 - 변수 as 강제할 타입  — 주로 이 방법으로 사용됨
-- <강제할 타입>변수
+- <강제할 타입> 변수
 
 ```typescript
 let some: any = "this is a string";
@@ -235,9 +237,135 @@ helloPerson('Jake');
 
 ## Class
 
-https://www.youtube.com/watch?v=eSaeHFD0aJA&list=PLV6pYUAZ-ZoEBNDzOxzToMqv-V1QGlU0T&index=9
+- 자바와 비슷하게 클래스를 기반으로 개발을 한다고 생각하면 된다.
+- 별도로 생성자를 정의하지 않으면 기본 생성자가 호출된다
+- 프로퍼티에 값을 할당하지 않으면, undefined 이다.
+
+```typescript
+class Greeter {
+    name: string;
+    age: number;
+
+    constructor(name: string) {
+        console.log(this.name === null); // false
+        console.log(this.name === undefined); // true
+        this.name = name;
+    }
+    greet() {
+        console.log(`Hello, ${this.name}`);
+    }
+}
+
+let greeter = new Greeter("Mary");
+greeter.age = 20;
+```
 
 
+
+#### 접근제어자
+
+- `private, public, protected` 타입이 있다. (명시하지 않으면 기본으로 public)
+- 상속을 받은 자식 클래스에서 부모 클래스의 this에 접근을 하려면 생성자에서 super()를 호출해주어야한다.
+
+```typescript
+class Parent {
+    protected name: string = 'Jake';
+    private age: number = null;
+}
+
+class Child extends Parent {
+    constructor() {
+        super();
+    }
+}
+
+const child: Child = new Child();
+console.log(child);
+/*
+Child
+	age: null
+	name: "Jake"
+	__proto__: Parent
+*/
+```
+
+
+
+#### 클래스 내부 함수 선언
+
+```typescript
+class Person {
+    // private name: string = 'Jake';
+    // private age: number = null;
+
+    constructor(private name: string, private age: number) {
+        this.name = name;
+        this.age = age
+    }
+
+    hello(): void {
+        console.log(this.name);
+    }
+}
+
+const person: Person = new Person('Amy', 10);
+person.hello();
+
+
+class Child extends Person {
+    constructor(name: string, age: number) {
+        super(name, age);
+
+        this.hello();
+    }
+}
+const child: Child = new Child('James', 45);
+child.hello();
+```
+
+
+
+#### Abstract Class
+
+- 자바의 추상클래스와 유사
+
+
+
+## Generic
+
+- 템플릿 라이브러리 처럼 타입을 변수로 주고 싶은 경우에 사용
+
+```typescript
+class Greeter<T> {
+    greeting: T;
+    constructor(message: T) {
+        this.greeting = message;
+    }
+    greet() {
+        return this.greeting;
+    }
+}
+
+let greeter = new Greeter<string>("Hello, world");
+```
+
+
+
+## Iterator
+
+https://www.youtube.com/watch?v=9-CiTxP8XJ8&list=PLV6pYUAZ-ZoEBNDzOxzToMqv-V1QGlU0T&index=12
+
+
+
+## Decorator
+
+https://www.youtube.com/watch?v=clsMXU1tm-g&list=PLV6pYUAZ-ZoEBNDzOxzToMqv-V1QGlU0T&index=13
+
+
+
+## Type Inference
+
+https://www.youtube.com/watch?v=yBXrtZfOjkY&index=14&list=PLV6pYUAZ-ZoEBNDzOxzToMqv-V1QGlU0T
 
 
 
