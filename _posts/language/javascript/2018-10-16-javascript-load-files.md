@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Javascript) 모듈 동적 로딩"
-date: 2018-01-10 14:35:00
+date: 2018-10-16 14:35:00
 author: gloria
 categories: language
 tags: javascript
