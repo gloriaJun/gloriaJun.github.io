@@ -20,7 +20,7 @@ Reflow와 Repaint를 이해하려면 브라우저에 대한 이해가 필요하�
 
 브라우저의 동작을 좀 더 쉽게 이해하기 위해 해당 구조를 살펴보자.
 
-![browser-structure](/Volumes/data/private/gloriaJun.github.io/assets/images/post/browser-structure.png)
+![browser-structure]({{ site.baseurl }}/assets/images/post/browser-structure.png)
 
 
 
@@ -55,7 +55,7 @@ Cookie, Local Storage 등과 같이 브라우저의 메모리를 활용하여 �
 
 기본 동작 과정은 다음과 같다.
 
-![browser-rendering](/Volumes/data/private/gloriaJun.github.io/assets/images/post/browser-rendering.png)
+![browser-rendering]({{ site.baseurl }}/assets/images/post/browser-rendering.png)
 
 
 
