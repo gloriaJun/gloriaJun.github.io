@@ -250,8 +250,35 @@ function noReflow() {
 그러므로 `</body>` 태그 상단에 자바스크립트를 정의한다.
 
 
+
+## Virtual Dom
+
+화면 하나에는 수천가지의 노드가 존재할 수 있다. 그리고 ajax 등과 같이 화면 조작이 많아지고, SPA가 등장하면서 화면에서 DOM의 변경이 잦아질 수 밖에 없는 현실이다. 이는 자연스레 잦은 Reflow가 발생할 수 밖에 없고 브라우저 성능 저하가 발생할 수 있다.
+
+이러한 배경으로 인하여 Virtual Dom이 탄생하게 되었다. 즉, 빈번한 repaint와 reflow문제를 보안하기 위해 등장했다.
+
+Virtual Dom은 화면 DOM의 변경이 일어날때마다 전체 DOM을 Reflow 하는 것이 아니라 가상의 DOM을 이용하여 한 번만 Reflow를 수행함으로써 화면의 부하를 줄여 빠르게 그릴 수 있게한다. 
+
+즉, 가상 dom의 동작을 간단히 정리하면 다음과 같다.
+
+- 메모리 내에 dom의 복사본을 생성한다.
+- dom의 변경이 일어나면 가상 dom에 반영한다.
+- 변경된 내용이 반영 완료된 가상dom의 내용을 실제 dom에 반영하여 브라우저가 그리게 한다.
+
+>  React나 Vue(ver2 부터)의 경우, 빠른 화면 렌더링을 위하여 Virtual Dom을 사용한다.
+
+
+
+
 ## Reference
 - [브라우저는 어떻게 동작하는가?](https://d2.naver.com/helloworld/59361)
+
 - [브라우저 렌더링](https://12bme.tistory.com/140)
+
 - [Reflow or Repaint(or ReDraw)과정 설명 및 최적화 방법](http://webclub.tistory.com/346)
+
 - [Reflow 원인과 마크업 최적화 Tip](http://lists.w3.org/Archives/Public/public-html-ig-ko/2011Sep/att-0031/Reflow_____________________________Tip.pdf)
+
+- [Virtual dom](https://www.slideshare.net/gyeongseokseo/virtual-dom)
+
+- [Virtual DOM 살펴보기](https://wonism.github.io/deep-dive-into-vdom/)
