@@ -87,7 +87,7 @@ HTML 태그를 파싱하여 DOM 트리를 구성한다.
 ## Reflow & Repaint
 
 화면에 모든 요소가 그려지고 나서 사용자 인터랙션 또는 페이지의 기능에 따라 일부 변경이 생기는 경우에 발생하는 현상이다.
-![browser-rendering-reflow-repaint](/Volumes/data/private/gloriaJun.github.io/assets/images/post/browser-rendering-reflow-repaint.png)
+![browser-rendering-reflow-repaint]({{ site.baseurl }}/assets/images/post/browser-rendering-reflow-repaint.png)
 
 #### Reflow
 노드의 크기 또는 위치가 변경되어 현재 레이아웃에 영향을 미쳐서 배치를 다시 해야하는 경우에 발생한다.
@@ -105,11 +105,20 @@ HTML 태그를 파싱하여 DOM 트리를 구성한다.
   - 페이지 초기 렌더링
   - 엘리먼트에 대한 offsetWidth, offsetHeight 등과 같은 위치 값을 계산 시
 
+- Reflow 발생 시의 이벤트 로그
+
+  ![reflow]({{ site.baseurl }}/assets/images/post/reflow.png)
+
 #### Repaint (or Redraw)
 Reflow가 발생하거나 배경색 변경 등의 단순한 스타일 변경과 같은 작업에 발생한다. 즉, 화면의 레이아웃에는 영향을 미치지 않는 경우에 발생한다.
 
 - Repaint가 발생하는 경우
+
   - 특정 엘리먼트의 색상 값 변화
+
+- Repaint 발생 시의 이벤트 로그
+
+  ![repaint]({{ site.baseurl }}/assets/images/post/repaint.png)
 
 #### 리플로 최소화 방법
 
