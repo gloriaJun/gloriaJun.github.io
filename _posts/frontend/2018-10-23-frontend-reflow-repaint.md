@@ -166,7 +166,9 @@ Reflow가 발생할 때마다 표현식이 다시 계산되므로 비용이 발�
 
 ###### 작업 그룹화 하여 처리하기 (cssText 또는 클래스를 활용하라)
 DOM 요소의 정보를 요청하고 변경하는 코드는 같은 형태의 작업끼리 그룹화하여 실행한다.
-- 예제1 : cssText 또는 클래스명을 이용하여 수정한다.            
+
+**예제1 : cssText 또는 클래스명을 이용하여 수정한다.**.      
+  
 ```javascript
 // DON'T - 최악의 경우 2번의 Reflow를 발생시킨다
 let div = document.getElementById('box');
@@ -181,7 +183,8 @@ div.style.cssText = 'padding: 16px; width: 600px;';
 div.className += ' clsName';
 ```
 
-- 예제2 : 스타일 변경 작업을 그룹화하여 처리한다.       
+**예제2 : 스타일 변경 작업을 그룹화하여 처리한다.**         
+
 ```javascript
 // DON'T
 let width = document.getElementById('box1').style.width;
