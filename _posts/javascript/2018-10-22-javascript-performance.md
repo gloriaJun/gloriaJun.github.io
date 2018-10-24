@@ -1,17 +1,74 @@
 ---
 layout: post
-title: "(Javascript) 성능 최적화 관련 참고 글들"
-date: 2018-10-16 17:35:00
+title: "(Javascript) 성능 최적화를 위한 코드 스타일"
+date: 2018-10-22 09:35:00
 author: gloria
 categories: language
-tags: javascript
+tags: javascript 자바슼크립트성능
 ---
+
+* TOC
+{:toc}
+
+아주 기본적일 수도 있으나, 코드를 어떻게 작성하느냐에 따라 자바스크립트 실행 성능을 약간은 높일 수 있다.
+
+
+## 객체의 생성 및 접근
+객체를 생성할 때에 `new`보다는 리터럴 형식을 사용해 객체를 생성한다.
+
+#### Object
+###### 생성 시
+
+|           | DO   | DON'T |
+| --------- | ---- | ----- |
+| 실행 예제 | let obj2 = {}; | let obj1 = new Object(); |
+| 실행 시간 |0.00634765625ms      | 0.010986328125ms |
+
+
+###### 접근 시
+|           | DO   | DON'T |
+| --------- | ---- | ----- |
+| 실행 예제 | let obj2 = {}; | let obj1 = {};<br/>obj1.a = 'a';
+obj1.b = 'b';
+obj1.c = 'a';
+obj1.d = 'a';
+obj1.e = 'a';
+obj1.f = 'a';
+obj1.g = 'a';
+obj1.h = 'a'; |
+| 실행 시간 |0.00634765625ms      | 0.031982421875ms |
+
+
+```javascript
+
+```
+
+####  Array
+###### 생성 시
+|           | DO   | DON'T |
+| --------- | ---- | ----- |
+| 실행 예제 | let obj2 = {}; | let obj1 = new Object(); |
+| 실행 시간 |0.00634765625ms      | 0.010986328125ms |
+
+
+```javascript
+// DON'T
+let arr1 = new Array(); 
+// 실행 시간 : 0.005126953125ms
+
+// DO
+let arr2 = [];
+// 실행 시간 : 0.004150390625ms
+```
+
+
+
 
 
 
 - [자바스크립트 성능 최적화 팁](https://isme2n.github.io/devlog/2017/07/10/javascript-perfomance-optimization/)
 
-- [자바스크립트는 어떻게 동작하는가: 렌더링 엔진과 성능을 최적화하는 방법](https://github.com/codepink/codepink.github.com/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80:-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%97%94%EC%A7%84%EA%B3%BC-%EC%84%B1%EB%8A%A5%EC%9D%84-%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
+
 
 - [성능 덕후를 위한 자바스크립트 코딩 패턴 (중급 이상)](https://joshuajangblog.wordpress.com/2016/11/21/javascript-coding-pattern-for-junior-web-developer/)
 
