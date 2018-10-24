@@ -4,7 +4,7 @@ title: "(Frontend) 크롬 개발자 도구 사용하기"
 date: 2018-10-23 20:35:00
 author: gloria
 categories: frontend
-tags: frontend 크롬개발자도구
+tags: frontend 크롬개발자도구 개발자도구
 ---
 
 * TOC

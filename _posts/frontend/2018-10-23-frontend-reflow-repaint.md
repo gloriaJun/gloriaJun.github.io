@@ -4,7 +4,7 @@ title: "(Frontend) Browser - Reflow & Repaint"
 date: 2018-10-23 10:35:00
 author: gloria
 categories: frontend
-tags: javascript 브라우저렌더링 브라우저구조
+tags: frontend javascript 브라우저렌더링 브라우저구조 자바스크립트성능
 ---
 
 * TOC
@@ -166,7 +166,7 @@ Reflow가 발생할 때마다 표현식이 다시 계산되므로 비용이 발�
 
 ###### 작업 그룹화 하여 처리하기 (cssText 또는 클래스를 활용하라)
 DOM 요소의 정보를 요청하고 변경하는 코드는 같은 형태의 작업끼리 그룹화하여 실행한다.
-- 예제1 : cssText 또는 클래스명을 이용하여 수정한다.
+- 예제1 : cssText 또는 클래스명을 이용하여 수정한다.     
 ```javascript
 // DON'T - 최악의 경우 2번의 Reflow를 발생시킨다
 let div = document.getElementById('box');
@@ -181,7 +181,7 @@ div.style.cssText = 'padding: 16px; width: 600px;';
 div.className += ' clsName';
 ```
 
-- 예제2
+- 예제2 : 스타일 변경 작업을 그룹화하여 처리한다.       
 ```javascript
 // DON'T
 let width = document.getElementById('box1').style.width;
@@ -197,7 +197,7 @@ document.getElementById('layer2').style.height = height;
 ```
 
 ###### 캐쉬를 활용하여 Reflow를 최소화한다.
-브라우저는 레이아웃의 변경을 큐에 저장했다가 한 번에 실행하는 방법으로 Reflow를 줄인다. 하지만, `offset, scrollTop...`과 같은 계산된 스타일 정보를 요청할 때마다 정확한 정보를 제공하기 위해 큐를 비우고 모든 변경을 다시 적용한다. 그러므로 중복되는 수치에 대한 요청 수를 줄임으로 Reflow 비용을 최소화 할 수 있다.
+브라우저는 레이아웃의 변경을 큐에 저장했다가 한 번에 실행하는 방법으로 Reflow를 줄인다. 하지만, `offset, scrollTop...`과 같은 계산된 스타일 정보를 요청할 때마다 정확한 정보를 제공하기 위해 큐를 비우고 모든 변경을 다시 적용한다. 그러므로 중복되는 수치에 대한 요청 수를 줄임으로 Reflow 비용을 최소화 할 수 있다.        
 ```javascript
 function collect() {
     let el = document.getElementById('box');
@@ -207,7 +207,7 @@ function collect() {
 ```
 
 ###### DOM 사용을 최소화한다.
-노드 조각(document.createDocumentFragment), 노드 사본(el.cloneNode)를 활용하여 DOM 접근을 최소화한다.
+노드 조각(document.createDocumentFragment), 노드 사본(el.cloneNode)를 활용하여 DOM 접근을 최소화한다.       
 ```javascript
 // DON'T
 function ex1BadCase() {
@@ -281,13 +281,10 @@ Virtual Dom은 화면 DOM의 변경이 일어날때마다 전체 DOM을 Reflow �
 
 ## Reference
 - [브라우저는 어떻게 동작하는가?](https://d2.naver.com/helloworld/59361)
-
+- [자바스크립트는 어떻게 동작하는가: 렌더링 엔진과 성능을 최적화하는 방법](https://github.com/codepink/codepink.github.com/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80:-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%97%94%EC%A7%84%EA%B3%BC-%EC%84%B1%EB%8A%A5%EC%9D%84-%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
 - [브라우저 렌더링](https://12bme.tistory.com/140)
-
 - [Reflow or Repaint(or ReDraw)과정 설명 및 최적화 방법](http://webclub.tistory.com/346)
-
 - [Reflow 원인과 마크업 최적화 Tip](http://lists.w3.org/Archives/Public/public-html-ig-ko/2011Sep/att-0031/Reflow_____________________________Tip.pdf)
-
 - [Virtual dom](https://www.slideshare.net/gyeongseokseo/virtual-dom)
-
 - [Virtual DOM 살펴보기](https://wonism.github.io/deep-dive-into-vdom/)
+

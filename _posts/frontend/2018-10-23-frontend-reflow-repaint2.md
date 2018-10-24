@@ -4,11 +4,12 @@ title: "(Frontend) Browser - Reflow & Repaint 테스트"
 date: 2018-10-23 20:35:00
 author: gloria
 categories: frontend
-tags: javascript 브라우저렌더링
+tags: frontend javascript 브라우저렌더링 자바스크립트성능
 ---
 
 * TOC
 {:toc}
+
 [(Frontend) Browser - Reflow & Repaint]({% post_url /frontend/2018-10-23-frontend-reflow-repaint %})에서 공부했던 내용을 크롬 디버그 창을 이용해서 성능을 비교해보기
 
 
