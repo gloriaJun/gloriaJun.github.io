@@ -41,9 +41,13 @@ if (element.addEventListener) {
 #### 웹 표준을 준수한다
 - [Can I user?](https://caniuse.com/)
 
-  : 내가 사용하고 싶은 css 나 javascript 명을 넣으면, 어떤 브라우져에서 작동되는지, 작동되지 않는지를 확인할 수 있따.
-
-
+  : 내가 사용하고 싶은 css 나 javascript 명을 넣으면, 어떤 브라우져에서 작동되는지, 작동되지 않는지를 확인할 수 있다.
+  
+###### 웹표준? 웹 접근성?
+- 웹표준
+: W3C의 권고를 따라 HTML,JS,CSS를 코딩, 문서 객체 모델(DOM)또한 원칙에 따라 구조화를 잘 하여 마크업 하는 것을 말한다.
+- 웹접근성
+: 이용자, 이용자의 장비에 관계없이 이용할 수 있는 웹 사이트를 구성하는 것으로, "눈으로 보거나 들을 수 있는 모든 정보의 대체 표현 수단을 제공하고  UX의 제한을 두지 않는 웹" 을 말한다.
 
 #### normalize.css를 사용한다
 각종 브라우저마다 기본 스타일이 달라서 동일한 스타일을 적용하기 위해서는 기본값을 초기화해주어야 한다.
@@ -64,3 +68,4 @@ if (element.addEventListener) {
 
 ## Reference
 - [크로스 브라우징 총정리](https://hackya.com/kr/%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [#5. 웹표준과 웹접근성](https://m.blog.naver.com/PostView.nhn?blogId=jhc9639&logNo=221032508913&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
