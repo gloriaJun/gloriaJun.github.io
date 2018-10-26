@@ -4,7 +4,7 @@ title: "REST API"
 date: 2017-01-15 16:54:00
 author: gloria
 categories: etc
-tags: rest-api
+tags: restApi
 ---
 
 * TOC
