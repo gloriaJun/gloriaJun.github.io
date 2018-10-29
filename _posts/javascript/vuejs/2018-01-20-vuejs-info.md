@@ -80,5 +80,6 @@ let model = {
 ###### Template
 - https://github.com/dobromir-hristov/vue-i18n-starter
 
-
+###### Vue 적용 사례
+- [배민찬은 Vue를 어떻게 사용하나요?](http://woowabros.github.io/experience/2018/06/07/vue-story-of-baminchan.html)
 
