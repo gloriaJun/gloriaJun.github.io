@@ -131,6 +131,24 @@ speakNation.apply(person);
 
 
 
+## ES6 - Arrow Function
+`Arrow Function`을 사용하면 현재 실행 시점의 this를 가르키는 것이 아니라,  상위 스코프의 this를 가르킨다. 
+```javascript
+const job = {
+    items: ['teacher', 'baker', 'student'],
+    find() {
+       	this.items.findIndex(function(item) {
+    		console.log('this === window : ', this === window); // true
+    	}); 
+    	this.items.findIndex((item) => {
+        	console.log('this === window : ', this === window); // false
+    	});
+    }
+}
+job.find();
+```
+
+
 ## Reference
 - [자바스크립트에서 사용되는 this에 대한 설명 1](http://webframeworks.kr/tutorials/translate/explanation-of-this-in-javascript-1/)
 - [JavaScript - this 이해하기](https://blog.kesuskim.com/2016/09/understanding-js-this/)
