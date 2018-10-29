@@ -76,6 +76,12 @@ let model = {
 #### 예제모음
 - [Vue.js Examples](https://vuejsexamples.com/)
 - [Vue.js 한국 사용자 모임-코드조각](http://vuejs.kr/snippets/)
+- [Vue.js — Forms, components and considerations](https://blog.webf.zone/vue-js-forms-components-and-considerations-d81b3ffe9efb)
+
+###### Dynamic Components
+- [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
+- [Swappable Dynamic Components in Vue.js](https://alligator.io/vuejs/dynamic-components/)
+
 
 ###### Template
 - https://github.com/dobromir-hristov/vue-i18n-starter
