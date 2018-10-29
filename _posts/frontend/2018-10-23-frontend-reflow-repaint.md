@@ -53,11 +53,11 @@ Cookie, Local Storage 등과 같이 브라우저의 메모리를 활용하여 �
 
 렌더링 엔진은 네트워크로부터 요청한 문서의 내용을 얻는 것으로 시작하며 문서의 내용은 보통 8KB 단위로 전송된다.
 
-기본 동작 과정은 다음과 같다.
+브라우저의 동작 과정은 아래와 같다.
+![브라우저 동작원리-출처poiemaweb](https://poiemaweb.com/img/client-server.png)
 
+이 중에 브라우저의 렌더링 과정만을 표시하면 아래와 같다.
 ![browser-rendering]({{ site.baseurl }}/assets/images/post/browser-rendering.png)
-
-
 
 ###### DOM (Documnet Object Model) Tree
 HTML 태그를 파싱하여 DOM 트리를 구성한다.
