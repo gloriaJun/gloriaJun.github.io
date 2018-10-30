@@ -185,7 +185,7 @@ hoisting_val =10
 
 위와 같이 함수 선언문으로 선언된 함수는 호이스팅이 되어 정상적으로 동작을 한다.
 
-하지만, 함수 표현식이나 생성자를 이용하여 선언된 경우에는 에러가 발생한다.
+하지만, 함수 표현식이나 생성자를 이용하여 선언된 경우에는 에러가 발생한다.
 
 ```javascript
 hoistingExam();  
@@ -200,17 +200,6 @@ Uncaught TypeError: hoistingExam is not a function
 
 
 
-
-
 ## Reference
-- [23. 스코프 체인](http://programmer-seva.tistory.com/36)
-- [Javascript - 변수관리 특징 및 스코프체인에 대하여](https://trustyoo86.github.io/javascript/2017/11/18/javascript-variables-scope-chain.html
-- 
-- 
-- )
-- http://www.nextree.co.kr/p7363/
-- http://jinbroing.tistory.com/116
-- http://asfirstalways.tistory.com/196
-- https://trustyoo86.github.io/javascript/2017/11/18/javascript-variables-scope-chain.html
-- https://blog.qodot.me/post/javascript-%ED%95%A8%EC%88%98-3-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80/
-- [스코프 체인 이란?](https://tyle.io/blog/54)
+- [(번역) 자바스크립트 스코프와 클로저(JavaScript Scope and Closures)](https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19)
+- [JavaScript : Scope 이해](http://www.nextree.co.kr/p7363/)
