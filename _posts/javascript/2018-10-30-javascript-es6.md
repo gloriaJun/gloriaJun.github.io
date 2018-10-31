@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Javascript) ES6"
-date: 2018-10-20 01:15:00
+date: 2018-10-30 01:15:00
 author: gloria
 categories: language
 tags: javascript
