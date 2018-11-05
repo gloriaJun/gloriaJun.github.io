@@ -291,3 +291,6 @@ Virtual Dom은 화면 DOM의 변경이 일어날때마다 전체 DOM을 Reflow �
 - [Virtual dom](https://www.slideshare.net/gyeongseokseo/virtual-dom)
 - [Virtual DOM 살펴보기](https://wonism.github.io/deep-dive-into-vdom/)
 
+#### Reflow&Repain와 관련하여 추가적으로 참고할만한 글
+- [CSS 애니메이션 어떻게 사용하고 계신가요?](https://brunch.co.kr/@99-life/2)
+- [CSS 애니메이션 성능 개선 방법(reflow 최소화, will-change 사용)](http://wit.nts-corp.com/2017/06/05/4571)

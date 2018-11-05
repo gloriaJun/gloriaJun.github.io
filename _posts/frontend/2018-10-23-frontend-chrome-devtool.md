@@ -111,3 +111,6 @@ ex2) copy($0);
 - [CHROME TIMELINE 사용해보기](http://graykick.tistory.com/3)
 - [크롬 개발자 도구를 이용한 자바스크립트 디버깅](https://subicura.com/2018/02/14/javascript-debugging.html)
 - [Command Line API 참조](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference?hl=ko)
+- [우리가 몰랐던 크롬 개발자 도구](https://www.slideshare.net/netil/ss-28588952)
+- [(시스템성능) 크롬 개발자 도구 활용하기](https://12bme.tistory.com/349)
+- 
