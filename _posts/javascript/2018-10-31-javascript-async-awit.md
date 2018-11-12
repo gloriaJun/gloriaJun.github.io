@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Javascript) ES6"
+title: "(Javascript) Async/Await"
 date: 2018-10-31 11:15:00
 author: gloria
 categories: language
