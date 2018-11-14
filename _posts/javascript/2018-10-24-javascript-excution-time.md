@@ -26,7 +26,8 @@ console.log(endTime - startTime); // 단위는 밀리세컨드
 
 ## console 객체 이용
 `console.time()`과 `console.timeEnd()`를 이용하여 시간을 측정하는 방법이다.
-> 해당 함수는 Chrome2, FireFox10, Safari4, IE11에서 사용이 가능하다.
+> 해당 함수는 Chrome2, FireFox10, Safari4, IE11에서 사용이 가능하다.       
+
 ```javascript
 let sum = 0;
 
