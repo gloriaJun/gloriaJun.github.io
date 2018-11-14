@@ -89,3 +89,5 @@ let model = {
 ###### Vue 적용 사례
 - [배민찬은 Vue를 어떻게 사용하나요?](http://woowabros.github.io/experience/2018/06/07/vue-story-of-baminchan.html)
 
+###### Tip
+- [숨겨진 Vue 패턴들](https://medium.com/@Dongmin_Jang/vuejs-%EC%88%A8%EA%B2%A8%EC%A7%84-vue-%ED%8C%A8%ED%84%B4%EB%93%A4-1ea3adc585ac)
