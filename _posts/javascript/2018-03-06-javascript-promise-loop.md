@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "(Javascript) Promise Loop"
+title: "(Javascript) Promise Pattern Example"
 date: 2018-03-06 14:35:00
 author: gloria
 categories: language
 tags: javascript promise callback
 ---
+
+* TOC
+{:toc}
+
 
 #### 특정 조건을 만족할 때까지 반복하기
 ```Javascript
@@ -41,6 +45,17 @@ promiseLoop({key: 10}, funcPromise)
   .then(res => {
     console.log('result : ', res)
   })
+```
+
+#### setTimeout을 promise 패턴으로 구현
+```javascript
+function delay(sec=3000) {
+	return new Promise(resolve => setTimeout(resolve, sec));
+}
+
+console.log('timeout call');
+await delay();
+console.log('timeout called');
 ```
 
 
