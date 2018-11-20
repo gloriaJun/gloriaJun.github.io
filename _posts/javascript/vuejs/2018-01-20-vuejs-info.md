@@ -64,8 +64,9 @@ let model = {
 #### 컴포넌트 모음
 - [awesome-vue](https://github.com/vuejs/awesome-vue#projects-using-vuejs)
 
-#### 공식 스타일 가이드
-- [vuejs-component-style-guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
+#### 스타일 가이드
+- [공식 스타일 가이드 - vuejs-component-style-guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
+- [GitLab - Style guides and linting](https://docs.gitlab.com/ce/development/fe_guide/style_guide_js.html)
 
 #### UI Framework & Library
 - https://vuetifyjs.com
@@ -88,6 +89,8 @@ let model = {
 
 ###### Vue 적용 사례
 - [배민찬은 Vue를 어떻게 사용하나요?](http://woowabros.github.io/experience/2018/06/07/vue-story-of-baminchan.html)
+- [GitLab은 왜 Vue.js를 선택했나](https://taegon.kim/archives/6690)
+- [GitLab은 Vue를 어떻게 사용하는가: 일 년 후](https://taegon.kim/archives/6698)
 
 ###### Tip
 - [숨겨진 Vue 패턴들](https://medium.com/@Dongmin_Jang/vuejs-%EC%88%A8%EA%B2%A8%EC%A7%84-vue-%ED%8C%A8%ED%84%B4%EB%93%A4-1ea3adc585ac)
