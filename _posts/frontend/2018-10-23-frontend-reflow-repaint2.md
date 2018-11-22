@@ -59,9 +59,7 @@ cssText를 이용하여 스타일을 적용하는 코드
 ```javascript
 function reFlow() {
 	let el = document.getElementById('app');
-	el.style.width = '600px';
-	el.style.height = '150px';
-	el.style.backgroundColor = 'blue';
+    el.style.cssText = 'width: 600px; height 150px;backgroundColor: blue';
 	return false;
 }
 
