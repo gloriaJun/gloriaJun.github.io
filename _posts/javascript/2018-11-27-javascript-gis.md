@@ -43,11 +43,15 @@ html, body { height: 100%; }
 </head>
 <body>
 
-<h1>Map by Leaflet</h1>
 <div id="leafMap" class="map"></div>
 
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
 <script>
+const zoom = {
+  level: 15,
+  maxLevel: 19,
+}
+
 // 현재의 위치 정보를 가져온다.
 function getLocation() {
   return new Promise(resolve => {
@@ -64,7 +68,7 @@ getLocation().then(location => {
   const { latitude, longitude }= location;
   
   // 위도, 경도, zoom level을 설정하여 Map을 생성한다.
-  let mymap = L.map('leafMap').setView([latitude, longitude], zoomLevel);
+  let mymap = L.map('leafMap').setView([latitude, longitude], zoom.level);
   
   // map을 로딩한다
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -75,7 +79,6 @@ getLocation().then(location => {
 </script>
 </body>
 </html>
-
 ```
 
 leaflet의 다큐먼트에 정의한 아래의 방법은 token이 필요해서 [Leaflet-providers preview - Leaflet Provider Demo](https://leaflet-extras.github.io/leaflet-providers/preview/)에 정의된 코드를 참고하여서 맵을 호출하였다
@@ -88,7 +91,63 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 ```
 
+<p data-height="265" data-theme-id="0" data-slug-hash="NEEGEJ" data-default-tab="js,result" data-user="gloriaJun" data-pen-title="javascript-gis-leaflet" class="codepen">See the Pen <a href="https://codepen.io/gloriaJun/pen/NEEGEJ/">javascript-gis-leaflet</a> by gloria (<a href="https://codepen.io/gloriaJun">@gloriaJun</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+
+#### OpenLayers
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
+</head>
+<body>
+
+<div id="myMap" class="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+<script>
+const zoom = {
+  level: 15,
+  maxLevel: 19,
+}
+
+// 현재의 위치 정보를 가져온다.
+function getLocation() {
+  return new Promise(resolve => {
+    navigator.geolocation.watchPosition(function(position) {
+      return resolve({
+        latitude: position.coords.latitude,
+        longitude: position.coords.longitude,
+      });
+    });
+  });
+}
+
+getLocation().then(location => {
+  const { latitude, longitude }= location;
+  
+  new ol.Map({
+    target: 'myMap',
+    view: new ol.View({
+      center: ol.proj.fromLonLat([longitude, latitude]),
+      zoom: zoom.level,
+    }),
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM(),
+      }),
+    ],
+  });
+});
+</script>
+</body>
+</html>
+```
+
+<p data-height="265" data-theme-id="0" data-slug-hash="Oaayqa" data-default-tab="js,result" data-user="gloriaJun" data-pen-title="javascript-gis-openLayers" class="codepen">See the Pen <a href="https://codepen.io/gloriaJun/pen/Oaayqa/">javascript-gis-openLayers</a> by gloria (<a href="https://codepen.io/gloriaJun">@gloriaJun</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
 ## Reference
