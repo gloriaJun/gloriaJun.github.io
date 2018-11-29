@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Javascript) Map 연동하기"
+title: "(Javascript) Map 연동하기(OSM)"
 date: 2018-11-27 15:15:00
 author: gloria
 categories: language
