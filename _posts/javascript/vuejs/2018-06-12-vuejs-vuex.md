@@ -9,6 +9,11 @@ tags: javascript vuejs vuex
 
 vuex 참고 자료 정리
 
+
+## Vuex Tutorial
+vuex의 개념에 대해 이해하기 쉽게 잘 설명해둔 동영상
+- [Vuex: Intro Tutorial](https://www.youtube.com/watch?v=_2_C9j-8CtM&feature=youtu.be&fbclid=IwAR0HkNCpprLft8qmekFy8dx1mSJ6VFznGj6PTc734pTV0zPSoArrw0TJ4UA)
+
 ## Vuex Start
 아래의 블로그 글이 정리가 잘 되어있어서 참고하기가 좋았음
 - [Vuex 시작하기 1 - Vuex 와 State](https://joshua1988.github.io/web-development/vuejs/vuex-start/)
