@@ -10,15 +10,16 @@ tags: java
 * TOC
 {:toc}
 
-## Bean
+## 간단 개념 정리
+#### Bean
 스프링에서 관리되는 객체를 **Bean**이라고 한다.
 
 
-## Container
+#### Container
 컨테이너는 Bean을 정의하고, 생성하고, 저장하고, 반환한다.
 
-## DI (Dependency Injection)
-의존성을 최소화하여 책임을 분리하기 위한 과정?
+#### DI (Dependency Injection)
+의존성을 최소화하여 책임을 분리하기 위한 과정. 즉, 객체 간의 결합도를 낮추는 것을 의미한다.
 - 스프링에서는 `@annotaion`, `setter`, `constructor`를 통하여 의존성을 주입한다.
 
 
@@ -80,3 +81,4 @@ public class Student implements InitializingBean, DisposableBean {
 - [SLiPP-spring - 4주차 Bean Life Cycle](https://www.slipp.net/wiki/pages/viewpage.action?pageId=25528047)
 - [Whiteship's Note](http://whiteship.tistory.com/791)
 - [Container와 Bean의 Lifecycle / Scope](https://kutar37.tistory.com/entry/Container%EC%99%80-Bean%EC%9D%98-Lifecycle-Scope)
+- [의존성 주입(Dependency injection)](https://www.slideshare.net/baejjae93/dependency-injection-36867592)
