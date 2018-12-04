@@ -115,3 +115,4 @@ hello = null;
 - [JavaScript 클로저(Closure)](https://hyunseob.github.io/2016/08/30/javascript-closure/)
 - [클로저(Closure) 사용에는 주의가 필요합니다](http://blog.javarouka.me/2012/01/closure.html)
 - [JavaScript : Scope 이해](http://www.nextree.co.kr/p7363/)
+- [자바스크립트의 스코프와 클로저](https://meetup.toast.com/posts/86)

@@ -65,3 +65,7 @@ Object
  	__proto__: Object
 */
 ```
+
+
+
+- [쉽게 이해하는 자바스크립트 프로토타입 체인](https://meetup.toast.com/posts/104)
