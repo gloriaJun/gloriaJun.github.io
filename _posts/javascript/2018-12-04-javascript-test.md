@@ -135,8 +135,44 @@ Done in 3.85s.
 Process finished with exit code 0
 ```
 
+#### Karma 설정 파일 생성
+```bash
+$ karma  init
+
+Which testing framework do you want to use ?
+Press tab to list possible options. Enter to move to the next question.
+> mocha
+
+Do you want to use Require.js ?
+This will add Require.js plugin.
+Press tab to list possible options. Enter to move to the next question.
+> no
+
+Do you want to capture any browsers automatically ?
+Press tab to list possible options. Enter empty string to move to the next question.
+> Chrome
+> 
+
+What is the location of your source and test files ?
+You can use glob patterns, eg. "js/*.js" or "test/**/*Spec.js".
+Enter empty string to move to the next question.
+> tests/**/*.spec.js
+> 
+
+Should any of the files included by the previous patterns be excluded ?
+You can use glob patterns, eg. "**/*.swp".
+Enter empty string to move to the next question.
+> 
+
+Do you want Karma to watch all the files and run the tests on change ?
+Press tab to list possible options.
+> yes
+```
+
+
 
 ## Reference
 - [Testing React application with Karma, Jest or Mocha.](https://sungjk.github.io/2017/03/03/testing-react-application.html)
 - [An Overview of JavaScript Testing in 2018](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3)
 - [NodeJS에서 가장 많이 사용하는 테스트 프레임웍, Mocha](http://blog.jeonghwan.net/mocha/)
+- [Mocha 로 하는 API Testing](https://inspiredjw.com/entry/Mocha-%EB%A1%9C-%ED%95%98%EB%8A%94-API-Testing)
