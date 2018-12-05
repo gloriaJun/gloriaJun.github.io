@@ -4,7 +4,7 @@ title: "(Javascript) Lint 설정하기"
 date: 2018-12-05 10:15:00
 author: gloria
 categories: language
-tags: javascript eslint lint
+tags: javascript eslint lint configuration
 ---
 
 * TOC

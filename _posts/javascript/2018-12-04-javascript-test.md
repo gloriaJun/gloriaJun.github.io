@@ -4,7 +4,7 @@ title: "(Javascript) 테스트 케이스 작성하기"
 date: 2018-12-04 15:15:00
 author: gloria
 categories: language
-tags: javascript unitTest testing
+tags: javascript unitTest testing configuration
 ---
 
 * TOC
