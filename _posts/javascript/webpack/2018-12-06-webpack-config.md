@@ -107,3 +107,5 @@ script를 아래와 같이 수정한다.
 ## Reference
 - [JavaScript 모듈화 도구, webpack](https://d2.naver.com/helloworld/0239818)
 - [Webpack-Getting Started](https://webpack.js.org/guides/getting-started/#basic-setup)
+- [webpack4로 바꾸기](https://showerbugs.github.io/2018-02-26/webpack4%EB%A1%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0)
+
