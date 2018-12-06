@@ -11,6 +11,7 @@ tags: javascript babel configuration
 {:toc}
 
 > Javascript Transpiler
+>
 > - ES6, ES7 으로 작성된 자바스크립트 코드를 브라우저(특히 구형 브라우저)가 인식할 수 있는 ES5로 변환시켜주는 역할을 수행한다.
 
 
@@ -19,7 +20,9 @@ tags: javascript babel configuration
 yarn add -D babel-cli babel-preset-es2015
 ```
 
+
 ## .babelrc
+
 ```
 {
   "presets": [
@@ -27,6 +30,7 @@ yarn add -D babel-cli babel-preset-es2015
   ]
 }
 ```
+
 
 ## 수행 결과 확인해보기
 ```javascript
@@ -117,3 +121,6 @@ var Santa = function (_Car) {
 var mycar = new Santa('model', 2015);
 console.log(mycar.toString());
 ```
+
+
+
