@@ -44,6 +44,8 @@ webpack 빌드 시에 babel을 포함시켜 빌드하도록 설정을 추가한�
   },
 ```
 
+> 프리셋을 "env" 로 설정하면 babel-preset-latest 라고 불리는 현재 지원 가능한 가장 최신 버전의 프리셋을 사용하고 추가로 프로젝트의 지원 브라우저를 기반으로 폴리필과 필요 트랜스폼 플러그인들을 관리할 수 있는 옵션들을 사용할 수 있다. 
+
 
 ## Trouble Shooting
 #### TypeError: Cannot read property 'bindings' of null

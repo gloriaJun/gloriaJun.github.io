@@ -21,6 +21,26 @@ webpack4 이상에서는 `production` 모드로 빌드 시에 기본으로 난�
 그리고 **optimization** 속성으로 해당 기능은 병합되었으며 `minimize`가 해당 기능을 계승한다고 한다.
 (production 모드일 때에 해당 옵션이 true로 설정됨으로써 기본으로 난독화가 되어 파일이 생성되는 것으로 보여짐)
 
+#### clean-webpack-plugin
+기존 빌드된 산출물 디렉토리를 삭제하기 위한 플러그인이다.
+
+```bash
+yarn add -D clean-webpack-plugin
+```
+
+```javascript
+// webpack.config.js
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+var webpackConfig = {
+  // ...
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+  ],
+  // ...
+}
+```
+
 
 #### FriendlyErrorsWebpackPlugin
 [Friendly-errors-webpack-plugin](https://github.com/geowarin/friendly-errors-webpack-plugin)을 적용하면 깔끔한 빌드 로그와 에러를 확인할 수 있다
