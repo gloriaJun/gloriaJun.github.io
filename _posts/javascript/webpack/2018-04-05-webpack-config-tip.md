@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(Webpack) webpack configuration"
+title: "(Webpack) Tip - webpack configuration"
 date: 2018-04-05 13:35:00
 author: gloria
 categories: language
