@@ -10,10 +10,12 @@ tags: javascript webpack configuration babel
 * TOC
 {:toc}
 
-[(Webpack) webpack]({% post_url language/2018-12-06-webpack %})에서 정리한 내용 글에 이어서 webpack을 이용한 기본적인 빌드 설정을 추가하는 과정에 대해서 정리하기.
+[(Webpack) webpack을 이용한 개발 환경 구성하기]({% post_url language/2018-12-06-webpack-config %})에서 정리한 내용 글에 이어서 webpack을 이용한 기본적인 빌드 설정을 추가하는 과정에 대해서 정리하기.
 
 ## babel 설정
 ES6 이상으로 작성된 자바스크립트를 ES5 버전으로 변환하기 위한 babel 설정을 추가해준다.
+
+> 참고로 *babel 설정 및 변환 결과에 대한 내용*은 [(Javascript) Babel 설정하기]({% post_url language/2018-12-06-javascript-babel %})을 확인해보면 된다.
 
 ####  babel 모듈 설치
 ```bash

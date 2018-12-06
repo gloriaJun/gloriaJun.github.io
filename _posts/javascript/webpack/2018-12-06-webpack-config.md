@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "(Webpack) webpack"
+title: "(Webpack) webpack을 이용한 개발 환경 구성하기"
 date: 2018-12-06 10:35:00
 author: gloria
 categories: language
-tags: javascript webpack
+tags: javascript webpack configuration
 ---
 
 * TOC
