@@ -93,4 +93,6 @@ function removeImage() {
 - [(번역) 바보들을 위한 자바스크립트 엔진 가이드](https://dongwoo.blog/2015/10/12/%EB%B2%88%EC%97%AD-%EB%B0%94%EB%B3%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%97%94%EC%A7%84-%EA%B0%80%EC%9D%B4%EB%93%9C/)
 - [자바스크립트는 어떻게 작동하는가: 엔진, 런타임, 콜스택 개관](https://engineering.huiseoul.com/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%8A%94%EA%B0%80-%EC%97%94%EC%A7%84-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%BD%9C%EC%8A%A4%ED%83%9D-%EA%B0%9C%EA%B4%80-ea47917c8442)
 - [자바스크립트는 어떻게 작동하는가: 메모리 관리 + 4가지 흔한 메모리 누수 대처법](https://engineering.huiseoul.com/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%8A%94%EA%B0%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-4%EA%B0%80%EC%A7%80-%ED%9D%94%ED%95%9C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%88%84%EC%88%98-%EB%8C%80%EC%B2%98%EB%B2%95-5b0d217d788d)
-- [자바스크립트와 이벤트 루프](https://meetup.toast.com/posts/89)
+- [자바스크립트 엔진의 최적화 기법 (1) - JITC, Adaptive Compilation](https://meetup.toast.com/posts/77)
+- [자바스크립트 엔진의 최적화 기법 (2) - Hidden class, Inline Caching](https://meetup.toast.com/posts/78)
+- [[자바스크립트와 이벤트 루프](https://meetup.toast.com/posts/89)
