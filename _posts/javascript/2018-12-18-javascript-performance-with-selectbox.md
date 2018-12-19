@@ -28,6 +28,9 @@ tags: javascript animation
             height: 200px;
             border: 1px solid grey;
         }
+        #select-box .popup.show {
+            display: block;
+        }
         #counter {
             font-size: 24px;
         }
@@ -77,7 +80,7 @@ tags: javascript animation
 
     // add event handler
     selelctBoxTitle.addEventListener('click', function () {
-      selelctBoxPopup.style.display = selelctBoxPopup.style.display === 'block' ? 'none' : 'block';
+      selelctBoxPopup.classList.toggle('show');
     });
 
     function createItem(data) {
@@ -87,7 +90,7 @@ tags: javascript animation
 
       el.addEventListener('click', function () {
         selelctBoxTitle.innerText = data;
-        selelctBoxPopup.style.display = 'none';
+        selelctBoxPopup.classList.toggle('show');
       });
 
       return el;
@@ -168,7 +171,7 @@ tags: javascript animation
 
     // add event handler
     selelctBoxTitle.addEventListener('click', function () {
-      selelctBoxPopup.style.display = selelctBoxPopup.style.display === 'block' ? 'none' : 'block';
+      selelctBoxPopup.classList.toggle('show');
     });
 
     function createItem(data) {
@@ -178,7 +181,7 @@ tags: javascript animation
 
       el.addEventListener('click', function () {
         selelctBoxTitle.innerText = data;
-        selelctBoxPopup.style.display = 'none';
+        selelctBoxPopup.classList.toggle('show');
       });
 
       return el;
@@ -217,8 +220,47 @@ tags: javascript animation
 
 #### dequeue 성능 개선
 dequeue하는 과정에서 shift() 메소드의 성능이 문제가 되는 것을 확인할 수 있다. 배열을 동적으로 변경하는 작업은 배열이 커질 수록 성능에 영향을 미치므로 다른 자료구조를 이용하여 구현하는 것이 효율적일 수 있다.
-일단, 단순하게 배열의 index를 이용하여 접근하는 방식으로 코드를 개선하여 다시 프로파일링을 해본다.
+일단, 단순하게 배열의 index를 이용하여 접근하는 방식으로 코드를 개선하여 다시 프로파일링을 해보면, dequeue의 수행 시간이 확연하게 줄어든 것을 확인할 수 있다.
 
+```javascript
+    let itemQueue = (function () {
+      let list = [];
+      let index = 0;
+
+      return {
+        enqueue: (item) => list.push(item),
+        dequeue: () => {
+          // list.shift();
+          return list[index++];
+        },
+        isEmpty: () => (list.length - index) === 0,
+      }
+    })();
+```
+
+#### select box 클릭 시의 브라우저 멈춤 현상 개선
+`display`를 이용한 css 처리는 reflow&repaint를 발생시킨다. 프로파일링을 확인해보면, 아래와 같이 layout 작업에서 많은 시간이 소요되는 것을 확인할 수 있다.
+![데이타 10만건-reflow]({{ site.baseurl }}/assets/images/post/selectBoxPerfor-reflow.png)
+
+해당 부분을 해결하기 위해서는 `display`와 비슷한 속성인 `visibility` 옵션을 사용하면, repaint만 발생하므로 reflow에 대한 비용을 줄일 수 있다.
+```css
+#select-box .popup {
+	/*display: none;*/
+	visibility:hidden;
+	position: absolute;
+	overflow: auto;
+	width: 300px;
+	height: 200px;
+	border: 1px solid grey;
+}
+#select-box .popup.show {
+	/*display: block;*/
+	visibility: visible;
+}
+```
+
+수정한 뒤에 프로파일링 결과를 확인해보면 아래와 같이 성능이 향상된 것과 클릭 시에 화면 멈춤 현상이 기존보다 개선된 것을 확인할 수 있다.
+![데이타 10만건-reflow개선]({{ site.baseurl }}/assets/images/post/selectBoxPerfor-reflow2.png)
 
 
 ## Reference
