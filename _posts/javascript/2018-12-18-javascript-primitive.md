@@ -5,11 +5,10 @@ date: 2018-12-18 10:35:00
 author: gloria
 categories: language
 tags: javascript
-
-
 ---
 
-[TOC]
+* TOC
+{:toc}
 
 자바스크립트에서는 현재 아래의 6개의 primitive 타입을 제공하며, primitive는 *원시 데이터 타입*을 의미한다.
 - undefined
