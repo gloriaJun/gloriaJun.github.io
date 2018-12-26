@@ -3,7 +3,6 @@ layout: post
 title: "(Q) my interview bank"
 date: 2018-12-02 10:12:00
 author: gloria
-categories: etc
 tags:
 ---
 
