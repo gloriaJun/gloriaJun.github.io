@@ -3,7 +3,6 @@ layout: post
 title: "(Review) interview"
 date: 2018-12-01 10:12:00
 author: gloria
-categories: etc
 tags:
 ---
 
