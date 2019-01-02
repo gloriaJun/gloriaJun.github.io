@@ -62,7 +62,8 @@ websocket의 크로스브라우징 지원 등과 같은 문제를 해결하기 �
 
 * https://socket.io
 * node.js 기반으로 만들어졌다.
-* Socket.io는 WebSocket, FlashSocket, AJAX Long Polling, AJAX Multi part Streaming, IFrame, JSONP Polling을 하나의 API로 추상화한 것이다. 즉, socket.io가 판단하여 가장 적합한 기술을 사용한다.
+* websocket을 지원하지 않는 브라우저도 지원한다.
+* Socket.io는 WebSocket, Polling 등을 하나의 API로 추상화한 것이다. 즉, socket.io가 판단하여 가장 적합한 기술을 사용한다.
 
 # Reference
 
@@ -71,4 +72,5 @@ websocket의 크로스브라우징 지원 등과 같은 문제를 해결하기 �
 * [코멧(Comet) #2 – Ajax 폴링(Ajax polling) 채팅방 예제로 배우기](http://dev.epiloum.net/1395)
 * [코멧(Comet) #3 – Ajax 롱폴링(Ajax Long polling) 채팅방 예제로 배우기](http://dev.epiloum.net/1453)
 * [Socket.IO 기반 티몬 상담톡 개발기](https://tmondev.blog.me/220982377777)
-* [Socket.io를 사용한 실시간 채팅 애플리케이션](https://poiemaweb.com/nodejs-socketio)
+* [티몬-Socket.io를 사용한 실시간 채팅 애플리케이션](https://poiemaweb.com/nodejs-socketio)
+* [우아한형제들-실시간 서비스 경험기(배달운영시스템)](http://woowabros.github.io/woowabros/2017/09/12/realtime-service.html)
