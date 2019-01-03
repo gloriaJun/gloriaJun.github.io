@@ -8,7 +8,8 @@ tags: frontend security
 
 ---
 
-[TOC]
+* TOC
+{:toc}
 
 
 ## Cross-Site Scripting
