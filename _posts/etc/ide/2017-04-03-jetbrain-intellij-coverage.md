@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "(IntelliJ) Code Coverage"
+title: "(IDE) IntelliJ Code Coverage"
 date: 2017-04-03 16:54:00
 author: gloria
 categories: etc
-tags: jetbrain
+tags: ide jetbrain
 ---
 
 ntelliJ의 경우, 별도 플러그인을 설치할 필요없이 자체적으로 내장이 되어있음.
