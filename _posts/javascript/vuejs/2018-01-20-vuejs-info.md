@@ -92,6 +92,7 @@ let model = {
 - [GitLab은 왜 Vue.js를 선택했나](https://taegon.kim/archives/6690)
 - [GitLab은 Vue를 어떻게 사용하는가: 일 년 후](https://taegon.kim/archives/6698)
 - [Zoom Tech - Vuejs로 모바일 웹 구축하기](https://zuminternet.github.io/ZUM-Pilot-vuejs/)
+- [우아한형제들 - 기존 Express 서버에 Vue.js 적용해보기 (feat.EJS)](http://woowabros.github.io/experience/2018/12/27/node-express-vue-with-ejs.html)
 
 ###### Tip
 - [숨겨진 Vue 패턴들](https://medium.com/@Dongmin_Jang/vuejs-%EC%88%A8%EA%B2%A8%EC%A7%84-vue-%ED%8C%A8%ED%84%B4%EB%93%A4-1ea3adc585ac)
