@@ -19,11 +19,16 @@ VSCode에서 내가 사용하는 플러그인들 정리
 ## Rainbow Brackets
 
 * https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets
+* 괄호를 색상별로 표시해서 구분하기 쉽게 해준다.
 
 ## TODO Highlight
 
 * https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
 
+## Beautify
+
+* https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify
+* 코드 정리를 단축키를 이용ㅍ해서 
 
 # Frontend 개발 관련
 
@@ -79,6 +84,7 @@ Table Format Current을 선택한 경우 현재 커서가 있는 테이블만 �
 ## Settings Sync
 
 * https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+* vscode 설정을 gist에 업로드해서 동기화할 수 있음
 
 ## Advanced New File
 
