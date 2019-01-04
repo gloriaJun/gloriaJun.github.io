@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) Storybook with vue"
 date: 2018-03-06 14:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript vuejs storybook frontend
 ---
 

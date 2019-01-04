@@ -3,7 +3,7 @@ layout: post
 title: "(Webpack) webpack Trouble Shooting"
 date: 2018-12-06 15:35:00
 author: gloria
-categories: language
+categories: devops
 tags: javascript webpack configuration trouble-shooting
 ---
 

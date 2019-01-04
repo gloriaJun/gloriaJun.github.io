@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) springboot 연동"
 date: 2018-03-15 13:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript vuejs springboot
 ---
 

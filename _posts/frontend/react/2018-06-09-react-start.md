@@ -3,7 +3,7 @@ layout: post
 title: "(React) react 시작하기"
 date: 2018-06-09 21:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend react
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) TypeScript 적용하며 발생한 문제 해결 기록하기"
 date: 2018-10-11 14:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript typescript
 
 

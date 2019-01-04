@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) Vuex"
 date: 2018-06-12 14:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript vuejs vuex
 ---
 

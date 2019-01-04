@@ -3,7 +3,7 @@ layout: post
 title: "(VueJs) AdminLTE 적용하기"
 date: 2018-02-20 20:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend vuejs bootstrap adminlte
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(React) react 프로젝트 만들기"
 date: 2018-06-10 15:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend react
 ---
 

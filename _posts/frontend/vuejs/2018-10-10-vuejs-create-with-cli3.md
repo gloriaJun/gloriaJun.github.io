@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) 개발 환경 구성하기 (vue-cli3)"
 date: 2018-10-10 14:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript vuejs vuecli3 typescript
 
 ---

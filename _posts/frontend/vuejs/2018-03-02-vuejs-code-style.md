@@ -3,7 +3,7 @@ layout: post
 title: "(VueJs) Code Style"
 date: 2018-03-02 11:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend vuejs eslint
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(Webpack) Tip - webpack 설정을 위한 옵션 및 플러그인들"
 date: 2018-04-05 13:35:00
 author: gloria
-categories: language
+categories: devops
 tags: javascript webpack configuration
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(Webpack) webpack4를 이용하여 VueJS 프로젝트 생성하기"
 date: 2018-04-04 23:35:00
 author: gloria
-categories: language
+categories: devops
 tags: javascript webpack vuejs
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(Webpack) webpack을 이용한 개발 환경 구성하기 - babel 설정"
 date: 2018-12-06 15:35:00
 author: gloria
-categories: language
+categories: devops
 tags: javascript webpack configuration babel
 ---
 

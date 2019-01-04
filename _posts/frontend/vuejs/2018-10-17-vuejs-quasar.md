@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) Quasar framework 적용하기"
 date: 2018-10-17 17:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript quasar
 ---
 

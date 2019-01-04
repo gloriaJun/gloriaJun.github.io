@@ -3,7 +3,7 @@ layout: post
 title: "(VueJs) 참고 사이트 모음"
 date: 2018-01-20 14:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend vuejs
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(VueJs) UI Library"
 date: 2018-02-19 20:55:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend vuejs
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(VueJs) 이미지 위에 박스를 그리고 해상도에 따라 반응하게 하기"
 date: 2018-03-11 11:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend vuejs css
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) 개발 환경 구성"
 date: 2018-03-19 22:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript vuejs nuxt vuex bootstrap
 ---
 

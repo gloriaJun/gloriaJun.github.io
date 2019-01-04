@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) Vue.js에서 TypeScript를 사용하지 않고 Type을 정의하기"
 date: 2018-11-28 14:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript typescript
 
 

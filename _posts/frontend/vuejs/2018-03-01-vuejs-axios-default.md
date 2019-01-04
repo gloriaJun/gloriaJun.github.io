@@ -3,7 +3,7 @@ layout: post
 title: "(VueJs) Axios 사용하기"
 date: 2018-03-01 10:32:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript frontend vuejs axios
 ---
 

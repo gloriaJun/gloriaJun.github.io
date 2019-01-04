@@ -3,7 +3,7 @@ layout: post
 title: "(VueJS) javascript library 사용하기"
 date: 2018-04-04 14:35:00
 author: gloria
-categories: language
+categories: frontend
 tags: javascript vuejs
 ---
 
