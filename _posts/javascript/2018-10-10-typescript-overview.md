@@ -11,7 +11,6 @@ tags: typescript
 * TOC
 {:toc}
 
-
 ## TypeScript
 
 - JavaScript의 슈퍼셋이다.
@@ -372,3 +371,8 @@ https://www.youtube.com/watch?v=yBXrtZfOjkY&index=14&list=PLV6pYUAZ-ZoEBNDzOxzTo
 ## 유투브 강좌
 
 https://www.youtube.com/watch?v=fgIHrsgvBH4&list=PLV6pYUAZ-ZoEBNDzOxzToMqv-V1QGlU0T
+
+# Reference
+
+* https://github.com/typescript-kr/awesome-typescript-korean
+* https://github.com/typescript-korea
