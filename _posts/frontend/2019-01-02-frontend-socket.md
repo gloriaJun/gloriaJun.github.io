@@ -65,12 +65,30 @@ websocket의 크로스브라우징 지원 등과 같은 문제를 해결하기 �
 * websocket을 지원하지 않는 브라우저도 지원한다.
 * Socket.io는 WebSocket, Polling 등을 하나의 API로 추상화한 것이다. 즉, socket.io가 판단하여 가장 적합한 기술을 사용한다.
 
+## Websocket vs SSE
+
+* Websocket은 양방향 통신이므로 채팅이나 게임 같이 실시간 통신이 필요한 경우 적합할 수 있음.
+* SSE는 push 알림, 주식 차트 같이 클라이언트에서 데이타를 전송할 필요가 없는 경우에 적합할 수 있다. (즉, 서버에서 데이타가 업데이트 되는 경우에 클라이언트에 전달해주면 되는 상황)
+
+### SSE
+
+* [Server Sent Event](https://www.w3.org/TR/eventsource/)는 서버가 필요할 때마다 클라이언트에게 데이타를 전달하는 서버 푸시 기술이다.
+* http를 이용하여 통신하므로 별도의 프로토콜이 필요없다.
+* html5에서 지원하는 표준 기술이다.
+* html과 javascript를 이용하여 구현할 수 있으며, 미지원 브라우저에 대하여 polyfill을 적용하여 크로스 브라우징 지원이 가능하다.
+* EventSource 객체를 이용하여 구현한다.
+
 # Reference
 
 * [MDN-websocket](https://developer.mozilla.org/ko/docs/WebSockets)
 * [코멧(Comet)에 대하여](https://vnthf.github.io/blog/Front-What_is_comet/)
 * [코멧(Comet) #2 – Ajax 폴링(Ajax polling) 채팅방 예제로 배우기](http://dev.epiloum.net/1395)
 * [코멧(Comet) #3 – Ajax 롱폴링(Ajax Long polling) 채팅방 예제로 배우기](http://dev.epiloum.net/1453)
+* [Polling vs SSE vs WebSocket— How to choose the right one](https://codeburst.io/polling-vs-sse-vs-websocket-how-to-choose-the-right-one-1859e4e13bd9)
+* [SSE ( Server-Sent Events) 란 무엇인가](http://hamait.tistory.com/792)
+
+## 적용 사례
+
 * [Socket.IO 기반 티몬 상담톡 개발기](https://tmondev.blog.me/220982377777)
 * [티몬-Socket.io를 사용한 실시간 채팅 애플리케이션](https://poiemaweb.com/nodejs-socketio)
 * [우아한형제들-실시간 서비스 경험기(배달운영시스템)](http://woowabros.github.io/woowabros/2017/09/12/realtime-service.html)
