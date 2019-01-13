@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "(알고리즘) 해시 - 완주하지 못한 선수"
+title: "(알고리즘) 해시 - 위장"
 date: 2018-10-05 22:53:00
 author: gloria
-categories: algorithm
+categories: algorith장
 tags: hash
 
 ---
-
-
 
 #### 문제 설명
 
