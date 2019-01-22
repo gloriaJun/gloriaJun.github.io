@@ -88,6 +88,7 @@ tags:
 # 그 외에 참고하면 좋은 링크들
 
 * [카카오스토리 팀의 코드 리뷰 도입 사례 - 코드 리뷰, 어디까지 해봤니?](http://tech.kakao.com/2016/02/04/code-review)
+* [카카오스토리 웹팀의 코드리뷰 경험](https://www.slideshare.net/OhgyunAhn/ss-61189141)
 * [소스코드 리뷰에 대한 짧은 이야기](https://brunch.co.kr/@supims/11)
 * [JavaScript 코드 리뷰 - 코드 리뷰 사례로 알아보는 좋은 JavaScript 코드](https://cimfalab.github.io/deepscan/2016/09/code-review-2)
 
