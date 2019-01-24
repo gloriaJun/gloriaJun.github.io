@@ -342,10 +342,9 @@ yarn install --dev push-dir
 language: node_js
 
 node_js:
-  - "10"
+  - 10
 
 cache:
-  yarn: true
   directories:
     - "node_modules"
 
@@ -354,8 +353,8 @@ branches:
     - master
 
 install:
-  - yarn install
-  - yarn generate
+  - npm install
+  - npm run generate
 
 deploy:
   provider: pages
@@ -365,9 +364,15 @@ deploy:
   local-dir: dist
   on:
     branch: master
+
+notifications:
+  email: false
+  slack:
+    rooms:
+      - glriaroom:GJpK4bqmhqF9CtV1l4qVSp6Q#devops
+    on_success: change # default : always
+    on_failure: always # default : always
 ```
-
-
 
 # 내가 느끼는 장단점
 
