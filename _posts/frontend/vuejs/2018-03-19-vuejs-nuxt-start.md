@@ -308,6 +308,67 @@ describe('Counter.vue', () => {
 })
 ```
 
+# GitHub Pages에 배포하기
+
+자세한 내용은 [How to deploy on GitHub Pages?](https://nuxtjs.org/faq/github-pages#deploying-to-github-pages-for-repository) 문서를 참고한다.
+
+내가 적용한 과정은...
+
+1. `push-dir`을 설치한다.
+
+```bash
+yarn install --dev push-dir
+```
+
+2. `package.json`을 수정한다.
+
+```json
+// package.json
+  "scripts": {
+    (..SKIP...)
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    (..SKIP...)
+  }
+```
+
+위와 같이 설정한 뒤에 deploy를 수행해보면 github의 해당 레파지토리에 gh-pages 브랜치가 생성되고, `http://<username>.github.io/<repository-name>`에서 결과물을 확인할 수 있다.
+
+## travis.yml 설정
+
+해당 빌드하여 gh-pages에 적용하는 부분을 travisCI와 연동을 하기 위해서는 `.travis.yml`을 작성하여 반영한다.
+
+```yml
+language: node_js
+
+node_js:
+  - "10"
+
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+    - master
+
+install:
+  - yarn install
+  - yarn generate
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
+  target-branch: gh-pages
+  local-dir: dist
+  on:
+    branch: master
+```
+
+
+
 # 내가 느끼는 장단점
 
 보름 정도 사용해보고 느낀 내 생각은...경험이 부족해서 느낄 수도 있지만..
