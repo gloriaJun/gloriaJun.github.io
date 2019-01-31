@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Temp - (DevOps) 패키지 의존성 관리를 위한 GreenKeeper"
-date: 2018-01-17 13:57:00
+title: "(DevOps) 패키지 의존성 관리를 위한 GreenKeeper"
+date: 2019-01-09 13:57:00
 author: gloria
 categories: devops
-tags: rancher docker
+tags:
 ---
 
 # GreenKeeper
