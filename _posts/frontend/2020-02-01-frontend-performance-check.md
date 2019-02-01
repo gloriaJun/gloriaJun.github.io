@@ -28,7 +28,7 @@ tags: frontend performance
 # PageSpeed
 
 - https://developers.google.com/speed/pagespeed/insights/?hl=ko
-- Google에 만든 웹사이트의 성능을 분석하고 최적화 방법을 알려주는 분석도
+- Google에 만든 웹사이트의 성능을 분석하고 최적화 방법을 알려주는 분석도구
 - Tutorial Video : https://www.youtube.com/watch?v=TDscFuRBTrA
 
 # Reference
