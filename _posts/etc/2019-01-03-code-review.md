@@ -87,6 +87,7 @@ tags:
 
 # 그 외에 참고하면 좋은 링크들
 
+* [매끄러운 ‘코드 리뷰’를 돕는 10가지 방법](https://1boon.kakao.com/bloter/238819?fbclid=IwAR2j_veQ_vxSN3MSsqWvEz4QSszYV6JJCJED7nEiHAO5EKm_ON-wTKjB37A)
 * [카카오스토리 팀의 코드 리뷰 도입 사례 - 코드 리뷰, 어디까지 해봤니?](http://tech.kakao.com/2016/02/04/code-review)
 * [카카오스토리 웹팀의 코드리뷰 경험](https://www.slideshare.net/OhgyunAhn/ss-61189141)
 * [소스코드 리뷰에 대한 짧은 이야기](https://brunch.co.kr/@supims/11)
