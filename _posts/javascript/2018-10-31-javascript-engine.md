@@ -14,8 +14,6 @@ tags: javascript
 
 이해하기가 어렵다.ㅡㅠ
 
-
-
 ## Javascript 엔진
 자바스크립트 엔진의 기본적인 역할은, 개발자가 작성한 자바스크립트 코드를 브라우저에 의해 해석되거나 어플리케이션에 임베드 될 수 있는 빠르고 최적화된 코드로 변환하는 일이다. 
 자바스크립트 엔진 중에 유명한 것이 구글의 V8 엔진이다. V8 엔진은 크롬과 Node.js에서 사용된다.
@@ -96,3 +94,4 @@ function removeImage() {
 - [자바스크립트 엔진의 최적화 기법 (1) - JITC, Adaptive Compilation](https://meetup.toast.com/posts/77)
 - [자바스크립트 엔진의 최적화 기법 (2) - Hidden class, Inline Caching](https://meetup.toast.com/posts/78)
 - [[자바스크립트와 이벤트 루프](https://meetup.toast.com/posts/89)
+- [JavaScript essentials: 엔진 동작을 알아야 하는 이유](https://devtimothy.tistory.com/94?fbclid=IwAR04jLJ3RAIgrUyZv2wnJENhqj9kV2iJj4HM9VODcQU40NLiQaMG-peQiHE)

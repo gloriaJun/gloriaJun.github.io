@@ -15,3 +15,8 @@ tags: frontend http
 
 * https://opentutorials.org/module/3830/22985
 * [HTTP 캐싱](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
+
+## 캐싱 테스트 도구
+
+* 크롬 개발자 도구의 `Audits`
+* 
