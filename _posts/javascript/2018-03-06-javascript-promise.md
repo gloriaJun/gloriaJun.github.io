@@ -10,8 +10,8 @@ tags: javascript promise callback
 * TOC
 {:toc}
 
+# 특정 조건을 만족할 때까지 반복하기
 
-#### 특정 조건을 만족할 때까지 반복하기
 ```Javascript
 function funcPromise (data, percent) {
   return new Promise((resolve, reject) => {
@@ -47,7 +47,8 @@ promiseLoop({key: 10}, funcPromise)
   })
 ```
 
-#### setTimeout을 promise 패턴으로 구현
+## setTimeout을 promise 패턴으로 구현
+
 ```javascript
 function delay(sec=3000) {
 	return new Promise(resolve => setTimeout(resolve, sec));
@@ -58,8 +59,14 @@ await delay();
 console.log('timeout called');
 ```
 
+# Promise.race(iterable)
 
-## Reference
+iterable 안에 있는 Promise 중에 가장 먼저 resolve 또는 reject 된 Promise의 결과값을 반환받는다.
+
+- https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/race
+
+# Reference
+
 - http://www.datchley.name/promise-patterns-anti-patterns/
 - http://han41858.tistory.com/11
 - https://lowrey.me/while-loop-with-es6-promises/
