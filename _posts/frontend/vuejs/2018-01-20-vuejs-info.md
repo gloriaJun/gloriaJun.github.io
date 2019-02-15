@@ -96,3 +96,4 @@ let model = {
 
 ###### Tip
 - [숨겨진 Vue 패턴들](https://medium.com/@Dongmin_Jang/vuejs-%EC%88%A8%EA%B2%A8%EC%A7%84-vue-%ED%8C%A8%ED%84%B4%EB%93%A4-1ea3adc585ac)
+- [VueJs best practices](https://blog.usejournal.com/vue-js-best-practices-c5da8d7af48d)
