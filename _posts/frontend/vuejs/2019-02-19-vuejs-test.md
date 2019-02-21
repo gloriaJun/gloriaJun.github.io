@@ -19,6 +19,8 @@ tags: javascript test jest tdd
 - 코드의 품질을 보장하기 위해서
 - 차후 코드 수정 시에 발생할 수 있는 사이드 이펙트를 조금이나마 예방하기 위해서
 
+[What’s testing and why should we do it?](https://vueschool.io/articles/vuejs-tutorials/what-is-testing-and-why-should-we-do-it/) 글의 **Why write tests?** 부분을 읽어보는 것도 좋은듯.
+
 ### 그 외의 여담으로 내가 생각하는 이유??
 
 내 경험에 의하면...대부분의 관리자나 개발자들은 테스트에 대해, 특히 단위 테스트에 대해 중요하게 생각하지 않는다.
@@ -69,7 +71,17 @@ Test Driven Development의 약자이다.
 
 > Snapshot tests are a very useful tool whenever you want to make sure your UI does not change unexpectedly.
 
+# Coverage
+
+각 커버리지 측정 항목에 대한 설명
+
+- Statements: 코드 내 모든 문장 중 실행된 문장 수
+- Branches: 코드 내 전체 분기 중 실행된 경로 분기 수
+- Functions: 전체 함수 중 실행된 적 있는 함수 수
+- Lines: 전체 코드 라인 중 실행된 적 있는 라인 수
+
 # Reference
 
 - [Working an application in Vue.js with TDD](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-1-3be791dafa2b)
 - [Cracking Vue.js-Vue Test Utils](https://joshua1988.github.io/vue-camp/testing/vue-test-util.html)
+- https://vueschool.io/articles/series/testing-like-a-pro-in-javascript/
