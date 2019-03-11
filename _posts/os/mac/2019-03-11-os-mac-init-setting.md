@@ -212,3 +212,7 @@ brew install yarn
 # NVM 같은 버전 관리 툴을 사용해야 한다면 Node.js의 설치를 제외하여 설치한다.
 brew install yarn --ignore-dependencies
 ```
+
+# Dracular 테마
+
+개인적으로는 가능한 [Dracular](https://draculatheme.com/)를 사용하고 있다는...
