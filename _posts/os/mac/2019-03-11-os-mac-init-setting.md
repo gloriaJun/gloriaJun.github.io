@@ -201,3 +201,14 @@ sh ./install.sh
 * vscode를 설치 후에 *Settings Sync*를 설치한다.
 * *Shift + option + D*를 클릭한 뒤에 출력되는 창에서 Github Token과 Gist ID를 입력한다.
 * 정상적으로 인증이 되면 Git에 공유되어있던 설정들을 다운받아 오면서 설정 정보를 동기화하는 작업이 진행된다.
+
+# Frontend 개발 도구 설치
+
+## Yarn
+
+```bash
+brew install yarn
+
+# NVM 같은 버전 관리 툴을 사용해야 한다면 Node.js의 설치를 제외하여 설치한다.
+brew install yarn --ignore-dependencies
+```
