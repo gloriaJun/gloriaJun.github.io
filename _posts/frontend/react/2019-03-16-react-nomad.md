@@ -8,6 +8,7 @@ tags: javascript frontend react
 ---
 
 [강의링크](https://academy.nomadcoders.co/courses/enrolled/216871)
+[실습소스](https://github.com/nomadcoders/movie_app)
 
 # Why React ?
 
