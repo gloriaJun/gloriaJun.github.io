@@ -10,3 +10,7 @@ _site
 # Bundler
 .bundle/
 vendor/
+
+# ide
+.vscode
+.idea
