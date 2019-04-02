@@ -33,7 +33,7 @@ yarn add -D webpack webpack-cli webpack-dev-server
 yarn add react react-dom 
 ```
 
-- package.json
+**package.json**    
 ```json
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -43,7 +43,7 @@ yarn add react react-dom
 
 #### Create Example Source
 
-- public/index.html
+**public/index.html**    
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +57,7 @@ yarn add react react-dom
 </html>
 ```
 
-- src/App.js
+**src/App.js**    
 ```javascript
 import React from 'react';
 
@@ -72,7 +72,7 @@ export default class App extends React.Component {
 }
 ```
 
-- scr/index.js
+**scr/index.js**    
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -89,7 +89,7 @@ babel을 설정하고, webpack config 파일에 기본 설정을 해준다.
 yarn add -D @babel/core @babel/preset-env babel-loader @babel/preset-react
 ```
 
-- babel.config.js
+**babel.config.js**    
 ```javascript
 // babel.config.js
 module.exports = function (api) {
@@ -104,7 +104,7 @@ module.exports = function (api) {
 }
 ```
 
-- webpack.config.js
+**webpack.config.js**    
 ```javascript
 // webpack.config.js
 const path = require('path');
@@ -143,7 +143,7 @@ module.exports = {
 yarn add -D html-webpack-plugin
 ```
 
-- webpack.config.js
+**webpack.config.js**    
 ```javascript
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -168,7 +168,7 @@ style 파일 관련 모듈을 설치하고 webpack 설정 파일을 수정한다
 yarn add -D css-loader sass-loader style-loader node-sass
 ```
 
-- `webpack.config.js`에 아래와 같은 설정을 추가해준다.
+`webpack.config.js`에 아래와 같은 설정을 추가해준다.     
 ```javascript
 {
   test: /\.s?css$/,
@@ -227,14 +227,14 @@ devServer: {
  yarn add -D react-hot-loader
 ```
 
-- babel.config.js
+**babel.config.js**    
 ```javascript
 plugins: [
   "react-hot-loader/babel",
 ],
 ```
 
-- webpack.config.js
+**webpack.config.js**    
 ```javascript
 const webpack = require('webpack');
 
@@ -250,7 +250,7 @@ const webpack = require('webpack');
   }
 ```
 
-- src/index.js
+**src/index.js**    
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -302,7 +302,7 @@ touch webpack.prod.conf.js
 yarn add -D extract-text-webpack-plugin@next 
 ```
 
-- webpack.prod.conf.js
+**webpack.prod.conf.js**    
 ```javascript
 // 중략...
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -355,7 +355,7 @@ css-loader 전에 css 파일을 압축(minify)하고 CSS 룰을 적용하고 자
 yarn add -D postcss-loader autoprefixer
 ```
 
-- postcss.config.js
+**postcss.config.js**    
 ```javascript
 module.exports = {
   plugins: [require('autoprefixer')]
