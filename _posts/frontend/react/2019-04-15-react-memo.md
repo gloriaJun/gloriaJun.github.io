@@ -72,4 +72,5 @@ return <View name={this.state.name} />;
 
 ## Reference
 
+- [React - React.memo](https://reactjs.org/docs/react-api.html#reactmemo)
 - [Using React Memo and memoization – Sam Pakvis – Medium](https://medium.com/@trekinbami/using-react-memo-and-memoization-1970eb1ed128)
