@@ -416,6 +416,8 @@ import(
   'module'
 );
 
+> import 시에 추가적으로 사용가능한 comment는 [webpack-Module Methods](https://webpack.js.org/api/module-methods/#magic-comments)를 참고
+
 #### webpackChunkName
 
 모듈을 import할 때에 아래와 같이 chunk 파일명을 명시한다.
@@ -425,15 +427,13 @@ import(
 const DynamicText = Loadable(() => import(/* webpackChunkName: "DynamicText" */ './DynamicText'));
 ```
 
-#### webpackPrefetch
+#### webpackPrefetch / webpackPreload
 
-브라우저가 판단하여 유휴한 시간이 미리 리소스를 받아 놓는다.
+- webpackPrefetch : 브라우저가 판단하여 유휴한 시간이 미리 리소스를 받아 놓는다.
+- webpackPreload : 필요하지만 당장은 필요하지 않은 리소스를 미리 로드 해놓도록 하기 위한 옵션
 
-#### webpackPreload
+> [preload-webpack-plugin](https://github.com/GoogleChromeLabs/preload-webpack-plugin)를 이용하여 webpack config 설정 파일에 적용할 수 있다 (webapck4+ 인 경우에는 `yarn add -D preload-webpack-plugin@next`와 같이 설치한다)
 
-필요하지만 당장은 필요하지 않은 리소스를 미리 로드 해놓도록 하기 위한 옵션
-
-> import 시에 추가적으로 사용가능한 comment는 [webpack-Module Methods](https://webpack.js.org/api/module-methods/#magic-comments)를 참고
 
 ### Splitting Duplicated Chunk
 
