@@ -19,6 +19,10 @@ tags: css frontend animation
 #### Shake
 - [CSShake](http://elrumordelaluz.github.io/csshake/#1)
 
+#### Transition
+
+- [Easing Functions Cheat Sheet](https://easings.net/)
+
 #### 기타
 - [magic animation](https://github.com/miniMAC/magic)
 - [Transform예제](https://codepen.io/gloriaJun/pen/xyMrXW)
