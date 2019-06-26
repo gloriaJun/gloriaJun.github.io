@@ -10,7 +10,7 @@ tags: javascript frontend react unit-test
 * TOC
 {:toc}
 
-![](_2019-06-20__9-a77b073b-e76a-4709-a2b2-7e5dfc76c55c.34.19.png)
+![]({{ site.baseurl }}/assets/images/post/_2019-06-20__9-a77b073b-e76a-4709-a2b2-7e5dfc76c55c.34.19.png)
 
 React 환경에서의 단위 테스트를 작성하기 위해서 어떠한 방식으로 접근하고 작성해야 하는 지에 대해 조사한 내용을 정리한 글이다.
 
@@ -65,7 +65,7 @@ React 환경에서 어떠한 동작을 검증해야 하는 지에 대해 생각�
 
 ## 테스트 시나리오 작성 규칙
 
-![](_2019-06-20__10-7d4ada37-04e9-4f96-a39b-c3c1d100a795.21.57.png)
+![]({{ site.baseurl }}/assets/images/post/_2019-06-20__10-7d4ada37-04e9-4f96-a39b-c3c1d100a795.21.57.png)
 
 - BDD(Behavior Driven Development)를 기준으로 테스트 코드를 작성한다.
 - 각각의 테스트는 다른 테스트에 의존적이지 않아야 한다.
@@ -84,7 +84,7 @@ PropTypes를 적용함으로써 가져올 수 있는 이점은 아래와 같다.
 
 - 컴포넌트 간에 주고 받는 props를 체크하여 사전에 버그를 예방할 수 있다.
 
-![](_2019-06-20__10-e10c095e-b60b-49e3-8014-25c6ac753efb.45.37.png)
+![]({{ site.baseurl }}/assets/images/post/_2019-06-20__10-e10c095e-b60b-49e3-8014-25c6ac753efb.45.37.png)
 
 - 상세한 PropTypes 정의로 인하여 코드의 가독성을 향상시킬 수 있다.
 
@@ -133,15 +133,15 @@ export default AccountList;
 React Component 테스트를 위해서는 Jest가 테스트 프레임워크로 가장 많이 사용되고 있으며, 컴포넌트 렌더링 등과 같은 동작을 위해서는 Enzyme, @testing-library/react 등과 같은 테스트 라이브러리가 사용되고 있다.
 
 - [Jest](https://jestjs.io/)
-    - Facebook에서 [Jasmine](https://jasmine.github.io/)을 기반으로 개발한 *JavaScript Test Framework*이다.
+    - Facebook에서 [Jasmine](https://jasmine.github.io/)을 기반으로 개발한 `JavaScript Test Framework`이다.
 - [Enzyme](https://github.com/airbnb/enzyme)
-    - Airbnb에서 개발한 React를 위한 *JavaScript Testing utility*이다.
+    - Airbnb에서 개발한 React를 위한 `JavaScript Testing utility`이다.
     - 컴포넌트 렌더링을 위해 아래와 같은 메소드가 제공된다.
         - shallow - 자기 자신만 렌더링을 하므로 독립적으로 해당 컴포넌트만 독립적으로 테스트할 수 있다.
         - mount - 관련된 컴포넌트를 모두 렌더링 한다. 다른 컴포넌트와의 관계를 테스트 할 수 있다.
         - render - 컴포넌트를 정적인 html로 렌더링한다.
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
-    - 가벼운 라이브러리 모듈로써, 리팩토링 시에 테스트 코드가 깨지는 것을 방지하기 위해 *구성 요소의 기능을 테스트하기 위한 코드를 작성*하도록 강요하고 있다.
+    - 가벼운 라이브러리 모듈로써, 리팩토링 시에 테스트 코드가 깨지는 것을 방지하기 위해 `구성 요소의 기능을 테스트하기 위한 코드를 작성`하도록 강요하고 있다.
     - state, props를 체크하지 않고, 사용자에게 보여지는 dom객체를 이용하여 검증한다.
     - render 메소드만 제공
         - mount, shallow와 같은 렌더링 메소드를 제공하지 않음
@@ -171,8 +171,10 @@ React Component 테스트를 위해서는 Jest가 테스트 프레임워크로 �
 ## References
 
 - [Create React App - Running Tests](https://facebook.github.io/create-react-app/docs/running-tests)
+- [React Doc - Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - [React 컴포넌트를 테스트하는 세 가지 방법](http://webframeworks.kr/tutorials/react/testing/)
 - [Toast Meetup - 실용적인 프론트엔드 테스트 전략](https://meetup.toast.com/posts/174)
 - [번역-리액트 테스팅 튜토리얼: 테스트 프레임워크와 컴포넌트 테스트 방법](https://rinae.dev/posts/react-testing-tutorial-kr)
 - [YouTube - React Redux Unit & Integration Testing with Jest and Enzyme](https://www.youtube.com/playlist?list=PL-Db3tEF6pB8Am-IhCRgyGSxTalkDpUV_)
     - enzyme를 이용하여 작성하고자 하는 경우 해당 영상이 도움이 될 듯.  
+- [Difference between react-testing-library and enzyme](https://techdoma.in/difference-between-react-test-utilities-and/)
