@@ -10,7 +10,7 @@ tags: javascript frontend react unit-test
 * TOC
 {:toc}
 
-![]({{ site.baseurl }}/assets/images/post/_2019-06-20__9-a77b073b-e76a-4709-a2b2-7e5dfc76c55c.34.19.png)
+![]({{ site.baseurl }}/assets/images/post/unit-test-react-01.png)
 
 React 환경에서의 단위 테스트를 작성하기 위해서 어떠한 방식으로 접근하고 작성해야 하는 지에 대해 조사한 내용을 정리한 글이다.
 
@@ -65,7 +65,7 @@ React 환경에서 어떠한 동작을 검증해야 하는 지에 대해 생각�
 
 ## 테스트 시나리오 작성 규칙
 
-![]({{ site.baseurl }}/assets/images/post/_2019-06-20__10-7d4ada37-04e9-4f96-a39b-c3c1d100a795.21.57.png)
+![]({{ site.baseurl }}/assets/images/post/unit-test-react-02.png)
 
 - BDD(Behavior Driven Development)를 기준으로 테스트 코드를 작성한다.
 - 각각의 테스트는 다른 테스트에 의존적이지 않아야 한다.
@@ -84,7 +84,7 @@ PropTypes를 적용함으로써 가져올 수 있는 이점은 아래와 같다.
 
 - 컴포넌트 간에 주고 받는 props를 체크하여 사전에 버그를 예방할 수 있다.
 
-![]({{ site.baseurl }}/assets/images/post/_2019-06-20__10-e10c095e-b60b-49e3-8014-25c6ac753efb.45.37.png)
+![]({{ site.baseurl }}/assets/images/post/unit-test-react-03.png)
 
 - 상세한 PropTypes 정의로 인하여 코드의 가독성을 향상시킬 수 있다.
 
