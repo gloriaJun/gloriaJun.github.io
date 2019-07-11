@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(React) redux-saga 반복 정의되는 부분 모듈화 하기"
+title: "(React) redux-saga예제의 fetchEntity 패턴"
 date: 2019-08-02 15:35:00
 author: gloria
 categories: frontend
@@ -22,18 +22,18 @@ redux-saga를 이용하여 비동기 로직 처리를 작성하다보면 `로딩
 그리고 난 뒤에 반복되어지는 부분을 떼어서 아래와 같이 `sagaCreator` 메소드를 생성하였다.
  
 ```javascript
-import { put } from 'redux-saga/effects';
-
-export default function* sagaCreator(actionObject, resultData, onSuccess, onError) {
-  const { pending, success, fail } = actionObject;
-
-  yield put(pending());
+/*
+* entity must have a success, request and failure method
+* request is a function that returns a promise when called
+* */
+export function* fetchEntity(request, entity, ...args) {
   try {
-    yield put(success(resultData));
-    onSuccess && onSuccess();
+    const response = yield call(request);
+    // we directly return the result object and throw away the headers and the status text here
+    // if status and headers are needed, then instead of returning response.result, we have to return just response.
+    yield put(entity.success(response.result, ...args));
   } catch (error) {
-    yield put(fail({ error }));
-    onError && onError(error);
+    yield put(entity.failure(error, ...args));
   }
 }
 ```
@@ -44,79 +44,21 @@ export default function* sagaCreator(actionObject, resultData, onSuccess, onErro
 - 코드를 좀 더 간결하게 가져감으로써 불필요한 반복되는 로직은 크게 신경쓰지 않아도 된다.
 - 반복되는 코드에 대한 사후 수정 시 깜빡하거나, 오타로 인한 사소한 오류를 줄일 수 있다.
 
-#### saga 내부에서 별도의 onSuccess, onError 동작 정의가 필요한 경우
+#### Usage
 
 ```javascript
-function* fetchAccounts({ onSuccess, onError }) {
-  const method = 'fetchAccounts';
-  const result = yield call(api[method]);
-
-  const handleSuccess = ()) => {
-    // success 관련 처리 로직
-    onSuccess(result);
-  }
-
-  const handleError = error => {
-    // error 관련 처리 로직
-    onError(error);
-  }
-
-  yield call(sagaCreator, action[method], result, handleSuccess, handleError);
+export function* searchForVideos(searchQuery, nextPageToken, amount) {
+  const request = api.buildSearchRequest.bind(null, searchQuery, nextPageToken, amount);
+  yield fetchEntity(request, searchActions.forVideos, searchQuery);
 }
 ```
 
-#### 적용 전/후 코드 saga 비지니스 처리 로직 비교
+#### 좀 더 고민해볼 포인트
 
-##### AS-IS
+- 병렬로 여러 api 호출 시에는????
 
-```javascript
-function* fetchAccounts({ payload }) {
-  const { pending, success, fail } = action.fetchAccounts;
+#### References
 
-  yield put(pending());
-  try {
-    const result = yield call(api.fetchAccounts, payload);
-    yield put(success(result));
-  } catch (error) {
-    yield put(fail({ error }));
-  }
-}
-
-function* fetchMain({ payload }) {
-  const { pending, success, fail } = action.fetchMain;
-
-  yield put(pending());
-  try {
-    const [{ content: account }, { content: recentlySent }, { content: history }] = yield all([
-      call(api.fetchAccount, payload),
-      call(api.fetchRecently),
-      call(api.fetchHistory, payload),
-    ]);
-    yield put(success({ account, recentlySent, history }));
-  } catch (error) {
-    yield put(fail({ error }));
-  }
-}
-```
-
-##### TO-BE
-
-```javascript
-function* fetchAccounts({ onSuccess, onError }) {
-  const method = 'fetchAccounts';
-  const result = yield call(api[method]);
-
-  yield call(sagaCreator, action[method], result, onSuccess, onError);
-}
-
-function* fetchMain({ onSuccess, onError, ...payload }) {
-  const result = yield all({
-    account: call(api.fetchAccount, payload),
-    recentlySent: call(api.fetchRecently, payload),
-    history: call(api.fetchHistory, payload),
-  });
-
-  yield call(sagaCreator, action.fetchMain, result, onSuccess, onError);
-}
-```
-
+- https://github.com/xkawi/react-universal-saga/blob/master/src/sagas/index.js
+- https://github.com/productioncoder/youtube-react/blob/master/src/store/sagas/index.js
+- https://jonir227.github.io/develop/2019/06/04/redux-saga%EC%99%80-typescript-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.html
