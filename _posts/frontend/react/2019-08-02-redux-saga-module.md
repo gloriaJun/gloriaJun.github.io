@@ -44,6 +44,27 @@ export default function* sagaCreator(actionObject, resultData, onSuccess, onErro
 - 코드를 좀 더 간결하게 가져감으로써 불필요한 반복되는 로직은 크게 신경쓰지 않아도 된다.
 - 반복되는 코드에 대한 사후 수정 시 깜빡하거나, 오타로 인한 사소한 오류를 줄일 수 있다.
 
+#### saga 내부에서 별도의 onSuccess, onError 동작 정의가 필요한 경우
+
+```javascript
+function* fetchAccounts({ onSuccess, onError }) {
+  const method = 'fetchAccounts';
+  const result = yield call(api[method]);
+
+  const handleSuccess = ()) => {
+    // success 관련 처리 로직
+    onSuccess(result);
+  }
+
+  const handleError = error => {
+    // error 관련 처리 로직
+    onError(error);
+  }
+
+  yield call(sagaCreator, action[method], result, handleSuccess, handleError);
+}
+```
+
 #### 적용 전/후 코드 saga 비지니스 처리 로직 비교
 
 ##### AS-IS
@@ -84,6 +105,7 @@ function* fetchMain({ payload }) {
 function* fetchAccounts({ onSuccess, onError }) {
   const method = 'fetchAccounts';
   const result = yield call(api[method]);
+
   yield call(sagaCreator, action[method], result, onSuccess, onError);
 }
 
@@ -97,3 +119,4 @@ function* fetchMain({ onSuccess, onError, ...payload }) {
   yield call(sagaCreator, action.fetchMain, result, onSuccess, onError);
 }
 ```
+
