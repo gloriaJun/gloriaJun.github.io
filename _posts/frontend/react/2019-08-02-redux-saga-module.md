@@ -22,20 +22,35 @@ redux-saga를 이용하여 비동기 로직 처리를 작성하다보면 `로딩
 그리고 난 뒤에 반복되어지는 부분을 떼어서 아래와 같이 `sagaCreator` 메소드를 생성하였다.
  
 ```javascript
-/*
-* entity must have a success, request and failure method
-* request is a function that returns a promise when called
-* */
-export function* fetchEntity(request, entity, ...args) {
-  try {
-    const response = yield call(request);
-    // we directly return the result object and throw away the headers and the status text here
-    // if status and headers are needed, then instead of returning response.result, we have to return just response.
-    yield put(entity.success(response.result, ...args));
-  } catch (error) {
-    yield put(entity.failure(error, ...args));
-  }
-}
+import { call, all, put } from 'redux-saga/effects';
+
+export const fetchEntity = (action, api) =>
+  function*(params, onSuccess, onError) {
+    const { pending, success, fail } = action;
+    yield put(pending());
+    try {
+      const data = yield call(api, params);
+      yield put(success(data));
+      onSuccess && onSuccess();
+    } catch (error) {
+      yield put(fail());
+      onError && onError(error);
+    }
+  };
+
+export const fetchParallelEntity = (action, apis) =>
+  function*(onSuccess, onError) {
+    const { pending, success, fail } = action;
+    yield put(pending());
+    try {
+      const data = yield all(apis);
+      yield put(success(data));
+      onSuccess && onSuccess();
+    } catch (error) {
+      yield put(fail());
+      onError && onError(error);
+    }
+  };
 ```
 
 위와 같이 모듈화를 하게 되면...가져올 수 있는 이점은 아래와 같다고 개인적으로는 생각한다.
@@ -47,15 +62,11 @@ export function* fetchEntity(request, entity, ...args) {
 #### Usage
 
 ```javascript
-export function* searchForVideos(searchQuery, nextPageToken, amount) {
-  const request = api.buildSearchRequest.bind(null, searchQuery, nextPageToken, amount);
-  yield fetchEntity(request, searchActions.forVideos, searchQuery);
+export function* deleteUser({ payload: { onSuccess, onError, ...params } }) {
+  yield call(fetchEntity(deleteUser, deleteUserApi, params, onSuccess, onError);
 }
 ```
 
-#### 좀 더 고민해볼 포인트
-
-- 병렬로 여러 api 호출 시에는????
 
 #### References
 
